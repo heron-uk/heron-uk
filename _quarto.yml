@@ -4,7 +4,7 @@ project:
 date: today
 
 website:
-  title: "HERON-UK Onboarding guidelines"
+  title: "HERON-UK Onboarding conventions"
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
   repo-url: https://github.com/oxford-pharmacoepi/HERONUK-OnboardingGuidelines
   repo-actions: [issue]
@@ -26,10 +26,5 @@ website:
 format:
   html:
     toc: true
-    #fontcolor: black
-    #linkcolor: blue
-    #backgroundcolor: black
-    #mainfont: Roboto
-    #monofont: to edit fonts
     theme: flatly
   
