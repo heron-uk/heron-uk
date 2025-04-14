@@ -1,0 +1,35 @@
+project:
+  type: website
+
+date: today
+
+website:
+  title: "HERON-UK Onboarding guidelines"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  repo-url: https://github.com/oxford-pharmacoepi/HERONUK-OnboardingGuidelines
+  repo-actions: [issue]
+  page-footer:
+    center: "Rendered on {{< meta date >}}"
+    left: "Copyright 2024, Oxinfer"
+  navbar:
+    search: false
+    left: 
+      - text: "HERON-UK Network"
+        href: the_network.qmd
+      - text: "Onboarding conventions"
+        menu:
+          - text: "Observation period"
+            href: observation_period.qmd
+          - text: "Ethnicity"
+            href: ethnicity.qmd
+
+format:
+  html:
+    toc: true
+    #fontcolor: black
+    #linkcolor: blue
+    #backgroundcolor: black
+    #mainfont: Roboto
+    #monofont: to edit fonts
+    theme: flatly
+  
