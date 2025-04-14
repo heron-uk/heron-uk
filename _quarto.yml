@@ -15,7 +15,7 @@ website:
     search: false
     left: 
       - text: "HERON-UK Network"
-        href: the_network.qmd
+        href: index.qmd
       - text: "Onboarding conventions"
         menu:
           - text: "Observation period"
