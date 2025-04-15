@@ -26,5 +26,5 @@ jobs:
         with:
           target: gh-pages
         env:
-          QUARTO_PUBLISH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
