@@ -6,7 +6,7 @@ date: today
 website:
   title: "HERON-UK Onboarding conventions"
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
-  repo-url: https://github.com/oxford-pharmacoepi/HERONUK-OnboardingGuidelines
+  repo-url: https://github.com/heron-uk/OnboardingGuidelines
   repo-actions: [issue]
   page-footer:
     center: "Rendered on {{< meta date >}}"
