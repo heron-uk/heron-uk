@@ -20,6 +20,8 @@ website:
         menu:
           - text: "Observation period"
             href: observation_period.qmd
+          - text: "IMD quintiles"
+            href: imd_quintiles.qmd
           - text: "Ethnicity"
             href: ethnicity.qmd
 
