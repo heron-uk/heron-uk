@@ -4,9 +4,9 @@ project:
 date: today
 
 website:
-  title: "HERON-UK Onboarding conventions"
+  title: "HERON-UK"
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
-  repo-url: https://github.com/heron-uk/OnboardingGuidelines
+  repo-url: https://github.com/heron-uk/heron-uk
   repo-actions: [issue]
   page-footer:
     center: "Rendered on {{< meta date >}}"
@@ -14,17 +14,22 @@ website:
   navbar:
     search: false
     left: 
-      - text: "HERON-UK Network"
-        href: index.qmd
-      - text: "Onboarding conventions"
+      - text: "Network activities"
         menu:
-          - text: "Observation period"
-            href: onboarding/observation_period.qmd
-          - text: "IMD quintiles"
-            href: onboarding/imd_quintiles.qmd
-          - text: "Ethnicity"
-            href: onboarding/ethnicity.qmd
-
+          - text: "Studies"
+            href: network_activities/studies.qmd
+          - text: "Studyathons"
+            href: network_activities/studyathons.qmd
+          - text: "Dissemination"
+            href: network_activities/dissemination.qmd
+      - text: "Onboarding"
+        menu:
+          - text: "Onboarding process"
+            href: onboarding/index.qmd
+          - text: "Conventions"
+            href: onboarding/conventions.qmd
+          - text: "Data partners"
+            href: onboarding/data_partners.qmd
 format:
   html:
     toc: true

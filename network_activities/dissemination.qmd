@@ -1,0 +1,31 @@
+
+# Publications
+
+- HERON-UK (PDS under review)
+- Antibiotics (writing)
+- High cost medicines (internal review)
+- OmopSketch (writing)
+
+# Conferences
+
+## OHDSI Europe 2025
+
+- Elin antibiotics oral presentation
+- Cecilia software demo
+- Cecilia onboarding poster
+- Marti Observation periods poster
+- Eds high cost medicines poster
+
+## OHDSI UK 2025
+
+- Elin antibiotics oral poster
+- Marti OmopConstructor oral presentation and software demo
+
+## OHDSI Africa 2025
+
+- Eds high cost medicines oral presentation
+
+## HDR-UK Conference 2025
+
+- Eds high cost medicines oral presentation
+- Cecilia HERON-UK onboarding
