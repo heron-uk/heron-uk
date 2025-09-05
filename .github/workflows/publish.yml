@@ -15,7 +15,7 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         
-     - name: Set up R and cache base packages
+      - name: Set up R and cache base packages
         uses: rstudio/shiny-workflows/setup-r-package@v1
         with:
           packages: |
@@ -24,17 +24,17 @@ jobs:
             pak
           cache-version: v1
 
-      - name: Install project-specific R dependencies
-        shell: Rscript {0}
-        run: |
-          deps <- unique(renv::dependencies()$Package)
-          message("Installing dependencies: ", paste(deps, collapse = ", "))
-          pak::pak(deps, upgrade = FALSE)
+       - name: Install project-specific R dependencies
+         shell: Rscript {0}
+         run: |
+           deps <- unique(renv::dependencies()$Package)
+           message("Installing dependencies: ", paste(deps, collapse = ", "))
+           pak::pak(deps, upgrade = FALSE)
         
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       - name: Render and Publish
+         uses: quarto-dev/quarto-actions/publish@v2
+         with:
+           target: gh-pages
+         env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
