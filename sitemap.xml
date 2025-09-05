@@ -2,18 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://heron-uk.github.io/heron-uk/index.html</loc>
-    <lastmod>2025-09-05T14:41:28.325Z</lastmod>
+    <lastmod>2025-09-05T15:11:29.772Z</lastmod>
   </url>
   <url>
-    <loc>https://heron-uk.github.io/heron-uk/onboarding/ethnicity.html</loc>
-    <lastmod>2025-09-05T14:41:28.325Z</lastmod>
+    <loc>https://heron-uk.github.io/heron-uk/onboarding/index.html</loc>
+    <lastmod>2025-09-05T15:11:29.773Z</lastmod>
   </url>
   <url>
-    <loc>https://heron-uk.github.io/heron-uk/onboarding/observation_period.html</loc>
-    <lastmod>2025-09-05T14:41:28.325Z</lastmod>
+    <loc>https://heron-uk.github.io/heron-uk/network_activities/dissemination.html</loc>
+    <lastmod>2025-09-05T15:11:29.772Z</lastmod>
   </url>
   <url>
-    <loc>https://heron-uk.github.io/heron-uk/onboarding/imd_quintiles.html</loc>
-    <lastmod>2025-09-05T14:41:28.325Z</lastmod>
+    <loc>https://heron-uk.github.io/heron-uk/network_activities/studies.html</loc>
+    <lastmod>2025-09-05T15:11:29.772Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/network_activities/studyathons.html</loc>
+    <lastmod>2025-09-05T15:11:29.772Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/onboarding/data_partners.html</loc>
+    <lastmod>2025-09-05T15:11:29.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/onboarding/conventions.html</loc>
+    <lastmod>2025-09-05T15:11:29.772Z</lastmod>
   </url>
 </urlset>

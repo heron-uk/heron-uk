@@ -7,24 +7,59 @@
     "text": "HERON-UK Network\nthe network"
   },
   {
-    "objectID": "onboarding/ethnicity.html",
-    "href": "onboarding/ethnicity.html",
-    "title": "Ethnicity",
+    "objectID": "onboarding/index.html",
+    "href": "onboarding/index.html",
+    "title": "Onboarding",
     "section": "",
-    "text": "Ethnicity\nhow to"
+    "text": "shiny\nlink to data partners\ngithub link"
   },
   {
-    "objectID": "onboarding/observation_period.html",
-    "href": "onboarding/observation_period.html",
-    "title": "Observation period",
+    "objectID": "onboarding/index.html#year-1",
+    "href": "onboarding/index.html#year-1",
+    "title": "Onboarding",
     "section": "",
-    "text": "Observation period\nthe op…"
+    "text": "shiny\nlink to data partners\ngithub link"
   },
   {
-    "objectID": "onboarding/imd_quintiles.html",
-    "href": "onboarding/imd_quintiles.html",
-    "title": "IMD quintiles",
+    "objectID": "network_activities/dissemination.html",
+    "href": "network_activities/dissemination.html",
+    "title": "Publications",
     "section": "",
-    "text": "IMD quintiles\nconcepts…"
+    "text": "HERON-UK (PDS under review)\nAntibiotics (writing)\nHigh cost medicines (internal review)\nOmopSketch (writing)"
+  },
+  {
+    "objectID": "network_activities/dissemination.html#ohdsi-europe-2025",
+    "href": "network_activities/dissemination.html#ohdsi-europe-2025",
+    "title": "Publications",
+    "section": "OHDSI Europe 2025",
+    "text": "OHDSI Europe 2025\n\nElin antibiotics oral presentation\nCecilia software demo\nCecilia onboarding poster\nMarti Observation periods poster\nEds high cost medicines poster"
+  },
+  {
+    "objectID": "network_activities/dissemination.html#ohdsi-uk-2025",
+    "href": "network_activities/dissemination.html#ohdsi-uk-2025",
+    "title": "Publications",
+    "section": "OHDSI UK 2025",
+    "text": "OHDSI UK 2025\n\nElin antibiotics oral poster\nMarti OmopConstructor oral presentation and software demo"
+  },
+  {
+    "objectID": "network_activities/dissemination.html#ohdsi-africa-2025",
+    "href": "network_activities/dissemination.html#ohdsi-africa-2025",
+    "title": "Publications",
+    "section": "OHDSI Africa 2025",
+    "text": "OHDSI Africa 2025\n\nEds high cost medicines oral presentation"
+  },
+  {
+    "objectID": "network_activities/dissemination.html#hdr-uk-conference-2025",
+    "href": "network_activities/dissemination.html#hdr-uk-conference-2025",
+    "title": "Publications",
+    "section": "HDR-UK Conference 2025",
+    "text": "HDR-UK Conference 2025\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding"
+  },
+  {
+    "objectID": "onboarding/data_partners.html",
+    "href": "onboarding/data_partners.html",
+    "title": "Data partners",
+    "section": "",
+    "text": "Data partners"
   }
 ]
