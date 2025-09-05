@@ -10,7 +10,7 @@ website:
   repo-actions: [issue]
   page-footer:
     center: "Rendered on {{< meta date >}}"
-    left: "Copyright 2024, Oxinfer"
+    left: "Copyright 2025, Oxinfer"
   navbar:
     search: false
     left: 
@@ -19,11 +19,11 @@ website:
       - text: "Onboarding conventions"
         menu:
           - text: "Observation period"
-            href: observation_period.qmd
+            href: onboarding/observation_period.qmd
           - text: "IMD quintiles"
-            href: imd_quintiles.qmd
+            href: onboarding/imd_quintiles.qmd
           - text: "Ethnicity"
-            href: ethnicity.qmd
+            href: onboarding/ethnicity.qmd
 
 format:
   html:
