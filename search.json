@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "ethnicity.html",
-    "href": "ethnicity.html",
-    "title": "Ethnicity",
-    "section": "",
-    "text": "Ethnicity\nhow to"
-  },
-  {
-    "objectID": "imd_quintiles.html",
-    "href": "imd_quintiles.html",
-    "title": "IMD quintiles",
-    "section": "",
-    "text": "IMD quintiles\nconcepts…"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "HERON-UK Network",
@@ -21,10 +7,24 @@
     "text": "HERON-UK Network\nthe network"
   },
   {
-    "objectID": "observation_period.html",
-    "href": "observation_period.html",
+    "objectID": "onboarding/ethnicity.html",
+    "href": "onboarding/ethnicity.html",
+    "title": "Ethnicity",
+    "section": "",
+    "text": "Ethnicity\nhow to"
+  },
+  {
+    "objectID": "onboarding/observation_period.html",
+    "href": "onboarding/observation_period.html",
     "title": "Observation period",
     "section": "",
     "text": "Observation period\nthe op…"
+  },
+  {
+    "objectID": "onboarding/imd_quintiles.html",
+    "href": "onboarding/imd_quintiles.html",
+    "title": "IMD quintiles",
+    "section": "",
+    "text": "IMD quintiles\nconcepts…"
   }
 ]

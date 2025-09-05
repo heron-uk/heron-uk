@@ -1,1 +1,1 @@
-Sitemap: https://heron-uk.github.io/OnboardingGuidelines/sitemap.xml
+Sitemap: https://heron-uk.github.io/heron-uk/sitemap.xml
