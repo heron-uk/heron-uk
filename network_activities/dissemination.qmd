@@ -21,7 +21,8 @@
 
 ## OHDSI UK 2025
 
-- Elin antibiotics oral poster
+- Elin antibiotics poster
+- Cecilia poster
 - Marti OmopConstructor oral presentation and software demo
 
 ## OHDSI Africa 2025
