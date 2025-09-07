@@ -1,12 +1,25 @@
 
-# Publications
+# Studyathons
 
-- HERON-UK (PDS under review)
-- Antibiotics (writing)
-- High cost medicines (internal review)
-- OmopSketch (writing)
+## Upcoming 
 
-# Conferences
+### OHDSI UK 2025
+
+- Elin antibiotics oral poster
+- Marti OmopConstructor oral presentation and software demo
+
+### OHDSI Africa 2025
+
+- Eds high cost medicines oral presentation
+
+### HDR-UK Conference 2025
+
+- Eds high cost medicines oral presentation
+- Cecilia HERON-UK onboarding
+
+## Previous
+
+### OHDSI Europe 2025
 
 - **Elin Rowlands**, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. *Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care*. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.
 
@@ -19,16 +32,7 @@
 - Cecilia software demo
 - Eds high cost medicines poster
 
-## OHDSI UK 2025
 
-- Elin antibiotics oral poster
-- Marti OmopConstructor oral presentation and software demo
 
-## OHDSI Africa 2025
 
-- Eds high cost medicines oral presentation
 
-## HDR-UK Conference 2025
-
-- Eds high cost medicines oral presentation
-- Cecilia HERON-UK onboarding
