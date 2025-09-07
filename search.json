@@ -95,7 +95,56 @@
     "href": "data_network/data_partners.html",
     "title": "Data partners",
     "section": "",
-    "text": "Data partners"
+    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research.\n\n\n\nGreat Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025.\n\n\n\nLeeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation.\n\n\n\nLancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading.\n\n\n\nUniversity College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions.\n\n\n\nBarts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards\n\n\n\nDataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
+  },
+  {
+    "objectID": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
+    "href": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
+    "title": "Data partners",
+    "section": "",
+    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research."
+  },
+  {
+    "objectID": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
+    "href": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "Great Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025."
+  },
+  {
+    "objectID": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
+    "href": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "Leeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation."
+  },
+  {
+    "objectID": "data_network/data_partners.html#lancashire-teaching-hospitals",
+    "href": "data_network/data_partners.html#lancashire-teaching-hospitals",
+    "title": "Data partners",
+    "section": "",
+    "text": "Lancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading."
+  },
+  {
+    "objectID": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
+    "href": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "University College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions."
+  },
+  {
+    "objectID": "data_network/data_partners.html#barts-health-nhs-trust",
+    "href": "data_network/data_partners.html#barts-health-nhs-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "Barts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards"
+  },
+  {
+    "objectID": "data_network/data_partners.html#dataloch",
+    "href": "data_network/data_partners.html#dataloch",
+    "title": "Data partners",
+    "section": "",
+    "text": "DataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
   },
   {
     "objectID": "data_network/data_overview.html",
