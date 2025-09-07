@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="HERON-UK">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="HERON-UK">
 </head>
 
@@ -181,9 +182,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#conventions" id="toc-conventions" class="nav-link active" data-scroll-target="#conventions">Conventions</a>
   <ul class="collapse">
   <li><a href="#observation-period" id="toc-observation-period" class="nav-link" data-scroll-target="#observation-period">Observation period</a></li>
-  <li><a href="#imd-quintiles" id="toc-imd-quintiles" class="nav-link" data-scroll-target="#imd-quintiles">IMD quintiles</a></li>
+  <li><a href="#index-of-multiple-deprivation-quintiles" id="toc-index-of-multiple-deprivation-quintiles" class="nav-link" data-scroll-target="#index-of-multiple-deprivation-quintiles">Index of Multiple Deprivation quintiles</a></li>
   <li><a href="#ethnicity" id="toc-ethnicity" class="nav-link" data-scroll-target="#ethnicity">Ethnicity</a></li>
   </ul></li>
+  <li><a href="#feedback" id="toc-feedback" class="nav-link" data-scroll-target="#feedback">Feedback</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/heron-uk/heron-uk/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -218,15 +220,92 @@ ul.task-list li input[type="checkbox"] {
 <h1>Conventions</h1>
 <section id="observation-period" class="level2">
 <h2 class="anchored" data-anchor-id="observation-period">Observation period</h2>
+<p>The observation period has a major impact on study results, particularly on incidence and prevalence calculations [CITE]. For this reason, it is essential to define the observation_period table carefully.</p>
+<p>In some databases, such as primary care data or claims data, enrollment (or registration) and disenrollment dates are available. In these cases, it is most accurate to use the registration date as the <em>observation_period_start_date</em> and the deregistration date as the <em>observation_period_end_date</em>. While multiple observation periods are not recommended, they are permitted.</p>
+<p>In other settings—most commonly secondary care databases, registration dates are not available, which makes defining the observation period more challenging. After initial exploration, we recommend the following approach:</p>
+<ul>
+<li>Observation period start date: the date of the first record for a person.</li>
+<li>Observation period end date: the earliest of the following:
+<ul>
+<li>Date of death</li>
+<li>A censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)</li>
+<li>Other censoring events, such as migration out of the study region.</li>
+</ul></li>
+</ul>
+<p>This definition results in a single observation period per person.</p>
+<p>If death registry linkage is not available, it may be advisable to censor patients two years after their last recorded event. This highlights the importance of linking your data to mortality records (for example, the Office for National Statistics in the UK).</p>
+<p>As part of the study network’s innovation plan, <a href="">OmopConstructor</a> was developed. It includes the function <a href="">builtObservationPeriod()</a>, which helps generate the <em>observation_period</em> table according to these guidelines.</p>
+<p>Please get in touch if you have any questions about building your observation periods.</p>
 </section>
-<section id="imd-quintiles" class="level2">
-<h2 class="anchored" data-anchor-id="imd-quintiles">IMD quintiles</h2>
+<section id="index-of-multiple-deprivation-quintiles" class="level2">
+<h2 class="anchored" data-anchor-id="index-of-multiple-deprivation-quintiles">Index of Multiple Deprivation quintiles</h2>
+<p>The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardized measure of socioeconomic status across geographic areas.</p>
+<p>The convention is to map the IMD data in the <em>observation</em> table using the concept ID <a href="https://athena.ohdsi.org/search-terms/terms/35812882">35812882</a>. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.</p>
+<p>The IMD quintile value is stored in the <code>value_as_number</code> field using a number between 1 and 5. For the units, we use the concept ID <a href="https://athena.ohdsi.org/search-terms/terms/37524288">37524288</a>, which represents quintiles.</p>
+<p>For the observation date:</p>
+<ul>
+<li>If a measurement date is available in the source data, use that date.</li>
+<li>If no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.</li>
+</ul>
+<p>In studies, if with multiple IMD records per person are present the record closest to the index date will be used.</p>
+<p>An example IMD record in the observation table would look like:</p>
+<div style="overflow-x: auto;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>…</th>
+<th><code>observation_concept_id</code></th>
+<th>…</th>
+<th><code>value_as_number</code></th>
+<th>…</th>
+<th><code>unit_concept_id</code></th>
+<th>…</th>
+<th><code>observation_source_concept_id</code></th>
+<th>…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>…</td>
+<td>0</td>
+<td>…</td>
+<td>2</td>
+<td>…</td>
+<td>37524288</td>
+<td>…</td>
+<td>35812882</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="ethnicity" class="level2">
 <h2 class="anchored" data-anchor-id="ethnicity">Ethnicity</h2>
-
-
+<p>Patient ethnicity is a valuable data element for research, and we encourage you to include ethnicity records in your OMOP CDM instance if available in your source data.</p>
+<p>By convention, ethnicity is mapped using the <a href="https://athena.ohdsi.org/search-terms/terms?vocabulary=NHS+Ethnic+Category&amp;page=1&amp;pageSize=15&amp;query=">NHS Ethnic Category</a> in two places: the <em>observation</em> table and the <em>person</em> table. This approach accommodates databases that may contain multiple ethnicity records per patient.</p>
+<p><strong>Observation Table</strong></p>
+<p>Ethnicity records should be inserted into the observation table, using the following conventions: - <code>observation_date</code>: use the date of the ethnicity record in the source data. If not available, use the patient’s <code>observation_period_start_date</code>. - <code>observation_source_concept_id</code>: use one of the 15 <a href="https://athena.ohdsi.org/search-terms/terms?vocabulary=NHS+Ethnic+Category&amp;page=1&amp;pageSize=15&amp;query=">NHS Ethnic Category</a> codes. observation_concept_id: set to 0, since these codes are non-standard concepts.</p>
+<p><strong>Person Table</strong></p>
+<p>Only one ethnicity record per person is allowed in the person table, to be populated as: - <code>race_concept_id</code>: always set to 0, because the NHS Ethnic Category codes are non-standard. - <code>race_source_concept_id</code>: populate with the most common code per person. If two or more codes occur with equal frequency, select the most recent one. If no ethnicity data is available for a person, set <code>race_source_concept_id</code> = 0.</p>
 </section>
+</section>
+<section id="feedback" class="level1">
+<h1>Feedback</h1>
+<p>We greatly value your feedback. These conventions have been developed through the exploration of multiple datasets, as well as the review of published literature and existing ETL processes. However, they are not rigid rules—adjustments may be necessary depending on the characteristics of your data. If you believe that these standards do not align well with your dataset, please get in touch so we can discuss potential adaptations.</p>
+
+
 </section>
 
 </main> <!-- /main -->
