@@ -1,31 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://heron-uk.github.io/heron-uk/about/about_heron_uk.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/about/funding.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/studies/study_overview.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/data_network/conventions.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/data_network/onboarding.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/network_activities/software.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/network_activities/publications.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/network_activities/presentations.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/data_network/data_partners.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/data_network/data_overview.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://heron-uk.github.io/heron-uk/studies/study_conventions.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
+  </url>
+  <url>
     <loc>https://heron-uk.github.io/heron-uk/index.html</loc>
-    <lastmod>2025-09-05T15:46:54.334Z</lastmod>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
   </url>
   <url>
-    <loc>https://heron-uk.github.io/heron-uk/onboarding/index.html</loc>
-    <lastmod>2025-09-05T15:46:54.335Z</lastmod>
-  </url>
-  <url>
-    <loc>https://heron-uk.github.io/heron-uk/network_activities/dissemination.html</loc>
-    <lastmod>2025-09-05T15:46:54.334Z</lastmod>
-  </url>
-  <url>
-    <loc>https://heron-uk.github.io/heron-uk/network_activities/studies.html</loc>
-    <lastmod>2025-09-05T15:46:54.334Z</lastmod>
-  </url>
-  <url>
-    <loc>https://heron-uk.github.io/heron-uk/network_activities/studyathons.html</loc>
-    <lastmod>2025-09-05T15:46:54.334Z</lastmod>
-  </url>
-  <url>
-    <loc>https://heron-uk.github.io/heron-uk/onboarding/data_partners.html</loc>
-    <lastmod>2025-09-05T15:46:54.334Z</lastmod>
-  </url>
-  <url>
-    <loc>https://heron-uk.github.io/heron-uk/onboarding/conventions.html</loc>
-    <lastmod>2025-09-05T15:46:54.334Z</lastmod>
+    <loc>https://heron-uk.github.io/heron-uk/about/organisational_structure.html</loc>
+    <lastmod>2025-09-07T17:25:37.176Z</lastmod>
   </url>
 </urlset>

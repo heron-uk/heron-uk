@@ -1,58 +1,93 @@
 [
   {
+    "objectID": "about/about_heron_uk.html",
+    "href": "about/about_heron_uk.html",
+    "title": "HERON-UK",
+    "section": "",
+    "text": "HERON-UK\nThe HEalth data Research UK OMOP Network (HERON-UK)"
+  },
+  {
+    "objectID": "about/funding.html",
+    "href": "about/funding.html",
+    "title": "HERON-UK funding",
+    "section": "",
+    "text": "HERON-UK funding\nEstablishing HERON-UK was supported through funding provided by HDR UK. HDR UK funded the year\nThe"
+  },
+  {
+    "objectID": "studies/study_overview.html",
+    "href": "studies/study_overview.html",
+    "title": "Studies",
+    "section": "",
+    "text": "Title\nProtocol\nAnalytic code\nResults viewer\nAssociated publications\nFunding\n\n\n\n\n\n\n\n\n\nHDR UK\n\n\n\n\n\n\n\nHDR UK"
+  },
+  {
+    "objectID": "data_network/onboarding.html",
+    "href": "data_network/onboarding.html",
+    "title": "Onboarding",
+    "section": "",
+    "text": "shiny\nlink to data partners\ngithub link"
+  },
+  {
+    "objectID": "data_network/onboarding.html#year-1",
+    "href": "data_network/onboarding.html#year-1",
+    "title": "Onboarding",
+    "section": "",
+    "text": "shiny\nlink to data partners\ngithub link"
+  },
+  {
+    "objectID": "network_activities/publications.html",
+    "href": "network_activities/publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Publications\n\nHERON-UK (PDS under review)\nAntibiotics (writing)\nHigh cost medicines (internal review)\nOmopSketch (writing)"
+  },
+  {
+    "objectID": "network_activities/presentations.html",
+    "href": "network_activities/presentations.html",
+    "title": "Studyathons",
+    "section": "",
+    "text": "Elin antibiotics oral poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding\n\n\n\n\n\n\n\n\nElin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
+  },
+  {
+    "objectID": "network_activities/presentations.html#upcoming",
+    "href": "network_activities/presentations.html#upcoming",
+    "title": "Studyathons",
+    "section": "",
+    "text": "Elin antibiotics oral poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding"
+  },
+  {
+    "objectID": "network_activities/presentations.html#previous",
+    "href": "network_activities/presentations.html#previous",
+    "title": "Studyathons",
+    "section": "",
+    "text": "Elin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
+  },
+  {
+    "objectID": "data_network/data_partners.html",
+    "href": "data_network/data_partners.html",
+    "title": "Data partners",
+    "section": "",
+    "text": "Data partners"
+  },
+  {
+    "objectID": "data_network/data_overview.html",
+    "href": "data_network/data_overview.html",
+    "title": "Data overview",
+    "section": "",
+    "text": "Data overview"
+  },
+  {
+    "objectID": "studies/study_conventions.html",
+    "href": "studies/study_conventions.html",
+    "title": "Studies",
+    "section": "",
+    "text": "Studies"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "HERON-UK Network",
     "section": "",
-    "text": "HERON-UK Network\nthe network"
-  },
-  {
-    "objectID": "onboarding/index.html",
-    "href": "onboarding/index.html",
-    "title": "Onboarding",
-    "section": "",
-    "text": "shiny\nlink to data partners\ngithub link"
-  },
-  {
-    "objectID": "onboarding/index.html#year-1",
-    "href": "onboarding/index.html#year-1",
-    "title": "Onboarding",
-    "section": "",
-    "text": "shiny\nlink to data partners\ngithub link"
-  },
-  {
-    "objectID": "network_activities/dissemination.html",
-    "href": "network_activities/dissemination.html",
-    "title": "Publications",
-    "section": "",
-    "text": "HERON-UK (PDS under review)\nAntibiotics (writing)\nHigh cost medicines (internal review)\nOmopSketch (writing)"
-  },
-  {
-    "objectID": "network_activities/dissemination.html#ohdsi-uk-2025",
-    "href": "network_activities/dissemination.html#ohdsi-uk-2025",
-    "title": "Publications",
-    "section": "OHDSI UK 2025",
-    "text": "OHDSI UK 2025\n\nElin antibiotics oral poster\nMarti OmopConstructor oral presentation and software demo"
-  },
-  {
-    "objectID": "network_activities/dissemination.html#ohdsi-africa-2025",
-    "href": "network_activities/dissemination.html#ohdsi-africa-2025",
-    "title": "Publications",
-    "section": "OHDSI Africa 2025",
-    "text": "OHDSI Africa 2025\n\nEds high cost medicines oral presentation"
-  },
-  {
-    "objectID": "network_activities/dissemination.html#hdr-uk-conference-2025",
-    "href": "network_activities/dissemination.html#hdr-uk-conference-2025",
-    "title": "Publications",
-    "section": "HDR-UK Conference 2025",
-    "text": "HDR-UK Conference 2025\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding"
-  },
-  {
-    "objectID": "onboarding/data_partners.html",
-    "href": "onboarding/data_partners.html",
-    "title": "Data partners",
-    "section": "",
-    "text": "Data partners"
+    "text": "HERON-UK Network\nThe HEalth data Research UK OMOP Network (HERON-UK)"
   }
 ]
