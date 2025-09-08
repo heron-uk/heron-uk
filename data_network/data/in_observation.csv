@@ -1,0 +1,84 @@
+cdm_name,omop_table,sex,age_group,variable_name,variable_level,time_interval,count,percentage,interval,study_period_end,study_period_start,date
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2012-01-01 to 2012-12-31,707713,21.87,years,2025-05-09,2012-01-01,2012-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2013-01-01 to 2013-12-31,815517,25.2,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2014-01-01 to 2014-12-31,940318,29.06,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2015-01-01 to 2015-12-31,1026402,31.72,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2016-01-01 to 2016-12-31,1102703,34.08,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2017-01-01 to 2017-12-31,1172274,36.23,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2018-01-01 to 2018-12-31,1235066,38.17,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2019-01-01 to 2019-12-31,1257269,38.85,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2020-01-01 to 2020-12-31,1191053,36.81,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2021-01-01 to 2021-12-31,1204622,37.23,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2022-01-01 to 2022-12-31,1190914,36.8,years,2025-05-09,2012-01-01,2022-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2023-01-01 to 2023-12-31,1082597,33.46,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2024-01-01 to 2024-12-31,945900,29.23,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,observation_period,overall,overall,Number records in observation,NA,2025-01-01 to 2025-12-31,550245,17,years,2025-05-09,2012-01-01,2025-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2012-01-01 to 2012-12-31,1115061,63.23,years,2025-06-03,2012-01-01,2012-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2013-01-01 to 2013-12-31,1153549,65.42,years,2025-06-03,2012-01-01,2013-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2014-01-01 to 2014-12-31,1190835,67.53,years,2025-06-03,2012-01-01,2014-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2015-01-01 to 2015-12-31,1228851,69.69,years,2025-06-03,2012-01-01,2015-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2016-01-01 to 2016-12-31,1265127,71.74,years,2025-06-03,2012-01-01,2016-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2017-01-01 to 2017-12-31,1300511,73.75,years,2025-06-03,2012-01-01,2017-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2018-01-01 to 2018-12-31,1335412,75.73,years,2025-06-03,2012-01-01,2018-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2019-01-01 to 2019-12-31,1369531,77.66,years,2025-06-03,2012-01-01,2019-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2020-01-01 to 2020-12-31,1396965,79.22,years,2025-06-03,2012-01-01,2020-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2021-01-01 to 2021-12-31,1431078,81.15,years,2025-06-03,2012-01-01,2021-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2022-01-01 to 2022-12-31,1457264,82.64,years,2025-06-03,2012-01-01,2022-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2023-01-01 to 2023-12-31,1469189,83.32,years,2025-06-03,2012-01-01,2023-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2024-01-01 to 2024-12-31,1471440,83.44,years,2025-06-03,2012-01-01,2024-01-01
+DataLoch,observation_period,overall,overall,Number records in observation,NA,2025-01-01 to 2025-12-31,1459968,82.79,years,2025-06-03,2012-01-01,2025-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2012-01-01 to 2012-12-31,1439795,2.91692719311882,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2013-01-01 to 2013-12-31,2805252,5.68325063106272,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2014-01-01 to 2014-12-31,4077906,8.26156147394759,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2015-01-01 to 2015-12-31,5140628,10.4145642976313,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2016-01-01 to 2016-12-31,6105420,12.3691675713636,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2017-01-01 to 2017-12-31,7004698,14.1910439165194,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2018-01-01 to 2018-12-31,7840328,15.8839737227667,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2019-01-01 to 2019-12-31,8632896,17.489662832394,years,2024-06-24,2012-01-01,2019-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2020-01-01 to 2020-12-31,8971197,18.1750377547678,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2021-01-01 to 2021-12-31,9999146,20.2575928346502,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2022-01-01 to 2022-12-31,10580676,21.4357332439546,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2023-01-01 to 2023-12-31,11147289,22.5836528211685,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records in observation,NA,2024-01-01 to 2024-12-31,10744414,21.7674553465782,years,2024-06-24,2012-01-01,2024-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2012-01-01 to 2012-12-31,120392,7.8522223135332,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2013-01-01 to 2013-12-31,187091,12.2024729621673,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2014-01-01 to 2014-12-31,233781,15.2476940717,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2015-01-01 to 2015-12-31,266423,17.376674741166,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2016-01-01 to 2016-12-31,290465,18.9447451184499,years,2025-01-02,2012-01-01,2016-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2017-01-01 to 2017-12-31,301731,19.6795376012084,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2018-01-01 to 2018-12-31,309859,20.2096630494475,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2019-01-01 to 2019-12-31,317045,20.6783492540545,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2020-01-01 to 2020-12-31,296465,19.3360778804374,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2021-01-01 to 2021-12-31,328611,21.4327083749124,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2022-01-01 to 2022-12-31,353543,23.0588264452245,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2023-01-01 to 2023-12-31,367020,23.9378250507754,years,2025-01-02,2012-01-01,2023-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2024-01-01 to 2024-12-31,367837,23.9911115285327,years,2025-01-02,2012-01-01,2024-01-01
+IDRIL_1,observation_period,overall,overall,Number records in observation,NA,2025-01-01 to 2025-12-31,49958,3.25836702056193,years,2025-01-02,2012-01-01,2025-01-01
+GOSH DRE,observation_period,overall,overall,Number records in observation,NA,2019-01-01 to 2019-12-31,163600,80.13,years,2025-02-17,2012-01-01,2019-01-01
+GOSH DRE,observation_period,overall,overall,Number records in observation,NA,2020-01-01 to 2020-12-31,173722,85.09,years,2025-02-17,2012-01-01,2020-01-01
+GOSH DRE,observation_period,overall,overall,Number records in observation,NA,2021-01-01 to 2021-12-31,183821,90.04,years,2025-02-17,2012-01-01,2021-01-01
+GOSH DRE,observation_period,overall,overall,Number records in observation,NA,2022-01-01 to 2022-12-31,192452,94.27,years,2025-02-17,2012-01-01,2022-01-01
+GOSH DRE,observation_period,overall,overall,Number records in observation,NA,2023-01-01 to 2023-12-31,199437,97.69,years,2025-02-17,2012-01-01,2023-01-01
+GOSH DRE,observation_period,overall,overall,Number records in observation,NA,2024-01-01 to 2024-12-31,204017,99.93,years,2025-02-17,2012-01-01,2024-01-01
+GOSH DRE,observation_period,overall,overall,Number records in observation,NA,2025-01-01 to 2025-12-31,204159,100,years,2025-02-17,2012-01-01,2025-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2012-01-01 to 2012-12-31,407787,27.43,years,2025-05-16,2012-01-01,2012-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2013-01-01 to 2013-12-31,407238,27.39,years,2025-05-16,2012-01-01,2013-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2014-01-01 to 2014-12-31,407277,27.4,years,2025-05-16,2012-01-01,2014-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2015-01-01 to 2015-12-31,407320,27.4,years,2025-05-16,2012-01-01,2015-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2016-01-01 to 2016-12-31,404784,27.23,years,2025-05-16,2012-01-01,2016-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2017-01-01 to 2017-12-31,392548,26.41,years,2025-05-16,2012-01-01,2017-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2018-01-01 to 2018-12-31,377758,25.41,years,2025-05-16,2012-01-01,2018-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2019-01-01 to 2019-12-31,358035,24.08,years,2025-05-16,2012-01-01,2019-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2020-01-01 to 2020-12-31,322527,21.7,years,2025-05-16,2012-01-01,2020-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2021-01-01 to 2021-12-31,299258,20.13,years,2025-05-16,2012-01-01,2021-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2022-01-01 to 2022-12-31,268193,18.04,years,2025-05-16,2012-01-01,2022-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2023-01-01 to 2023-12-31,231260,15.56,years,2025-05-16,2012-01-01,2023-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2024-01-01 to 2024-12-31,176221,11.85,years,2025-05-16,2012-01-01,2024-01-01
+LTHT,observation_period,overall,overall,Number records in observation,NA,2025-01-01 to 2025-12-31,51054,3.43,years,2025-05-16,2012-01-01,2025-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records in observation,NA,2019-01-01 to 2019-12-31,279656,24.7557453076631,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records in observation,NA,2020-01-01 to 2020-12-31,343836,30.4370957304891,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records in observation,NA,2021-01-01 to 2021-12-31,389340,34.4652068186828,years,2025-12-31,2012-01-01,2021-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records in observation,NA,2022-01-01 to 2022-12-31,431922,38.2346562375792,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records in observation,NA,2023-01-01 to 2023-12-31,424142,37.5459540517022,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records in observation,NA,2024-01-01 to 2024-12-31,403441,35.7134574000519,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records in observation,NA,2025-01-01 to 2025-12-31,244388,21.6337467611965,years,2025-12-31,2012-01-01,2025-01-01

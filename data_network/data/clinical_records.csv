@@ -1,0 +1,61 @@
+cdm_name,omop_table,age_group,sex,variable_name,variable_level,count,percentage,max,mean,median,min,q25,q75,sd,study_period_end,study_period_start
+Barts Health,observation_period,overall,overall,Number records,NA,2397408,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-09,2012-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,NA,34342483,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-09,2012-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,NA,26085472,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-09,2012-01-01
+Barts Health,drug_exposure,overall,overall,Number records,NA,36880541,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-09,2012-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,NA,9773168,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-09,2012-01-01
+Barts Health,device_exposure,overall,overall,Number records,NA,1529701,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-09,2012-01-01
+Barts Health,measurement,overall,overall,Number records,NA,731583135,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-09,2012-01-01
+Barts Health,observation,overall,overall,Number records,NA,43568544,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-09,2012-01-01
+Barts Health,death,overall,overall,Number records,NA,99407,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-09,2012-01-01
+DataLoch,observation_period,overall,overall,Number records,NA,563970,NA,NA,NA,NA,NA,NA,NA,NA,2025-06-03,2012-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,NA,3163778,NA,NA,NA,NA,NA,NA,NA,NA,2025-06-03,2012-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,NA,6776621,NA,NA,NA,NA,NA,NA,NA,NA,2025-06-03,2012-01-01
+DataLoch,drug_exposure,overall,overall,Number records,NA,159381229,NA,NA,NA,NA,NA,NA,NA,NA,2025-06-03,2012-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,NA,2342824,NA,NA,NA,NA,NA,NA,NA,NA,2025-06-03,2012-01-01
+DataLoch,measurement,overall,overall,Number records,NA,345146311,NA,NA,NA,NA,NA,NA,NA,NA,2025-06-03,2012-01-01
+DataLoch,observation,overall,overall,Number records,NA,15855607,NA,NA,NA,NA,NA,NA,NA,NA,2025-06-03,2012-01-01
+DataLoch,death,overall,overall,Number records,NA,171452,NA,NA,NA,NA,NA,NA,NA,NA,2025-06-03,2012-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,NA,19524950,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-24,2012-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-24,2012-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,NA,974387987,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-24,2012-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,NA,1894098770,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-24,2012-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,NA,1522428239,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-24,2012-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,NA,180811306,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-24,2012-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-24,2012-01-01
+AurumCDM_202409,observation,overall,overall,Number records,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-24,2012-01-01
+AurumCDM_202409,death,overall,overall,Number records,NA,1771569,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-24,2012-01-01
+IDRIL_1,observation_period,overall,overall,Number records,NA,1641681,NA,NA,NA,NA,NA,NA,NA,NA,2025-01-02,2012-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,NA,17370690,NA,NA,NA,NA,NA,NA,NA,NA,2025-01-02,2012-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,NA,14394306,NA,NA,NA,NA,NA,NA,NA,NA,2025-01-02,2012-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,NA,20158139,NA,NA,NA,NA,NA,NA,NA,NA,2025-01-02,2012-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,NA,8382295,NA,NA,NA,NA,NA,NA,NA,NA,2025-01-02,2012-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,NA,88568,NA,NA,NA,NA,NA,NA,NA,NA,2025-01-02,2012-01-01
+IDRIL_1,measurement,overall,overall,Number records,NA,351554754,NA,NA,NA,NA,NA,NA,NA,NA,2025-01-02,2012-01-01
+IDRIL_1,observation,overall,overall,Number records,NA,62408073,NA,NA,NA,NA,NA,NA,NA,NA,2025-01-02,2012-01-01
+IDRIL_1,death,overall,overall,Number records,NA,68595,NA,NA,NA,NA,NA,NA,NA,NA,2025-01-02,2012-01-01
+GOSH DRE,observation_period,overall,overall,Number records,NA,204159,NA,NA,NA,NA,NA,NA,NA,NA,2025-02-17,2012-01-01
+GOSH DRE,visit_occurrence,overall,overall,Number records,NA,1737103,NA,NA,NA,NA,NA,NA,NA,NA,2025-02-17,2012-01-01
+GOSH DRE,condition_occurrence,overall,overall,Number records,NA,8546971,NA,NA,NA,NA,NA,NA,NA,NA,2025-02-17,2012-01-01
+GOSH DRE,drug_exposure,overall,overall,Number records,NA,7768109,NA,NA,NA,NA,NA,NA,NA,NA,2025-02-17,2012-01-01
+GOSH DRE,procedure_occurrence,overall,overall,Number records,NA,1846317,NA,NA,NA,NA,NA,NA,NA,NA,2025-02-17,2012-01-01
+GOSH DRE,measurement,overall,overall,Number records,NA,115381308,NA,NA,NA,NA,NA,NA,NA,NA,2025-02-17,2012-01-01
+GOSH DRE,observation,overall,overall,Number records,NA,347761,NA,NA,NA,NA,NA,NA,NA,NA,2025-02-17,2012-01-01
+GOSH DRE,death,overall,overall,Number records,NA,5491,NA,NA,NA,NA,NA,NA,NA,NA,2025-02-17,2012-01-01
+LTHT,observation_period,overall,overall,Number records,NA,584188,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-16,2012-01-01
+LTHT,visit_occurrence,overall,overall,Number records,NA,7458139,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-16,2012-01-01
+LTHT,condition_occurrence,overall,overall,Number records,NA,5074278,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-16,2012-01-01
+LTHT,drug_exposure,overall,overall,Number records,NA,2968289,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-16,2012-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,NA,1597246,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-16,2012-01-01
+LTHT,measurement,overall,overall,Number records,NA,2170991,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-16,2012-01-01
+LTHT,observation,overall,overall,Number records,NA,1393600,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-16,2012-01-01
+LTHT,death,overall,overall,Number records,NA,268824,NA,NA,NA,NA,NA,NA,NA,NA,2025-05-16,2012-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records,NA,995469,NA,NA,NA,NA,NA,NA,NA,NA,2025-12-31,2012-01-01
+UCLH-from-2019,visit_occurrence,overall,overall,Number records,NA,14568465,NA,NA,NA,NA,NA,NA,NA,NA,2025-12-31,2012-01-01
+UCLH-from-2019,condition_occurrence,overall,overall,Number records,NA,6450152,NA,NA,NA,NA,NA,NA,NA,NA,2025-12-31,2012-01-01
+UCLH-from-2019,drug_exposure,overall,overall,Number records,NA,31946340,NA,NA,NA,NA,NA,NA,NA,NA,2025-12-31,2012-01-01
+UCLH-from-2019,procedure_occurrence,overall,overall,Number records,NA,25104832,NA,NA,NA,NA,NA,NA,NA,NA,2025-12-31,2012-01-01
+UCLH-from-2019,device_exposure,overall,overall,Number records,NA,4934850,NA,NA,NA,NA,NA,NA,NA,NA,2025-12-31,2012-01-01
+UCLH-from-2019,measurement,overall,overall,Number records,NA,541183363,NA,NA,NA,NA,NA,NA,NA,NA,2025-12-31,2012-01-01
+UCLH-from-2019,observation,overall,overall,Number records,NA,71064038,NA,NA,NA,NA,NA,NA,NA,NA,2025-12-31,2012-01-01
+UCLH-from-2019,death,overall,overall,Number records,NA,42086,NA,NA,NA,NA,NA,NA,NA,NA,2025-12-31,2012-01-01

@@ -1,4 +1,227 @@
+---
+title: "Data overview"
+format: html
+execute: 
+  echo: false
+  warning: false
+  message: false
+---
 
-# Data overview
+```{r}
+# this is to nicely format large numbers
+# should choose appropriate number of decimal places etc
+y_formatting_js <- "
+        function(value) {
+          if (value >= 1000000000) {
+            return new Intl.NumberFormat('en-US', {
+                maximumSignificantDigits: 3
+            }).format(value / 1000000000) + 'B';
+          }
+          if (value >= 1000000) {
+            return new Intl.NumberFormat('en-US', {
+                maximumSignificantDigits: 3
+            }).format(value / 1000000) + 'M';
+          }
+          if (value >= 1000) {
+            return new Intl.NumberFormat('en-US', {
+                maximumSignificantDigits: 3
+            }).format(value / 1000) + 'K';
+          }
+          return value;
+        }
+      "
+```
 
 
+```{r}
+library(omopgenerics)
+library(here)
+library(OmopSketch)
+library(dplyr)
+library(ggplot2)
+library(echarts4r)
+library(visOmopResults)
+library(gt)
+
+# load(here("data_network", "data", "shinyData.RData"))
+
+# exportSummarisedResult(data$summarise_omop_snapshot |> 
+#                          ßrenameCDM(),
+#                        fileName =  here::here("data_network",
+#                                               "data",
+#                                               "snapshot"))
+
+# readr::write_csv( data$summarise_record_count  |> 
+#   tidy() |> 
+#   filter(variable_name == "Number records",
+#          age_group == "overall",
+#          sex == "overall",
+#          variable_level != "overall") |> 
+#   mutate(date = as.Date(variable_level)),
+#   here::here("data_network","data", "record_count.csv"))
+
+# readr::write_csv(data$summarise_in_observation |> 
+#   tidy() |> 
+#   filter(age_group == "overall",
+#          sex == "overall", 
+#          variable_name == "Number records in observation") |> 
+#   mutate(date = as.Date(
+#     stringr::str_sub(time_interval, start = 1, end = 10))),
+#   here::here("data_network","data", "in_observation.csv"))
+
+# readr::write_csv(data$summarise_clinical_records  |>
+#   tidy() |>
+#   filter(variable_name == "Number records",
+#          age_group == "overall",
+#          sex == "overall"),
+#   here::here("data_network","data", "clinical_records.csv"))
+
+snapshot <- importSummarisedResult(here::here("data_network",
+                           "data", 
+                           "snapshot.csv"))
+
+record_counts <- readr::read_csv(here::here("data_network",
+                           "data", 
+                           "record_count.csv"))
+
+in_observation <- readr::read_csv(here::here("data_network",
+                           "data", 
+                           "in_observation.csv"))
+
+clinical_records <- readr::read_csv(here::here("data_network",
+                           "data", 
+                           "clinical_records.csv"))
+
+renameCDM <- function(workingData){
+  workingData |> 
+    mutate(cdm_name = case_when(
+      cdm_name == "AurumCDM_202409"  ~ "CPRD_AURUM",
+      cdm_name == "Barts Health"  ~ "Barts",
+      cdm_name == "DataLoch"  ~ "DataLoch",
+      cdm_name == "GOSH DRE"  ~ "GOSH",
+      cdm_name == "IDRIL_1"  ~ "Lancs",
+      cdm_name == "LTHT"  ~ "Leeds",
+      cdm_name == "UCLH-from-2019"  ~ "UCLH"
+    ))
+}
+  
+plotTableTrend <- function(workingData, workingTable){
+record_counts |> 
+  filter(omop_table == workingTable) |> 
+  renameCDM() |> 
+  select(cdm_name, count, date) |> 
+  filter(!is.na(count)) |> 
+  tidyr::pivot_wider(names_from = cdm_name,
+                     values_from = count) |> 
+  arrange(date) |> 
+  e_charts(date) |> 
+  e_bar(Barts, stack = "grp") |>
+  e_bar(DataLoch, stack = "grp") |>  
+  e_bar(CPRD_AURUM, stack = "grp") |>  
+  e_bar(Lancs, stack = "grp")  |>  
+  e_bar(GOSH, stack = "grp")  |>  
+  e_bar(Leeds, stack = "grp")  |>  
+  e_bar(UCLH, stack = "grp") |> 
+  e_datazoom() |>
+  e_tooltip() |>
+  e_y_axis(
+    axisLabel = list(
+      formatter = htmlwidgets::JS(y_formatting_js)
+    )
+  ) 
+}
+```
+
+# Snapshot
+```{r}
+tableOmopSnapshot(snapshot)
+```
+
+# Observation periods
+## In observation
+```{r}
+in_observation |>  
+  renameCDM() |> 
+  select(cdm_name, count, date) |> 
+  filter(!is.na(count)) |> 
+  tidyr::pivot_wider(names_from = cdm_name,
+                     values_from = count) |> 
+  arrange(date) |> 
+  e_charts(date) |> 
+  e_bar(Barts, stack = "grp") |>
+  e_bar(DataLoch, stack = "grp") |>  
+  e_bar(CPRD_AURUM, stack = "grp") |>  
+  e_bar(Lancs, stack = "grp")  |>  
+  e_bar(GOSH, stack = "grp")  |>  
+  e_bar(Leeds, stack = "grp")  |>  
+  e_bar(UCLH, stack = "grp") |> 
+  e_datazoom() |>
+  e_tooltip() |>
+  e_y_axis(
+    axisLabel = list(
+      formatter = htmlwidgets::JS(y_formatting_js)
+    )
+  ) 
+
+```
+
+# Clinical records
+## Summary
+
+```{r, message=FALSE, warning=FALSE, error=TRUE}
+clinical_records  |> 
+  renameCDM() |> 
+  mutate(omop_table = stringr::str_replace_all(omop_table, "_", " ")) |> 
+  select(cdm_name, omop_table, count) |> 
+  filter(!is.na(count)) |> 
+  group_by(omop_table) |> 
+  e_charts(cdm_name)   |> 
+  e_bar(count, stack = "omop_table") |> 
+  e_x_axis(
+    axisLabel = list(
+      interval = 0,
+      rotate = 45 
+    )
+  ) |>
+  e_tooltip()  |>
+  e_y_axis(
+    axisLabel = list(
+      formatter = htmlwidgets::JS(y_formatting_js)
+    )
+  ) 
+```
+
+## Drug exposure
+```{r}
+plotTableTrend(plot_data, "drug_exposure")
+```
+
+## Condition occurrence
+```{r}
+plotTableTrend(plot_data, "condition_occurrence")
+```
+
+## Measurement
+```{r}
+plotTableTrend(plot_data, "measurement")
+```
+
+## Observation
+```{r}
+plotTableTrend(plot_data, "observation")
+```
+
+## Procedure occurrence
+```{r}
+plotTableTrend(plot_data, "procedure_occurrence")
+```
+
+## Visit occurrence
+```{r}
+plotTableTrend(plot_data, "visit_occurrence")
+```
+
+## Death
+```{r}
+plotTableTrend(plot_data, "death")
+```
