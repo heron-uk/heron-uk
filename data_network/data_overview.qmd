@@ -41,6 +41,7 @@ library(dplyr)
 library(ggplot2)
 library(echarts4r)
 library(visOmopResults)
+library(gt)
 
 # load(here("data_network", "data", "shinyData.RData"))
 
