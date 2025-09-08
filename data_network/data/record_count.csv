@@ -1,0 +1,702 @@
+cdm_name,omop_table,age_group,sex,variable_name,variable_level,time_interval,count,interval,study_period_end,study_period_start,date
+Barts Health,observation_period,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,202346,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,observation_period,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,192246,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,observation_period,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,189911,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,observation_period,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,156452,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,observation_period,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,158213,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,observation_period,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,189079,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,observation_period,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,207227,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,observation_period,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,125446,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,observation_period,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,55996,years,2025-05-09,2012-01-01,2025-01-01
+Barts Health,observation_period,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,158150,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,observation_period,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,221068,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,observation_period,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,196418,years,2025-05-09,2012-01-01,2012-01-01
+Barts Health,observation_period,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,180389,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,observation_period,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,164467,years,2025-05-09,2012-01-01,2022-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,1354694,years,2025-05-09,2012-01-01,2012-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,1836507,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,1990497,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,2287396,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,2388830,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,2445467,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,2760047,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,2916952,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,2391867,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,2910726,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,3213326,years,2025-05-09,2012-01-01,2022-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,3143170,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,3411209,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,visit_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,1211417,years,2025-05-09,2012-01-01,2025-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,897449,years,2025-05-09,2012-01-01,2012-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,1085500,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,1169037,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,1197807,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,1440402,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,1809041,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,2318933,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,2337664,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,2092340,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,2389297,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,2608412,years,2025-05-09,2012-01-01,2022-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,2717796,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,3102400,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,condition_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,871502,years,2025-05-09,2012-01-01,2025-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,NA,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,NA,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,14228,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,14,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,51,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,20,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,3271,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,17,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,2083597,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,9489505,years,2025-05-09,2012-01-01,2022-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,10318127,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,11214924,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,drug_exposure,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,3751450,years,2025-05-09,2012-01-01,2025-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,396040,years,2025-05-09,2012-01-01,2012-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,544660,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,541725,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,617962,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,715014,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,683477,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,721858,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,765148,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,694087,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,805159,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,924272,years,2025-05-09,2012-01-01,2022-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,982036,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,1060777,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,procedure_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,296419,years,2025-05-09,2012-01-01,2025-01-01
+Barts Health,device_exposure,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,182418,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,device_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,191131,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,device_exposure,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,16321,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,device_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,189396,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,device_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,223813,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,device_exposure,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,154902,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,device_exposure,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,2661,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,device_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,137421,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,device_exposure,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,84185,years,2025-05-09,2012-01-01,2025-01-01
+Barts Health,device_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,150266,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,device_exposure,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,6389,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,device_exposure,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,10,years,2025-05-09,2012-01-01,2012-01-01
+Barts Health,device_exposure,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,1954,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,device_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,186340,years,2025-05-09,2012-01-01,2022-01-01
+Barts Health,measurement,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,11541017,years,2025-05-09,2012-01-01,2012-01-01
+Barts Health,measurement,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,16727292,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,measurement,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,28682832,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,measurement,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,47763521,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,measurement,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,41492164,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,measurement,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,42055460,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,measurement,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,49648371,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,measurement,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,49338237,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,measurement,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,58064082,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,measurement,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,76594132,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,measurement,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,94165546,years,2025-05-09,2012-01-01,2022-01-01
+Barts Health,measurement,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,88373124,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,measurement,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,93765478,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,measurement,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,32522494,years,2025-05-09,2012-01-01,2025-01-01
+Barts Health,observation,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,102961,years,2025-05-09,2012-01-01,2012-01-01
+Barts Health,observation,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,448386,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,observation,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,614994,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,observation,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,786208,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,observation,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,890419,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,observation,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,1106107,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,observation,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,1486304,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,observation,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,2909329,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,observation,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,4690505,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,observation,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,5626208,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,observation,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,6404206,years,2025-05-09,2012-01-01,2022-01-01
+Barts Health,observation,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,6703491,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,observation,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,7490811,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,observation,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,2691293,years,2025-05-09,2012-01-01,2025-01-01
+Barts Health,death,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,6229,years,2025-05-09,2012-01-01,2018-01-01
+Barts Health,death,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,6259,years,2025-05-09,2012-01-01,2019-01-01
+Barts Health,death,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,5641,years,2025-05-09,2012-01-01,2016-01-01
+Barts Health,death,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,7146,years,2025-05-09,2012-01-01,2023-01-01
+Barts Health,death,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,6782,years,2025-05-09,2012-01-01,2024-01-01
+Barts Health,death,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,6030,years,2025-05-09,2012-01-01,2017-01-01
+Barts Health,death,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,6148,years,2025-05-09,2012-01-01,2014-01-01
+Barts Health,death,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,7820,years,2025-05-09,2012-01-01,2020-01-01
+Barts Health,death,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,2260,years,2025-05-09,2012-01-01,2025-01-01
+Barts Health,death,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,7656,years,2025-05-09,2012-01-01,2021-01-01
+Barts Health,death,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,6148,years,2025-05-09,2012-01-01,2015-01-01
+Barts Health,death,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,4797,years,2025-05-09,2012-01-01,2012-01-01
+Barts Health,death,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,5708,years,2025-05-09,2012-01-01,2013-01-01
+Barts Health,death,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,7126,years,2025-05-09,2012-01-01,2022-01-01
+DataLoch,observation_period,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,52031,years,2025-06-03,2012-01-01,2012-01-01
+DataLoch,observation_period,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,49582,years,2025-06-03,2012-01-01,2013-01-01
+DataLoch,observation_period,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,48454,years,2025-06-03,2012-01-01,2014-01-01
+DataLoch,observation_period,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,49234,years,2025-06-03,2012-01-01,2015-01-01
+DataLoch,observation_period,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,48201,years,2025-06-03,2012-01-01,2016-01-01
+DataLoch,observation_period,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,47435,years,2025-06-03,2012-01-01,2017-01-01
+DataLoch,observation_period,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,47384,years,2025-06-03,2012-01-01,2018-01-01
+DataLoch,observation_period,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,46742,years,2025-06-03,2012-01-01,2019-01-01
+DataLoch,observation_period,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,40077,years,2025-06-03,2012-01-01,2020-01-01
+DataLoch,observation_period,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,48162,years,2025-06-03,2012-01-01,2021-01-01
+DataLoch,observation_period,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,40329,years,2025-06-03,2012-01-01,2022-01-01
+DataLoch,observation_period,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,26712,years,2025-06-03,2012-01-01,2023-01-01
+DataLoch,observation_period,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,16846,years,2025-06-03,2012-01-01,2024-01-01
+DataLoch,observation_period,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,2781,years,2025-06-03,2012-01-01,2025-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,227856,years,2025-06-03,2012-01-01,2012-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,228258,years,2025-06-03,2012-01-01,2013-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,237354,years,2025-06-03,2012-01-01,2014-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,240687,years,2025-06-03,2012-01-01,2015-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,238586,years,2025-06-03,2012-01-01,2016-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,243040,years,2025-06-03,2012-01-01,2017-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,243637,years,2025-06-03,2012-01-01,2018-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,258023,years,2025-06-03,2012-01-01,2019-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,219007,years,2025-06-03,2012-01-01,2020-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,236509,years,2025-06-03,2012-01-01,2021-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,235663,years,2025-06-03,2012-01-01,2022-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,253749,years,2025-06-03,2012-01-01,2023-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,250797,years,2025-06-03,2012-01-01,2024-01-01
+DataLoch,visit_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,50612,years,2025-06-03,2012-01-01,2025-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,495988,years,2025-06-03,2012-01-01,2012-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,497283,years,2025-06-03,2012-01-01,2013-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,509227,years,2025-06-03,2012-01-01,2014-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,502147,years,2025-06-03,2012-01-01,2015-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,504704,years,2025-06-03,2012-01-01,2016-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,518303,years,2025-06-03,2012-01-01,2017-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,507572,years,2025-06-03,2012-01-01,2018-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,541688,years,2025-06-03,2012-01-01,2019-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,487323,years,2025-06-03,2012-01-01,2020-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,516674,years,2025-06-03,2012-01-01,2021-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,517800,years,2025-06-03,2012-01-01,2022-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,546509,years,2025-06-03,2012-01-01,2023-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,526470,years,2025-06-03,2012-01-01,2024-01-01
+DataLoch,condition_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,104933,years,2025-06-03,2012-01-01,2025-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,10626735,years,2025-06-03,2012-01-01,2012-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,11027084,years,2025-06-03,2012-01-01,2013-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,11474767,years,2025-06-03,2012-01-01,2014-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,11679787,years,2025-06-03,2012-01-01,2015-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,11867904,years,2025-06-03,2012-01-01,2016-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,11832042,years,2025-06-03,2012-01-01,2017-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,11808041,years,2025-06-03,2012-01-01,2018-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,11970441,years,2025-06-03,2012-01-01,2019-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,11883247,years,2025-06-03,2012-01-01,2020-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,12047346,years,2025-06-03,2012-01-01,2021-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,12449248,years,2025-06-03,2012-01-01,2022-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,13053882,years,2025-06-03,2012-01-01,2023-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,13629716,years,2025-06-03,2012-01-01,2024-01-01
+DataLoch,drug_exposure,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,3288055,years,2025-06-03,2012-01-01,2025-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,179959,years,2025-06-03,2012-01-01,2012-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,180350,years,2025-06-03,2012-01-01,2013-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,188471,years,2025-06-03,2012-01-01,2014-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,194587,years,2025-06-03,2012-01-01,2015-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,186562,years,2025-06-03,2012-01-01,2016-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,189843,years,2025-06-03,2012-01-01,2017-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,189021,years,2025-06-03,2012-01-01,2018-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,186338,years,2025-06-03,2012-01-01,2019-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,134613,years,2025-06-03,2012-01-01,2020-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,149735,years,2025-06-03,2012-01-01,2021-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,161591,years,2025-06-03,2012-01-01,2022-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,183207,years,2025-06-03,2012-01-01,2023-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,181132,years,2025-06-03,2012-01-01,2024-01-01
+DataLoch,procedure_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,37415,years,2025-06-03,2012-01-01,2025-01-01
+DataLoch,measurement,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,22418928,years,2025-06-03,2012-01-01,2012-01-01
+DataLoch,measurement,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,23427470,years,2025-06-03,2012-01-01,2013-01-01
+DataLoch,measurement,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,23914114,years,2025-06-03,2012-01-01,2014-01-01
+DataLoch,measurement,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,24369583,years,2025-06-03,2012-01-01,2015-01-01
+DataLoch,measurement,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,24576442,years,2025-06-03,2012-01-01,2016-01-01
+DataLoch,measurement,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,25509389,years,2025-06-03,2012-01-01,2017-01-01
+DataLoch,measurement,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,26082114,years,2025-06-03,2012-01-01,2018-01-01
+DataLoch,measurement,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,26167763,years,2025-06-03,2012-01-01,2019-01-01
+DataLoch,measurement,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,23229028,years,2025-06-03,2012-01-01,2020-01-01
+DataLoch,measurement,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,29271359,years,2025-06-03,2012-01-01,2021-01-01
+DataLoch,measurement,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,27441792,years,2025-06-03,2012-01-01,2022-01-01
+DataLoch,measurement,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,28320687,years,2025-06-03,2012-01-01,2023-01-01
+DataLoch,measurement,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,29211012,years,2025-06-03,2012-01-01,2024-01-01
+DataLoch,measurement,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,11206630,years,2025-06-03,2012-01-01,2025-01-01
+DataLoch,observation,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,1267677,years,2025-06-03,2012-01-01,2012-01-01
+DataLoch,observation,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,1350518,years,2025-06-03,2012-01-01,2013-01-01
+DataLoch,observation,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,1267986,years,2025-06-03,2012-01-01,2014-01-01
+DataLoch,observation,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,1119592,years,2025-06-03,2012-01-01,2015-01-01
+DataLoch,observation,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,1002301,years,2025-06-03,2012-01-01,2016-01-01
+DataLoch,observation,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,914019,years,2025-06-03,2012-01-01,2017-01-01
+DataLoch,observation,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,896214,years,2025-06-03,2012-01-01,2018-01-01
+DataLoch,observation,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,910050,years,2025-06-03,2012-01-01,2019-01-01
+DataLoch,observation,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,578849,years,2025-06-03,2012-01-01,2020-01-01
+DataLoch,observation,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,734687,years,2025-06-03,2012-01-01,2021-01-01
+DataLoch,observation,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,755875,years,2025-06-03,2012-01-01,2022-01-01
+DataLoch,observation,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,806161,years,2025-06-03,2012-01-01,2023-01-01
+DataLoch,observation,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,791323,years,2025-06-03,2012-01-01,2024-01-01
+DataLoch,observation,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,3460345,years,2025-06-03,2012-01-01,2025-01-01
+DataLoch,death,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,12623,years,2025-06-03,2012-01-01,2018-01-01
+DataLoch,death,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,12643,years,2025-06-03,2012-01-01,2019-01-01
+DataLoch,death,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,12051,years,2025-06-03,2012-01-01,2016-01-01
+DataLoch,death,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,14595,years,2025-06-03,2012-01-01,2023-01-01
+DataLoch,death,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,14253,years,2025-06-03,2012-01-01,2024-01-01
+DataLoch,death,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,12483,years,2025-06-03,2012-01-01,2017-01-01
+DataLoch,death,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,11218,years,2025-06-03,2012-01-01,2014-01-01
+DataLoch,death,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,14049,years,2025-06-03,2012-01-01,2020-01-01
+DataLoch,death,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,4420,years,2025-06-03,2012-01-01,2025-01-01
+DataLoch,death,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,14143,years,2025-06-03,2012-01-01,2021-01-01
+DataLoch,death,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,11925,years,2025-06-03,2012-01-01,2015-01-01
+DataLoch,death,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,11094,years,2025-06-03,2012-01-01,2012-01-01
+DataLoch,death,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,11168,years,2025-06-03,2012-01-01,2013-01-01
+DataLoch,death,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,14787,years,2025-06-03,2012-01-01,2022-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,1546400,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,1763622,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,1563970,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,764560,years,2024-06-24,2012-01-01,2024-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,1461495,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,1293724,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,1848650,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,1521335,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,1535840,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,1439795,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,1597492,years,2024-06-24,2012-01-01,2019-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,1660543,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,observation_period,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,1527524,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,271494253,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,246475137,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,351916227,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,151216006,years,2024-06-24,2012-01-01,2024-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,226325682,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,348637369,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,211549512,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,268484303,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,268081510,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,289385453,years,2024-06-24,2012-01-01,2019-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,345897968,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,281022988,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,visit_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,277797902,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,66682678,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,62731733,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,66200262,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,28987403,years,2024-06-24,2012-01-01,2024-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,72070322,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,53098239,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,64931993,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,65417293,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,47846130,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,68346142,years,2024-06-24,2012-01-01,2019-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,67643683,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,58014280,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,condition_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,79845930,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,123340411,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,147795097,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,109851157,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,62969229,years,2024-06-24,2012-01-01,2024-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,104277272,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,129560622,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,188384784,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,114565478,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,99105146,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,128495755,years,2024-06-24,2012-01-01,2019-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,154802933,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,125862645,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,drug_exposure,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,119867107,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,90964227,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,178058411,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,58451676,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,66054124,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,71431442,years,2024-06-24,2012-01-01,2024-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,115691783,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,76974873,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,50155491,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,167919528,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,110808473,years,2024-06-24,2012-01-01,2019-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,99985738,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,153599435,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,procedure_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,45081429,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,13492612,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,12074218,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,12934655,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,9599314,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,12845669,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,11130818,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,13006057,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,13591514,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,12903699,years,2024-06-24,2012-01-01,2019-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,6442808,years,2024-06-24,2012-01-01,2024-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,12995038,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,10287877,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,device_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,14134903,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,373956375,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,433577292,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,331855571,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,319745006,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,203168996,years,2024-06-24,2012-01-01,2024-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,346031249,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,364487610,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,308968615,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,394056041,years,2024-06-24,2012-01-01,2019-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,399935118,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,400052081,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,386265612,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,measurement,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,293925947,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,650743426,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,1043034594,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,617002715,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,586368204,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,467614160,years,2024-06-24,2012-01-01,2024-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,835601811,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,658062686,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,650815222,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,647712779,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,547672710,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,668909160,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,952926969,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,observation,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,691313482,years,2024-06-24,2012-01-01,2019-01-01
+AurumCDM_202409,death,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,142686,years,2024-06-24,2012-01-01,2013-01-01
+AurumCDM_202409,death,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,155146,years,2024-06-24,2012-01-01,2020-01-01
+AurumCDM_202409,death,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,138302,years,2024-06-24,2012-01-01,2016-01-01
+AurumCDM_202409,death,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,134696,years,2024-06-24,2012-01-01,2012-01-01
+AurumCDM_202409,death,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,58218,years,2024-06-24,2012-01-01,2024-01-01
+AurumCDM_202409,death,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,141331,years,2024-06-24,2012-01-01,2018-01-01
+AurumCDM_202409,death,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,137739,years,2024-06-24,2012-01-01,2015-01-01
+AurumCDM_202409,death,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,134339,years,2024-06-24,2012-01-01,2014-01-01
+AurumCDM_202409,death,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,136659,years,2024-06-24,2012-01-01,2023-01-01
+AurumCDM_202409,death,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,140075,years,2024-06-24,2012-01-01,2017-01-01
+AurumCDM_202409,death,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,142096,years,2024-06-24,2012-01-01,2022-01-01
+AurumCDM_202409,death,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,148120,years,2024-06-24,2012-01-01,2021-01-01
+AurumCDM_202409,death,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,137891,years,2024-06-24,2012-01-01,2019-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,134107,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,132052,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,98375,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,127274,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,121367,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,128661,years,2025-01-02,2012-01-01,2024-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,127016,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,120392,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,127058,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,129560,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,136329,years,2025-01-02,2012-01-01,2016-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,105,years,2025-01-02,2012-01-01,2025-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,131014,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,observation_period,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,128371,years,2025-01-02,2012-01-01,2023-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,1435316,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,1462582,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,1549140,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,1401521,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,1342399,years,2025-01-02,2012-01-01,2016-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,1296014,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,1281695,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,1286162,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,1129231,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,1257992,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,1277970,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,1289583,years,2025-01-02,2012-01-01,2023-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,1360098,years,2025-01-02,2012-01-01,2024-01-01
+IDRIL_1,visit_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,983,years,2025-01-02,2012-01-01,2025-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,645627,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,686926,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,773937,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,863907,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,896152,years,2025-01-02,2012-01-01,2016-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,936647,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,1086288,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,1239554,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,1173267,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,1336106,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,1514920,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,1636388,years,2025-01-02,2012-01-01,2023-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,1603237,years,2025-01-02,2012-01-01,2024-01-01
+IDRIL_1,condition_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,285,years,2025-01-02,2012-01-01,2025-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,13,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,6,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,5,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,NA,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,52684,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,268276,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,1412468,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,2330047,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,3258988,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,4269196,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,4290007,years,2025-01-02,2012-01-01,2023-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,4276092,years,2025-01-02,2012-01-01,2024-01-01
+IDRIL_1,drug_exposure,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,355,years,2025-01-02,2012-01-01,2025-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,543151,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,549551,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,561862,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,529504,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,542518,years,2025-01-02,2012-01-01,2016-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,518742,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,655173,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,698216,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,630572,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,765154,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,779522,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,811875,years,2025-01-02,2012-01-01,2023-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,796189,years,2025-01-02,2012-01-01,2024-01-01
+IDRIL_1,procedure_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,266,years,2025-01-02,2012-01-01,2025-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,8612,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,8404,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,7185,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,8527,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,9003,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,8729,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,8231,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,10182,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,2238,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,8654,years,2025-01-02,2012-01-01,2016-01-01
+IDRIL_1,device_exposure,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,8803,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,measurement,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,10056068,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,measurement,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,10695195,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,measurement,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,11496927,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,measurement,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,11750167,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,measurement,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,12673914,years,2025-01-02,2012-01-01,2016-01-01
+IDRIL_1,measurement,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,13552672,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,measurement,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,29873894,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,measurement,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,34963986,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,measurement,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,32930255,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,measurement,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,38998157,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,measurement,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,43062740,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,measurement,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,46646325,years,2025-01-02,2012-01-01,2023-01-01
+IDRIL_1,measurement,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,44225875,years,2025-01-02,2012-01-01,2024-01-01
+IDRIL_1,measurement,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,46,years,2025-01-02,2012-01-01,2025-01-01
+IDRIL_1,observation,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,670572,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,observation,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,672194,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,observation,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,734232,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,observation,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,1327836,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,observation,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,2385306,years,2025-01-02,2012-01-01,2016-01-01
+IDRIL_1,observation,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,2672208,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,observation,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,4821368,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,observation,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,4981120,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,observation,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,6189812,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,observation,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,7988090,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,observation,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,9142570,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,observation,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,10883436,years,2025-01-02,2012-01-01,2023-01-01
+IDRIL_1,observation,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,9936983,years,2025-01-02,2012-01-01,2024-01-01
+IDRIL_1,observation,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,2346,years,2025-01-02,2012-01-01,2025-01-01
+IDRIL_1,death,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,960,years,2025-01-02,2012-01-01,2015-01-01
+IDRIL_1,death,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,979,years,2025-01-02,2012-01-01,2014-01-01
+IDRIL_1,death,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,1456,years,2025-01-02,2012-01-01,2020-01-01
+IDRIL_1,death,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,944,years,2025-01-02,2012-01-01,2013-01-01
+IDRIL_1,death,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,1216,years,2025-01-02,2012-01-01,2019-01-01
+IDRIL_1,death,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,1434,years,2025-01-02,2012-01-01,2024-01-01
+IDRIL_1,death,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,1154,years,2025-01-02,2012-01-01,2018-01-01
+IDRIL_1,death,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,902,years,2025-01-02,2012-01-01,2012-01-01
+IDRIL_1,death,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,1419,years,2025-01-02,2012-01-01,2021-01-01
+IDRIL_1,death,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,1440,years,2025-01-02,2012-01-01,2022-01-01
+IDRIL_1,death,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,1043,years,2025-01-02,2012-01-01,2016-01-01
+IDRIL_1,death,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,NA,years,2025-01-02,2012-01-01,2025-01-01
+IDRIL_1,death,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,1039,years,2025-01-02,2012-01-01,2017-01-01
+IDRIL_1,death,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,1565,years,2025-01-02,2012-01-01,2023-01-01
+GOSH DRE,observation_period,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,204159,years,2025-02-17,2012-01-01,2019-01-01
+GOSH DRE,visit_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,184906,years,2025-02-17,2012-01-01,2019-01-01
+GOSH DRE,visit_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,268233,years,2025-02-17,2012-01-01,2020-01-01
+GOSH DRE,visit_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,299378,years,2025-02-17,2012-01-01,2021-01-01
+GOSH DRE,visit_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,307857,years,2025-02-17,2012-01-01,2022-01-01
+GOSH DRE,visit_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,314176,years,2025-02-17,2012-01-01,2023-01-01
+GOSH DRE,visit_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,320446,years,2025-02-17,2012-01-01,2024-01-01
+GOSH DRE,visit_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,41865,years,2025-02-17,2012-01-01,2025-01-01
+GOSH DRE,condition_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,915529,years,2025-02-17,2012-01-01,2019-01-01
+GOSH DRE,condition_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,1181039,years,2025-02-17,2012-01-01,2020-01-01
+GOSH DRE,condition_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,1414830,years,2025-02-17,2012-01-01,2021-01-01
+GOSH DRE,condition_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,1499564,years,2025-02-17,2012-01-01,2022-01-01
+GOSH DRE,condition_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,1549776,years,2025-02-17,2012-01-01,2023-01-01
+GOSH DRE,condition_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,1771121,years,2025-02-17,2012-01-01,2024-01-01
+GOSH DRE,condition_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,197432,years,2025-02-17,2012-01-01,2025-01-01
+GOSH DRE,drug_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,898363,years,2025-02-17,2012-01-01,2019-01-01
+GOSH DRE,drug_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,1245648,years,2025-02-17,2012-01-01,2020-01-01
+GOSH DRE,drug_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,1327193,years,2025-02-17,2012-01-01,2021-01-01
+GOSH DRE,drug_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,1327164,years,2025-02-17,2012-01-01,2022-01-01
+GOSH DRE,drug_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,1393450,years,2025-02-17,2012-01-01,2023-01-01
+GOSH DRE,drug_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,1380801,years,2025-02-17,2012-01-01,2024-01-01
+GOSH DRE,drug_exposure,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,195490,years,2025-02-17,2012-01-01,2025-01-01
+GOSH DRE,procedure_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,191270,years,2025-02-17,2012-01-01,2019-01-01
+GOSH DRE,procedure_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,240651,years,2025-02-17,2012-01-01,2020-01-01
+GOSH DRE,procedure_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,326670,years,2025-02-17,2012-01-01,2021-01-01
+GOSH DRE,procedure_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,343591,years,2025-02-17,2012-01-01,2022-01-01
+GOSH DRE,procedure_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,345288,years,2025-02-17,2012-01-01,2023-01-01
+GOSH DRE,procedure_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,360807,years,2025-02-17,2012-01-01,2024-01-01
+GOSH DRE,procedure_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,38040,years,2025-02-17,2012-01-01,2025-01-01
+GOSH DRE,measurement,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,12716060,years,2025-02-17,2012-01-01,2019-01-01
+GOSH DRE,measurement,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,16584160,years,2025-02-17,2012-01-01,2020-01-01
+GOSH DRE,measurement,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,20064377,years,2025-02-17,2012-01-01,2021-01-01
+GOSH DRE,measurement,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,20062007,years,2025-02-17,2012-01-01,2022-01-01
+GOSH DRE,measurement,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,19706939,years,2025-02-17,2012-01-01,2023-01-01
+GOSH DRE,measurement,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,22899321,years,2025-02-17,2012-01-01,2024-01-01
+GOSH DRE,measurement,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,3348444,years,2025-02-17,2012-01-01,2025-01-01
+GOSH DRE,observation,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,45195,years,2025-02-17,2012-01-01,2019-01-01
+GOSH DRE,observation,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,62779,years,2025-02-17,2012-01-01,2023-01-01
+GOSH DRE,observation,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,64999,years,2025-02-17,2012-01-01,2024-01-01
+GOSH DRE,observation,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,49187,years,2025-02-17,2012-01-01,2020-01-01
+GOSH DRE,observation,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,8301,years,2025-02-17,2012-01-01,2025-01-01
+GOSH DRE,observation,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,55885,years,2025-02-17,2012-01-01,2021-01-01
+GOSH DRE,observation,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,61142,years,2025-02-17,2012-01-01,2022-01-01
+GOSH DRE,death,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,574,years,2025-02-17,2012-01-01,2019-01-01
+GOSH DRE,death,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,991,years,2025-02-17,2012-01-01,2023-01-01
+GOSH DRE,death,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,1035,years,2025-02-17,2012-01-01,2024-01-01
+GOSH DRE,death,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,881,years,2025-02-17,2012-01-01,2020-01-01
+GOSH DRE,death,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,126,years,2025-02-17,2012-01-01,2025-01-01
+GOSH DRE,death,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,892,years,2025-02-17,2012-01-01,2021-01-01
+GOSH DRE,death,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,974,years,2025-02-17,2012-01-01,2022-01-01
+LTHT,observation_period,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,47155,years,2025-05-16,2012-01-01,2018-01-01
+LTHT,observation_period,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,46930,years,2025-05-16,2012-01-01,2019-01-01
+LTHT,observation_period,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,47964,years,2025-05-16,2012-01-01,2016-01-01
+LTHT,observation_period,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,42660,years,2025-05-16,2012-01-01,2023-01-01
+LTHT,observation_period,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,44834,years,2025-05-16,2012-01-01,2024-01-01
+LTHT,observation_period,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,46539,years,2025-05-16,2012-01-01,2017-01-01
+LTHT,observation_period,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,43160,years,2025-05-16,2012-01-01,2014-01-01
+LTHT,observation_period,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,37168,years,2025-05-16,2012-01-01,2020-01-01
+LTHT,observation_period,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,10434,years,2025-05-16,2012-01-01,2025-01-01
+LTHT,observation_period,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,40766,years,2025-05-16,2012-01-01,2021-01-01
+LTHT,observation_period,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,44608,years,2025-05-16,2012-01-01,2015-01-01
+LTHT,observation_period,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,46919,years,2025-05-16,2012-01-01,2012-01-01
+LTHT,observation_period,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,43994,years,2025-05-16,2012-01-01,2013-01-01
+LTHT,observation_period,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,41057,years,2025-05-16,2012-01-01,2022-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,604144,years,2025-05-16,2012-01-01,2012-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,587062,years,2025-05-16,2012-01-01,2013-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,597846,years,2025-05-16,2012-01-01,2014-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,607787,years,2025-05-16,2012-01-01,2015-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,631620,years,2025-05-16,2012-01-01,2016-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,614843,years,2025-05-16,2012-01-01,2017-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,602744,years,2025-05-16,2012-01-01,2018-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,601981,years,2025-05-16,2012-01-01,2019-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,485820,years,2025-05-16,2012-01-01,2020-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,533588,years,2025-05-16,2012-01-01,2021-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,531684,years,2025-05-16,2012-01-01,2022-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,548290,years,2025-05-16,2012-01-01,2023-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,358434,years,2025-05-16,2012-01-01,2024-01-01
+LTHT,visit_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,66328,years,2025-05-16,2012-01-01,2025-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,357142,years,2025-05-16,2012-01-01,2012-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,345760,years,2025-05-16,2012-01-01,2013-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,352904,years,2025-05-16,2012-01-01,2014-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,377092,years,2025-05-16,2012-01-01,2015-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,402441,years,2025-05-16,2012-01-01,2016-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,383381,years,2025-05-16,2012-01-01,2017-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,376264,years,2025-05-16,2012-01-01,2018-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,388495,years,2025-05-16,2012-01-01,2019-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,351877,years,2025-05-16,2012-01-01,2020-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,387356,years,2025-05-16,2012-01-01,2021-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,368796,years,2025-05-16,2012-01-01,2022-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,392202,years,2025-05-16,2012-01-01,2023-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,432455,years,2025-05-16,2012-01-01,2024-01-01
+LTHT,condition_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,97566,years,2025-05-16,2012-01-01,2025-01-01
+LTHT,drug_exposure,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,57868,years,2025-05-16,2012-01-01,2012-01-01
+LTHT,drug_exposure,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,61155,years,2025-05-16,2012-01-01,2013-01-01
+LTHT,drug_exposure,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,69756,years,2025-05-16,2012-01-01,2014-01-01
+LTHT,drug_exposure,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,69135,years,2025-05-16,2012-01-01,2015-01-01
+LTHT,drug_exposure,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,80381,years,2025-05-16,2012-01-01,2016-01-01
+LTHT,drug_exposure,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,177184,years,2025-05-16,2012-01-01,2017-01-01
+LTHT,drug_exposure,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,246240,years,2025-05-16,2012-01-01,2018-01-01
+LTHT,drug_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,274412,years,2025-05-16,2012-01-01,2019-01-01
+LTHT,drug_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,244224,years,2025-05-16,2012-01-01,2020-01-01
+LTHT,drug_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,292138,years,2025-05-16,2012-01-01,2021-01-01
+LTHT,drug_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,400987,years,2025-05-16,2012-01-01,2022-01-01
+LTHT,drug_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,418869,years,2025-05-16,2012-01-01,2023-01-01
+LTHT,drug_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,445930,years,2025-05-16,2012-01-01,2024-01-01
+LTHT,drug_exposure,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,125504,years,2025-05-16,2012-01-01,2025-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,131581,years,2025-05-16,2012-01-01,2018-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,139424,years,2025-05-16,2012-01-01,2019-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,135004,years,2025-05-16,2012-01-01,2016-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,98399,years,2025-05-16,2012-01-01,2023-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,108132,years,2025-05-16,2012-01-01,2024-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,129900,years,2025-05-16,2012-01-01,2017-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,131307,years,2025-05-16,2012-01-01,2014-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,114128,years,2025-05-16,2012-01-01,2020-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,27469,years,2025-05-16,2012-01-01,2025-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,92197,years,2025-05-16,2012-01-01,2021-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,132779,years,2025-05-16,2012-01-01,2015-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,127215,years,2025-05-16,2012-01-01,2012-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,126952,years,2025-05-16,2012-01-01,2013-01-01
+LTHT,procedure_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,96191,years,2025-05-16,2012-01-01,2022-01-01
+LTHT,measurement,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,102783,years,2025-05-16,2012-01-01,2012-01-01
+LTHT,measurement,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,111720,years,2025-05-16,2012-01-01,2013-01-01
+LTHT,measurement,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,167006,years,2025-05-16,2012-01-01,2014-01-01
+LTHT,measurement,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,182901,years,2025-05-16,2012-01-01,2015-01-01
+LTHT,measurement,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,188736,years,2025-05-16,2012-01-01,2016-01-01
+LTHT,measurement,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,176294,years,2025-05-16,2012-01-01,2017-01-01
+LTHT,measurement,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,195166,years,2025-05-16,2012-01-01,2018-01-01
+LTHT,measurement,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,207572,years,2025-05-16,2012-01-01,2019-01-01
+LTHT,measurement,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,183051,years,2025-05-16,2012-01-01,2020-01-01
+LTHT,measurement,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,189639,years,2025-05-16,2012-01-01,2021-01-01
+LTHT,measurement,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,144551,years,2025-05-16,2012-01-01,2022-01-01
+LTHT,measurement,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,141197,years,2025-05-16,2012-01-01,2023-01-01
+LTHT,measurement,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,140926,years,2025-05-16,2012-01-01,2024-01-01
+LTHT,measurement,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,39449,years,2025-05-16,2012-01-01,2025-01-01
+LTHT,observation,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,102043,years,2025-05-16,2012-01-01,2018-01-01
+LTHT,observation,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,104308,years,2025-05-16,2012-01-01,2019-01-01
+LTHT,observation,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,101646,years,2025-05-16,2012-01-01,2016-01-01
+LTHT,observation,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,120418,years,2025-05-16,2012-01-01,2023-01-01
+LTHT,observation,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,145320,years,2025-05-16,2012-01-01,2024-01-01
+LTHT,observation,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,101709,years,2025-05-16,2012-01-01,2017-01-01
+LTHT,observation,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,91776,years,2025-05-16,2012-01-01,2014-01-01
+LTHT,observation,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,80021,years,2025-05-16,2012-01-01,2020-01-01
+LTHT,observation,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,36878,years,2025-05-16,2012-01-01,2025-01-01
+LTHT,observation,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,93452,years,2025-05-16,2012-01-01,2021-01-01
+LTHT,observation,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,94612,years,2025-05-16,2012-01-01,2015-01-01
+LTHT,observation,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,92111,years,2025-05-16,2012-01-01,2012-01-01
+LTHT,observation,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,89244,years,2025-05-16,2012-01-01,2013-01-01
+LTHT,observation,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,100748,years,2025-05-16,2012-01-01,2022-01-01
+LTHT,death,overall,overall,Number records,2018-01-01,2018-01-01 to 2018-12-31,20566,years,2025-05-16,2012-01-01,2018-01-01
+LTHT,death,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,21246,years,2025-05-16,2012-01-01,2019-01-01
+LTHT,death,overall,overall,Number records,2016-01-01,2016-01-01 to 2016-12-31,19435,years,2025-05-16,2012-01-01,2016-01-01
+LTHT,death,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,23598,years,2025-05-16,2012-01-01,2023-01-01
+LTHT,death,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,24119,years,2025-05-16,2012-01-01,2024-01-01
+LTHT,death,overall,overall,Number records,2017-01-01,2017-01-01 to 2017-12-31,19917,years,2025-05-16,2012-01-01,2017-01-01
+LTHT,death,overall,overall,Number records,2014-01-01,2014-01-01 to 2014-12-31,13289,years,2025-05-16,2012-01-01,2014-01-01
+LTHT,death,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,23909,years,2025-05-16,2012-01-01,2020-01-01
+LTHT,death,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,8220,years,2025-05-16,2012-01-01,2025-01-01
+LTHT,death,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,23078,years,2025-05-16,2012-01-01,2021-01-01
+LTHT,death,overall,overall,Number records,2015-01-01,2015-01-01 to 2015-12-31,16267,years,2025-05-16,2012-01-01,2015-01-01
+LTHT,death,overall,overall,Number records,2012-01-01,2012-01-01 to 2012-12-31,16949,years,2025-05-16,2012-01-01,2012-01-01
+LTHT,death,overall,overall,Number records,2013-01-01,2013-01-01 to 2013-12-31,14406,years,2025-05-16,2012-01-01,2013-01-01
+LTHT,death,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,23825,years,2025-05-16,2012-01-01,2022-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,144286,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,34815,years,2025-12-31,2012-01-01,2025-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,129553,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,144597,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,127802,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,279656,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,observation_period,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,134760,years,2025-12-31,2012-01-01,2021-01-01
+UCLH-from-2019,visit_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,2563429,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,visit_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,837266,years,2025-12-31,2012-01-01,2025-01-01
+UCLH-from-2019,visit_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,2471660,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,visit_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,2158857,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,visit_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,2557100,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,visit_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,1432858,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,visit_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,2547293,years,2025-12-31,2012-01-01,2021-01-01
+UCLH-from-2019,condition_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,1117392,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,condition_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,198724,years,2025-12-31,2012-01-01,2025-01-01
+UCLH-from-2019,condition_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,1113381,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,condition_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,869347,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,condition_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,1199229,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,condition_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,777102,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,condition_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,1031561,years,2025-12-31,2012-01-01,2021-01-01
+UCLH-from-2019,drug_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,5530206,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,drug_exposure,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,1137319,years,2025-12-31,2012-01-01,2025-01-01
+UCLH-from-2019,drug_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,5702845,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,drug_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,4540175,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,drug_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,6096600,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,drug_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,3617722,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,drug_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,5210825,years,2025-12-31,2012-01-01,2021-01-01
+UCLH-from-2019,procedure_occurrence,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,4360126,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,procedure_occurrence,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,927789,years,2025-12-31,2012-01-01,2025-01-01
+UCLH-from-2019,procedure_occurrence,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,4447876,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,procedure_occurrence,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,3442615,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,procedure_occurrence,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,4832782,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,procedure_occurrence,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,3003025,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,procedure_occurrence,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,3882868,years,2025-12-31,2012-01-01,2021-01-01
+UCLH-from-2019,device_exposure,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,866381,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,device_exposure,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,163298,years,2025-12-31,2012-01-01,2025-01-01
+UCLH-from-2019,device_exposure,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,887246,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,device_exposure,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,706049,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,device_exposure,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,908161,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,device_exposure,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,482986,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,device_exposure,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,910355,years,2025-12-31,2012-01-01,2021-01-01
+UCLH-from-2019,measurement,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,95532991,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,measurement,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,71761491,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,measurement,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,60335807,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,measurement,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,85953184,years,2025-12-31,2012-01-01,2021-01-01
+UCLH-from-2019,measurement,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,98062897,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,measurement,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,20181808,years,2025-12-31,2012-01-01,2025-01-01
+UCLH-from-2019,measurement,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,107810236,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,observation,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,11052945,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,observation,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,8722137,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,observation,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,11336461,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,observation,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,3794909,years,2025-12-31,2012-01-01,2025-01-01
+UCLH-from-2019,observation,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,7181375,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,observation,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,10324689,years,2025-12-31,2012-01-01,2021-01-01
+UCLH-from-2019,observation,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,12337226,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,death,overall,overall,Number records,2022-01-01,2022-01-01 to 2022-12-31,2944,years,2025-12-31,2012-01-01,2022-01-01
+UCLH-from-2019,death,overall,overall,Number records,2025-01-01,2025-01-01 to 2025-12-31,510,years,2025-12-31,2012-01-01,2025-01-01
+UCLH-from-2019,death,overall,overall,Number records,2023-01-01,2023-01-01 to 2023-12-31,3003,years,2025-12-31,2012-01-01,2023-01-01
+UCLH-from-2019,death,overall,overall,Number records,2020-01-01,2020-01-01 to 2020-12-31,2807,years,2025-12-31,2012-01-01,2020-01-01
+UCLH-from-2019,death,overall,overall,Number records,2024-01-01,2024-01-01 to 2024-12-31,2874,years,2025-12-31,2012-01-01,2024-01-01
+UCLH-from-2019,death,overall,overall,Number records,2019-01-01,2019-01-01 to 2019-12-31,1395,years,2025-12-31,2012-01-01,2019-01-01
+UCLH-from-2019,death,overall,overall,Number records,2021-01-01,2021-01-01 to 2021-12-31,2998,years,2025-12-31,2012-01-01,2021-01-01
