@@ -151,7 +151,70 @@
     "href": "data_network/data_overview.html",
     "title": "Data overview",
     "section": "",
-    "text": "Data overview"
+    "text": "Estimate\n\nDatabase name\n\n\n\nBarts\nCPRD_AURUM\nDataLoch\nGOSH\nLancs\nLeeds\nUCLH\n\n\n\n\nGeneral\n\n\nSnapshot date\n2025-06-05\n2025-01-27\n2025-06-03\n2025-06-04\n2025-01-23\n2025-05-21\n2025-03-19\n\n\nPerson count\n3,235,843\n49,359,991\n1,763,406\n204,159\n1,533,222\n1,486,578\n1,129,661\n\n\nVocabulary version\nv5.0 30-AUG-24\nv5.0 30-AUG-24\nv5.0 27-FEB-25\nv5.0 30-AUG-24\nv5.0 09-SEP-22\nv5.0 30-AUG-24\n-\n\n\nObservation period\n\n\nN\n3,235,843\n49,359,991\n1,763,406\n204,159\n2,580,013\n1,486,578\n995,469\n\n\nStart date\n1901-02-05\n1995-01-01\n1900-01-01\n2019-04-19\n2005-01-01\n1975-02-26\n2019-04-01\n\n\nEnd date\n2025-05-09\n2024-06-24\n2025-06-03\n2025-02-17\n2025-01-02\n2025-05-16\n2025-12-31\n\n\nCdm\n\n\nSource name\nBarts Health Data Warehouse\nCPRD Aurum OMOP CDM September 2024 build\nDataloch General Population\nGOSH DRE database\nIDRIL\nLTHT OMOP database\nData Catalogue - UCLH OMOP CDM\n\n\nVersion\n5.4\n5.4.0\n5.4.0\nv5.4\n5.4\nv5.4\n53\n\n\nHolder name\nBarts Health NHS Trust\nCPRD\nDataLoch\nGOSH\nLancashire Teaching Hospitals NHS Foundation Trust\nLTHT\nUCLH\n\n\nRelease date\n2024-08-30\n2024-09-20\n2025-06-03\n2024-11-05\n2025-01-02\n2025-05-08\n2025-03-06\n\n\nDescription\nEDW OMOP Research\nAurum September 2024\nDataLoch has separate OMOP CDMs for cancer and for the general Lothian patient population. The general population CDM contains person records drawn from the Lothian subsets of 4 national datasets: PHS Scottish Morbidity Records SMR00, SMR01, and SMR06, and the PIS dataset for prescribing information. These patients have been linked to historical coded data for hospitalisations, drug prescriptions, laboratory results, SIMD quintiles, GP data for BMI, alcohol consumption and smoking status, and deaths data from the National Records of Scotland. The dataset covers a geographical area in South East Scotland with a population of approximately 900k individuals.\nGOSH is a specialist tertiary care paediatrics hospital in the UK receiving children with complex and/or rare conditions. A large proportion of the children that we see typically require long-term care and follow up at GOSH. This results in data collected during routine healthcare that are very rich in number of variables and detail\nMulti-source secondary care dataset\nLTHT OMOP database\n-\n\n\nDocumentation reference\n-\nETL Document reference\nhttps://dataloch.org/data\n-\nhttp://omop-lsc.surge.sh/\nNot available - source is PPM\n-\n\n\nSource type\nsql server\nsql server\nsql server\nsql server\nsql server\nsql server\npostgresql"
+  },
+  {
+    "objectID": "data_network/data_overview.html#in-observation",
+    "href": "data_network/data_overview.html#in-observation",
+    "title": "Data overview",
+    "section": "In observation",
+    "text": "In observation"
+  },
+  {
+    "objectID": "data_network/data_overview.html#summary",
+    "href": "data_network/data_overview.html#summary",
+    "title": "Data overview",
+    "section": "Summary",
+    "text": "Summary"
+  },
+  {
+    "objectID": "data_network/data_overview.html#drug-exposure",
+    "href": "data_network/data_overview.html#drug-exposure",
+    "title": "Data overview",
+    "section": "Drug exposure",
+    "text": "Drug exposure"
+  },
+  {
+    "objectID": "data_network/data_overview.html#condition-occurrence",
+    "href": "data_network/data_overview.html#condition-occurrence",
+    "title": "Data overview",
+    "section": "Condition occurrence",
+    "text": "Condition occurrence"
+  },
+  {
+    "objectID": "data_network/data_overview.html#measurement",
+    "href": "data_network/data_overview.html#measurement",
+    "title": "Data overview",
+    "section": "Measurement",
+    "text": "Measurement"
+  },
+  {
+    "objectID": "data_network/data_overview.html#observation",
+    "href": "data_network/data_overview.html#observation",
+    "title": "Data overview",
+    "section": "Observation",
+    "text": "Observation"
+  },
+  {
+    "objectID": "data_network/data_overview.html#procedure-occurrence",
+    "href": "data_network/data_overview.html#procedure-occurrence",
+    "title": "Data overview",
+    "section": "Procedure occurrence",
+    "text": "Procedure occurrence"
+  },
+  {
+    "objectID": "data_network/data_overview.html#visit-occurrence",
+    "href": "data_network/data_overview.html#visit-occurrence",
+    "title": "Data overview",
+    "section": "Visit occurrence",
+    "text": "Visit occurrence"
+  },
+  {
+    "objectID": "data_network/data_overview.html#death",
+    "href": "data_network/data_overview.html#death",
+    "title": "Data overview",
+    "section": "Death",
+    "text": "Death"
   },
   {
     "objectID": "studies/study_conventions.html",
