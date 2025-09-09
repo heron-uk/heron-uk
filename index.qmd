@@ -1,3 +1,108 @@
-# HERON-UK Network
+---
+title: ""
+format: html
+execute: 
+  echo: false
+  warning: false
+  message: false
+---
 
-The HEalth data Research UK OMOP Network (HERON-UK)
+The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. The network is funded by HDR UK and more information on the project can be found [here](https://ukhealthdata.org/data-standards/common-data-models/rwe-network/).
+
+Our network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. These records are analysed in situ, with only aggregated results shared by data partners to ensure privacy of patient data. Transparency and reproducibility is a core feature of the network, with all study code made freely available on [GitHub](https://github.com/heron-uk).
+
+## Cumulative data capture in HERON-UK
+
+```{r}
+# this is to nicely format large numbers
+# should choose appropriate number of decimal places etc
+y_formatting_js <- "
+        function(value) {
+          if (value >= 1000000000) {
+            return new Intl.NumberFormat('en-US', {
+                maximumSignificantDigits: 3
+            }).format(value / 1000000000) + 'B';
+          }
+          if (value >= 1000000) {
+            return new Intl.NumberFormat('en-US', {
+                maximumSignificantDigits: 3
+            }).format(value / 1000000) + 'M';
+          }
+          if (value >= 1000) {
+            return new Intl.NumberFormat('en-US', {
+                maximumSignificantDigits: 3
+            }).format(value / 1000) + 'K';
+          }
+          return value;
+        }
+      "
+```
+
+```{r}
+library(here)
+library(dplyr)
+library(echarts4r)
+
+record_counts <- readr::read_csv(here::here("data_network",
+                           "data", 
+                           "record_count.csv"))
+
+renameCDM <- function(workingData){
+  workingData |> 
+    mutate(cdm_name = case_when(
+      cdm_name == "AurumCDM_202409"  ~ "CPRD_AURUM",
+      cdm_name == "Barts Health"  ~ "Barts",
+      cdm_name == "DataLoch"  ~ "DataLoch",
+      cdm_name == "GOSH DRE"  ~ "GOSH",
+      cdm_name == "IDRIL_1"  ~ "Lancs",
+      cdm_name == "LTHT"  ~ "Leeds",
+      cdm_name == "UCLH-from-2019"  ~ "UCLH"
+    ))
+}
+  
+```
+
+```{r}
+plot_data<-record_counts |> 
+  group_by(date, omop_table) |> 
+  summarise(total= sum(count, 
+                       na.rm = TRUE)) |> 
+  group_by(omop_table) |>
+  arrange(omop_table) |> 
+  mutate(running_total = cumsum(total)) |> 
+  ungroup() |> 
+  select(omop_table, date, running_total)
+plot_data<-bind_rows(plot_data,
+          record_counts |> 
+            renameCDM() |> 
+            group_by(date) |> 
+            summarise(total= sum(count, 
+                                 na.rm = TRUE)) |> 
+            arrange(date) |> 
+            mutate(running_total = cumsum(total)) |> 
+            mutate(omop_table = "All")|> 
+            ungroup() |> 
+            select(omop_table, date, running_total))
+
+plot_data |> 
+  tidyr::pivot_wider(names_from = omop_table,
+                     values_from = running_total) |> 
+  e_charts(x = date)|> 
+  e_area(condition_occurrence, stack = "grp")    |> 
+  e_area(drug_exposure, stack = "grp")     |> 
+  e_area(measurement, stack = "grp")     |> 
+  e_area(observation, stack = "grp")     |> 
+  e_area(procedure_occurrence, stack = "grp")       |> 
+  e_area(device_exposure, stack = "grp")       |> 
+  e_area(visit_occurrence, stack = "grp")       |> 
+  e_area(death, stack = "grp")   |>
+  e_y_axis(
+    axisLabel = list(
+      formatter = htmlwidgets::JS(y_formatting_js)
+    )
+  ) 
+```
+
+::: {style="display: flex; gap: 20px; align-items: flex-start;"}
+<img src="images/clipboard-3959621261.png" style="max-width: 20%;"/> <img src="images/clipboard-3752148240.png" style="max-width: 20%;"/> <img src="images/clipboard-3013093500.png" style="max-width: 20%;"/> <img src="images/clipboard-2986220169.png" style="max-width: 20%;"/>
+:::
