@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-09-08">
+<meta name="dcterms.date" content="2025-09-09">
 
 <title>HERON-UK</title>
 <style>
@@ -68,10 +68,17 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/echarts4r-4.8.0/echarts-en.min.js"></script>
+<script src="site_libs/echarts4r-4.8.0/ecStat.min.js"></script>
+<script src="site_libs/echarts4r-4.8.0/dataTool.min.js"></script>
+<script src="site_libs/echarts4r-binding-0.4.5/echarts4r.js"></script>
 
 
-<meta property="og:title" content="HERON-UK">
+<meta property="og:title" content="– HERON-UK">
 <meta property="og:description" content="">
+<meta property="og:image" content="images/clipboard-3959621261.png">
 <meta property="og:site_name" content="HERON-UK">
 </head>
 
@@ -179,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#heron-uk-network" id="toc-heron-uk-network" class="nav-link active" data-scroll-target="#heron-uk-network">HERON-UK Network</a></li>
+  <li><a href="#cumulative-data-capture-in-heron-uk" id="toc-cumulative-data-capture-in-heron-uk" class="nav-link active" data-scroll-target="#cumulative-data-capture-in-heron-uk">Cumulative data capture in HERON-UK</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/heron-uk/heron-uk/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -198,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 8, 2025</p>
+      <p class="date">September 9, 2025</p>
     </div>
   </div>
   
@@ -210,9 +217,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="heron-uk-network" class="level1">
-<h1>HERON-UK Network</h1>
-<p>The HEalth data Research UK OMOP Network (HERON-UK)</p>
+<p>The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. The network is funded by HDR UK and more information on the project can be found <a href="https://ukhealthdata.org/data-standards/common-data-models/rwe-network/">here</a>.</p>
+<p>Our network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. These records are analysed in situ, with only aggregated results shared by data partners to ensure privacy of patient data. Transparency and reproducibility is a core feature of the network, with all study code made freely available on <a href="https://github.com/heron-uk">GitHub</a>.</p>
+<section id="cumulative-data-capture-in-heron-uk" class="level2">
+<h2 class="anchored" data-anchor-id="cumulative-data-capture-in-heron-uk">Cumulative data capture in HERON-UK</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="echarts4r html-widget html-fill-item" id="htmlwidget-5eaa99547cb9747865e4" style="width:100%;height:500px;"></div>
+<script type="application/json" data-for="htmlwidget-5eaa99547cb9747865e4">{"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"axisLabel":{"formatter":"\n        function(value) {\n          if (value >= 1000000000) {\n            return new Intl.NumberFormat('en-US', {\n                maximumSignificantDigits: 3\n            }).format(value / 1000000000) + 'B';\n          }\n          if (value >= 1000000) {\n            return new Intl.NumberFormat('en-US', {\n                maximumSignificantDigits: 3\n            }).format(value / 1000000) + 'M';\n          }\n          if (value >= 1000) {\n            return new Intl.NumberFormat('en-US', {\n                maximumSignificantDigits: 3\n            }).format(value / 1000) + 'K';\n          }\n          return value;\n        }\n      "}}],"xAxis":[{"data":["2012-01-01","2013-01-01","2014-01-01","2015-01-01","2016-01-01","2017-01-01","2018-01-01","2019-01-01","2020-01-01","2021-01-01","2022-01-01","2023-01-01","2024-01-01","2025-01-01"],"type":"time","boundaryGap":true}],"legend":{"data":["condition_occurrence","drug_exposure","measurement","observation","procedure_occurrence","device_exposure","visit_occurrence","death"]},"series":[{"data":[{"value":["2012-01-01"," 82242136"]},{"value":["2013-01-01","156927927"]},{"value":["2014-01-01","225933294"]},{"value":["2015-01-01","293806240"]},{"value":["2016-01-01","362467232"]},{"value":["2017-01-01","432797282"]},{"value":["2018-01-01","504730022"]},{"value":["2019-01-01","579276196"]},{"value":["2020-01-01","633277519"]},{"value":["2021-01-01","693451582"]},{"value":["2022-01-01","759092746"]},{"value":["2023-01-01","829780531"]},{"value":["2024-01-01","867402846"]},{"value":["2025-01-01","868873288"]}],"yAxisIndex":0,"xAxisIndex":0,"name":"condition_occurrence","type":"line","coordinateSystem":"cartesian2d","areaStyle":[],"stack":"grp"},{"data":[{"value":["2012-01-01"," 109789762"]},{"value":["2013-01-01"," 225155279"]},{"value":["2014-01-01"," 346550964"]},{"value":["2015-01-01"," 472879592"]},{"value":["2016-01-01"," 604694998"]},{"value":["2017-01-01"," 740097370"]},{"value":["2018-01-01"," 878282592"]},{"value":["2019-01-01","1024955024"]},{"value":["2020-01-01","1174759004"]},{"value":["2021-01-01","1387363875"]},{"value":["2022-01-01","1575633114"]},{"value":["2023-01-01","1758605391"]},{"value":["2024-01-01","1858618683"]},{"value":["2025-01-01","1867116856"]}],"yAxisIndex":0,"xAxisIndex":0,"name":"drug_exposure","type":"line","coordinateSystem":"cartesian2d","areaStyle":[],"stack":"grp"},{"data":[{"value":["2012-01-01"," 353087411"]},{"value":["2013-01-01"," 723794094"]},{"value":["2014-01-01","1119910544"]},{"value":["2015-01-01","1550007965"]},{"value":["2016-01-01","1993426831"]},{"value":["2017-01-01","2448677021"]},{"value":["2018-01-01","2940742178"]},{"value":["2019-01-01","3518527644"]},{"value":["2020-01-01","4015205658"]},{"value":["2021-01-01","4666328587"]},{"value":["2022-01-01","5346673332"]},{"value":["2023-01-01","6061501793"]},{"value":["2024-01-01","6562723637"]},{"value":["2025-01-01","6630022508"]}],"yAxisIndex":0,"xAxisIndex":0,"name":"measurement","type":"line","coordinateSystem":"cartesian2d","areaStyle":[],"stack":"grp"},{"data":[{"value":["2012-01-01"," 549806031"]},{"value":["2013-01-01","1138734577"]},{"value":["2014-01-01","1758446280"]},{"value":["2015-01-01","2412589750"]},{"value":["2016-01-01","3064682201"]},{"value":["2017-01-01","3720219670"]},{"value":["2018-01-01","4396434759"]},{"value":["2019-01-01","5103879618"]},{"value":["2020-01-01","5782252815"]},{"value":["2021-01-01","6642677637"]},{"value":["2022-01-01","7623122092"]},{"value":["2023-01-01","8696069432"]},{"value":["2024-01-01","9194450254"]},{"value":["2025-01-01","9204444326"]}],"yAxisIndex":0,"xAxisIndex":0,"name":"observation","type":"line","coordinateSystem":"cartesian2d","areaStyle":[],"stack":"grp"},{"data":[{"value":["2012-01-01","  46327794"]},{"value":["2013-01-01","  97884798"]},{"value":["2014-01-01"," 157759839"]},{"value":["2015-01-01"," 225288795"]},{"value":["2016-01-01"," 303842766"]},{"value":["2017-01-01"," 396328955"]},{"value":["2018-01-01"," 498012326"]},{"value":["2019-01-01"," 613804220"]},{"value":["2020-01-01"," 734752669"]},{"value":["2021-01-01"," 894373887"]},{"value":["2022-01-01","1068958708"]},{"value":["2023-01-01","1253885800"]},{"value":["2024-01-01","1332657061"]},{"value":["2025-01-01","1333984459"]}],"yAxisIndex":0,"xAxisIndex":0,"name":"procedure_occurrence","type":"line","coordinateSystem":"cartesian2d","areaStyle":[],"stack":"grp"},{"data":[{"value":["2012-01-01","  9607555"]},{"value":["2013-01-01"," 19905913"]},{"value":["2014-01-01"," 31047796"]},{"value":["2015-01-01"," 43137015"]},{"value":["2016-01-01"," 56007659"]},{"value":["2017-01-01"," 69106019"]},{"value":["2018-01-01"," 82303223"]},{"value":["2019-01-01"," 95890042"]},{"value":["2020-01-01","109735735"]},{"value":["2021-01-01","124299150"]},{"value":["2022-01-01","138945623"]},{"value":["2023-01-01","154157168"]},{"value":["2024-01-01","161731950"]},{"value":["2025-01-01","161979433"]}],"yAxisIndex":0,"xAxisIndex":0,"name":"device_exposure","type":"line","coordinateSystem":"cartesian2d","areaStyle":[],"stack":"grp"},{"data":[{"value":["2012-01-01"," 215171522"]},{"value":["2013-01-01"," 445611613"]},{"value":["2014-01-01"," 696461587"]},{"value":["2015-01-01"," 969483281"]},{"value":["2016-01-01","1242166226"]},{"value":["2017-01-01","1518259843"]},{"value":["2018-01-01","1804170954"]},{"value":["2019-01-01","2100237289"]},{"value":["2020-01-01","2384688206"]},{"value":["2021-01-01","2741111061"]},{"value":["2022-01-01","3095138958"]},{"value":["2023-01-01","3455075813"]},{"value":["2024-01-01","3614549903"]},{"value":["2025-01-01","3616758374"]}],"yAxisIndex":0,"xAxisIndex":0,"name":"visit_occurrence","type":"line","coordinateSystem":"cartesian2d","areaStyle":[],"stack":"grp"},{"data":[{"value":["2012-01-01"," 168438"]},{"value":["2013-01-01"," 343350"]},{"value":["2014-01-01"," 509323"]},{"value":["2015-01-01"," 682362"]},{"value":["2016-01-01"," 858834"]},{"value":["2017-01-01","1038378"]},{"value":["2018-01-01","1220281"]},{"value":["2019-01-01","1401505"]},{"value":["2020-01-01","1607573"]},{"value":["2021-01-01","1805879"]},{"value":["2022-01-01","1999071"]},{"value":["2023-01-01","2186628"]},{"value":["2024-01-01","2295343"]},{"value":["2025-01-01","2310879"]}],"yAxisIndex":0,"xAxisIndex":0,"name":"death","type":"line","coordinateSystem":"cartesian2d","areaStyle":[],"stack":"grp"}]},"dispose":true},"evals":["opts.yAxis.0.axisLabel.formatter"],"jsHooks":[]}</script>
+</div>
+</div>
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+<p><img src="images/clipboard-3959621261.png" style="max-width: 20%;"> <img src="images/clipboard-3752148240.png" style="max-width: 20%;"> <img src="images/clipboard-3013093500.png" style="max-width: 20%;"> <img src="images/clipboard-2986220169.png" style="max-width: 20%;"></p>
+</div>
 
 
 </section>
@@ -624,7 +641,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Rendered on September 8, 2025</p>
+<p>Rendered on September 9, 2025</p>
 <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/heron-uk/heron-uk/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;

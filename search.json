@@ -226,8 +226,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "HERON-UK Network",
+    "title": "HERON-UK",
     "section": "",
-    "text": "HERON-UK Network\nThe HEalth data Research UK OMOP Network (HERON-UK)"
+    "text": "The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. The network is funded by HDR UK and more information on the project can be found here.\nOur network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. These records are analysed in situ, with only aggregated results shared by data partners to ensure privacy of patient data. Transparency and reproducibility is a core feature of the network, with all study code made freely available on GitHub."
+  },
+  {
+    "objectID": "index.html#cumulative-data-capture-in-heron-uk",
+    "href": "index.html#cumulative-data-capture-in-heron-uk",
+    "title": "HERON-UK",
+    "section": "Cumulative data capture in HERON-UK",
+    "text": "Cumulative data capture in HERON-UK"
   }
 ]
