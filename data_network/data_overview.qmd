@@ -106,7 +106,7 @@ renameCDM <- function(workingData){
 }
   
 plotTableTrend <- function(workingData, workingTable){
-record_counts |> 
+workingData |> 
   filter(omop_table == workingTable) |> 
   renameCDM() |> 
   select(cdm_name, count, date) |> 
@@ -193,35 +193,35 @@ clinical_records  |>
 
 ## Drug exposure
 ```{r}
-plotTableTrend(plot_data, "drug_exposure")
+plotTableTrend(record_counts, "drug_exposure")
 ```
 
 ## Condition occurrence
 ```{r}
-plotTableTrend(plot_data, "condition_occurrence")
+plotTableTrend(record_counts, "condition_occurrence")
 ```
 
 ## Measurement
 ```{r}
-plotTableTrend(plot_data, "measurement")
+plotTableTrend(record_counts, "measurement")
 ```
 
 ## Observation
 ```{r}
-plotTableTrend(plot_data, "observation")
+plotTableTrend(record_counts, "observation")
 ```
 
 ## Procedure occurrence
 ```{r}
-plotTableTrend(plot_data, "procedure_occurrence")
+plotTableTrend(record_counts, "procedure_occurrence")
 ```
 
 ## Visit occurrence
 ```{r}
-plotTableTrend(plot_data, "visit_occurrence")
+plotTableTrend(record_counts, "visit_occurrence")
 ```
 
 ## Death
 ```{r}
-plotTableTrend(plot_data, "death")
+plotTableTrend(record_counts, "death")
 ```
