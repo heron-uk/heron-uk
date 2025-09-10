@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "HERON UK"
 format: html
 execute: 
   echo: false
@@ -13,8 +13,7 @@ Our network of 7 data partners contains more than 20 billion clinical records fr
 
 ## Cumulative data capture in HERON-UK
 
-::: {.panel-tabset}
-
+::: panel-tabset
 # Overall
 
 ```{r}
@@ -117,6 +116,7 @@ plotCumulativeRecords(record_counts)
 ```
 
 # Barts
+
 ```{r}
 plotCumulativeRecords(record_counts|> 
             renameCDM() |> 
@@ -124,6 +124,7 @@ plotCumulativeRecords(record_counts|>
 ```
 
 # CPRD AURUM
+
 ```{r}
 plotCumulativeRecords(record_counts|> 
             renameCDM() |> 
@@ -131,6 +132,7 @@ plotCumulativeRecords(record_counts|>
 ```
 
 # DataLoch
+
 ```{r}
 plotCumulativeRecords(record_counts |> 
             renameCDM() |> 
@@ -138,6 +140,7 @@ plotCumulativeRecords(record_counts |>
 ```
 
 # GOSH
+
 ```{r}
 plotCumulativeRecords(record_counts|> 
             renameCDM() |> 
@@ -145,6 +148,7 @@ plotCumulativeRecords(record_counts|>
 ```
 
 # Lancs
+
 ```{r}
 plotCumulativeRecords(record_counts|> 
             renameCDM() |> 
@@ -152,6 +156,7 @@ plotCumulativeRecords(record_counts|>
 ```
 
 # Leeds
+
 ```{r}
 plotCumulativeRecords(record_counts|> 
             renameCDM() |> 
@@ -159,12 +164,12 @@ plotCumulativeRecords(record_counts|>
 ```
 
 # UCLH
+
 ```{r}
 plotCumulativeRecords(record_counts|> 
             renameCDM() |> 
             filter(stringr::str_detect(cdm_name, "UCLH")))
 ```
-
 :::
 
 ::: {style="display: flex; gap: 20px; align-items: flex-start;"}
