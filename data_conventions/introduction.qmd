@@ -1,0 +1,7 @@
+# Conventions
+
+In general, when mapping to the OMOP CDM we recommend following the [OHDSI THEMIS Conventions](https://ohdsi.github.io/Themis/index.html). Where necessary here we document additional conventions we use in the HERON UK to ensure that we map to the OMOP CDM as consistently as possible.
+
+# Feedback
+
+We greatly value your feedback. These conventions have been developed through the exploration of currently onboarded datasets, as well as the review of published literature and existing ETL processes. However, they are not rigid rules—adjustments may be necessary depending on the characteristics of your data. If you believe that these standards do not align well with your dataset or if you see other areas needing a convention, please do get in touch.

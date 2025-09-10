@@ -1,0 +1,22 @@
+
+# Observation period
+
+The observation period has a major impact on study results, particularly on incidence and prevalence calculations [CITE]. For this reason, it is essential to define the observation_period table carefully.
+
+In some databases, such as primary care data or claims data, enrollment (or registration) and disenrollment dates are available. In these cases, it is most accurate to use the registration date as the *observation_period_start_date* and the deregistration date as the *observation_period_end_date*. While multiple observation periods are not recommended, they are permitted.
+
+In other settings—most commonly secondary care databases, registration dates are not available, which makes defining the observation period more challenging. After initial exploration, we recommend the following approach:
+
+- Observation period start date: the date of the first record for a person.
+- Observation period end date: the earliest of the following:
+  - Date of death
+  - A censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)
+  - Other censoring events, such as migration out of the study region.
+
+This definition results in a single observation period per person.
+
+If death registry linkage is not available, it may be advisable to censor patients two years after their last recorded event. This highlights the importance of linking your data to mortality records (for example, the Office for National Statistics in the UK).
+
+As part of the study network’s innovation plan, [OmopConstructor]() was developed. It includes the function [builtObservationPeriod()](), which helps generate the *observation_period* table according to these guidelines.
+
+Please get in touch if you have any questions about building your observation periods.

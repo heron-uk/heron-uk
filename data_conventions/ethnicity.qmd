@@ -1,0 +1,14 @@
+
+# Ethnicity
+
+Patient ethnicity is a valuable data element for research, and we encourage you to include ethnicity records in your OMOP CDM instance if available in your source data.
+
+By convention, ethnicity is mapped using the [NHS Ethnic Category](https://athena.ohdsi.org/search-terms/terms?vocabulary=NHS+Ethnic+Category&page=1&pageSize=15&query=) in two places: the *observation* table and the *person* table. This approach accommodates databases that may contain multiple ethnicity records per patient.
+
+**Person Table**
+
+Only one ethnicity record per person is allowed in the person table, to be populated as:
+- `race_concept_id`: always set to 0, because the NHS Ethnic Category codes are non-standard.
+- `race_source_concept_id`: populate with the most common code per person. If two or more codes occur with equal frequency, select the most recent one. If no ethnicity data is available for a person, set `race_source_concept_id` = 0.
+
+

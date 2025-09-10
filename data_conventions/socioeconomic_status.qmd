@@ -1,0 +1,23 @@
+## Index of Multiple Deprivation quintiles
+
+The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardised measure of socioeconomic status across geographic areas.
+
+The convention is to map the IMD data in the *observation* table using the concept ID [35812882](https://athena.ohdsi.org/search-terms/terms/35812882). Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.
+
+The IMD quintile value is stored in the `value_as_number` field using a number between 1 and 5. For the units, we use the concept ID [37524288](https://athena.ohdsi.org/search-terms/terms/37524288), which represents quintiles.
+
+For the observation date:
+
+- If a measurement date is available in the source data, use that date.
+- If no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.
+
+In studies, if with multiple IMD records per person are present the record closest to the index date will be used.
+
+An example IMD record in the observation table would look like:
+
+::: {style="overflow-x: auto;"}
+| ... | `observation_concept_id` | ... | `value_as_number` | ... | `unit_concept_id` | ... | `observation_source_concept_id` | ... |
+|--|------|--|------|--|------|--|------|--|
+| ...| 0 | ... | 2 | ... | 37524288 | ... | 35812882 | ... |
+:::
+
