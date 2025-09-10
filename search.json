@@ -35,11 +35,116 @@
     "text": "Observation period\nThe observation period has a major impact on study results, particularly on incidence and prevalence calculations [CITE]. For this reason, it is essential to define the observation_period table carefully.\nIn some databases, such as primary care data or claims data, enrollment (or registration) and disenrollment dates are available. In these cases, it is most accurate to use the registration date as the observation_period_start_date and the deregistration date as the observation_period_end_date. While multiple observation periods are not recommended, they are permitted.\nIn other settings—most commonly secondary care databases, registration dates are not available, which makes defining the observation period more challenging. After initial exploration, we recommend the following approach:\n\nObservation period start date: the date of the first record for a person.\nObservation period end date: the earliest of the following:\n\nDate of death\nA censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)\nOther censoring events, such as migration out of the study region.\n\n\nThis definition results in a single observation period per person.\nIf death registry linkage is not available, it may be advisable to censor patients two years after their last recorded event. This highlights the importance of linking your data to mortality records (for example, the Office for National Statistics in the UK).\nAs part of the study network’s innovation plan, OmopConstructor was developed. It includes the function builtObservationPeriod(), which helps generate the observation_period table according to these guidelines.\nPlease get in touch if you have any questions about building your observation periods."
   },
   {
-    "objectID": "studies/study_overview.html",
-    "href": "studies/study_overview.html",
+    "objectID": "join/onboarding.html",
+    "href": "join/onboarding.html",
+    "title": "Onboarding",
+    "section": "",
+    "text": "shiny\nlink to data partners\ngithub link"
+  },
+  {
+    "objectID": "join/onboarding.html#year-1",
+    "href": "join/onboarding.html#year-1",
+    "title": "Onboarding",
+    "section": "",
+    "text": "shiny\nlink to data partners\ngithub link"
+  },
+  {
+    "objectID": "studies/study_conventions.html",
+    "href": "studies/study_conventions.html",
+    "title": "Studies",
+    "section": "",
+    "text": "Studies"
+  },
+  {
+    "objectID": "data_network/data_partners.html",
+    "href": "data_network/data_partners.html",
+    "title": "Data partners",
+    "section": "",
+    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research.\n\n\n\nGreat Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025.\n\n\n\nLeeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation.\n\n\n\nLancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading.\n\n\n\nUniversity College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions.\n\n\n\nBarts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards\n\n\n\nDataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
+  },
+  {
+    "objectID": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
+    "href": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
+    "title": "Data partners",
+    "section": "",
+    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research."
+  },
+  {
+    "objectID": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
+    "href": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "Great Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025."
+  },
+  {
+    "objectID": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
+    "href": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "Leeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation."
+  },
+  {
+    "objectID": "data_network/data_partners.html#lancashire-teaching-hospitals",
+    "href": "data_network/data_partners.html#lancashire-teaching-hospitals",
+    "title": "Data partners",
+    "section": "",
+    "text": "Lancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading."
+  },
+  {
+    "objectID": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
+    "href": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "University College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions."
+  },
+  {
+    "objectID": "data_network/data_partners.html#barts-health-nhs-trust",
+    "href": "data_network/data_partners.html#barts-health-nhs-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "Barts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards"
+  },
+  {
+    "objectID": "data_network/data_partners.html#dataloch",
+    "href": "data_network/data_partners.html#dataloch",
+    "title": "Data partners",
+    "section": "",
+    "text": "DataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
+  },
+  {
+    "objectID": "network_activities/study_overview.html",
+    "href": "network_activities/study_overview.html",
     "title": "Studies",
     "section": "",
     "text": "Title\nProtocol\nAnalytic code\nResults viewer\nAssociated publications\nFunding\n\n\n\n\n\n\n\n\n\nHDR UK\n\n\n\n\n\n\n\nHDR UK"
+  },
+  {
+    "objectID": "network_activities/publications.html",
+    "href": "network_activities/publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Publications\n\nHERON-UK (PDS under review)\nAntibiotics (writing)\nHigh cost medicines (internal review)\nOmopSketch (writing)"
+  },
+  {
+    "objectID": "network_activities/presentations.html",
+    "href": "network_activities/presentations.html",
+    "title": "Studyathons",
+    "section": "",
+    "text": "Elin antibiotics poster\nCecilia poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding\n\n\n\n\n\n\n\n\nElin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
+  },
+  {
+    "objectID": "network_activities/presentations.html#upcoming",
+    "href": "network_activities/presentations.html#upcoming",
+    "title": "Studyathons",
+    "section": "",
+    "text": "Elin antibiotics poster\nCecilia poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding"
+  },
+  {
+    "objectID": "network_activities/presentations.html#previous",
+    "href": "network_activities/presentations.html#previous",
+    "title": "Studyathons",
+    "section": "",
+    "text": "Elin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
   },
   {
     "objectID": "data_network/data_overview.html",
@@ -112,123 +217,39 @@
     "text": "Death"
   },
   {
-    "objectID": "data_network/data_partners.html",
-    "href": "data_network/data_partners.html",
-    "title": "Data partners",
-    "section": "",
-    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research.\n\n\n\nGreat Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025.\n\n\n\nLeeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation.\n\n\n\nLancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading.\n\n\n\nUniversity College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions.\n\n\n\nBarts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards\n\n\n\nDataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
-  },
-  {
-    "objectID": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
-    "href": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
-    "title": "Data partners",
-    "section": "",
-    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research."
-  },
-  {
-    "objectID": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
-    "href": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
-    "title": "Data partners",
-    "section": "",
-    "text": "Great Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025."
-  },
-  {
-    "objectID": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
-    "href": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
-    "title": "Data partners",
-    "section": "",
-    "text": "Leeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation."
-  },
-  {
-    "objectID": "data_network/data_partners.html#lancashire-teaching-hospitals",
-    "href": "data_network/data_partners.html#lancashire-teaching-hospitals",
-    "title": "Data partners",
-    "section": "",
-    "text": "Lancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading."
-  },
-  {
-    "objectID": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
-    "href": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
-    "title": "Data partners",
-    "section": "",
-    "text": "University College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions."
-  },
-  {
-    "objectID": "data_network/data_partners.html#barts-health-nhs-trust",
-    "href": "data_network/data_partners.html#barts-health-nhs-trust",
-    "title": "Data partners",
-    "section": "",
-    "text": "Barts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards"
-  },
-  {
-    "objectID": "data_network/data_partners.html#dataloch",
-    "href": "data_network/data_partners.html#dataloch",
-    "title": "Data partners",
-    "section": "",
-    "text": "DataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
-  },
-  {
-    "objectID": "network_activities/presentations.html",
-    "href": "network_activities/presentations.html",
-    "title": "Studyathons",
-    "section": "",
-    "text": "Elin antibiotics poster\nCecilia poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding\n\n\n\n\n\n\n\n\nElin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
-  },
-  {
-    "objectID": "network_activities/presentations.html#upcoming",
-    "href": "network_activities/presentations.html#upcoming",
-    "title": "Studyathons",
-    "section": "",
-    "text": "Elin antibiotics poster\nCecilia poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding"
-  },
-  {
-    "objectID": "network_activities/presentations.html#previous",
-    "href": "network_activities/presentations.html#previous",
-    "title": "Studyathons",
-    "section": "",
-    "text": "Elin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
-  },
-  {
-    "objectID": "network_activities/publications.html",
-    "href": "network_activities/publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Publications\n\nHERON-UK (PDS under review)\nAntibiotics (writing)\nHigh cost medicines (internal review)\nOmopSketch (writing)"
-  },
-  {
-    "objectID": "data_network/onboarding.html",
-    "href": "data_network/onboarding.html",
-    "title": "Onboarding",
-    "section": "",
-    "text": "shiny\nlink to data partners\ngithub link"
-  },
-  {
-    "objectID": "data_network/onboarding.html#year-1",
-    "href": "data_network/onboarding.html#year-1",
-    "title": "Onboarding",
-    "section": "",
-    "text": "shiny\nlink to data partners\ngithub link"
-  },
-  {
-    "objectID": "studies/study_conventions.html",
-    "href": "studies/study_conventions.html",
-    "title": "Studies",
-    "section": "",
-    "text": "Studies"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "HERON-UK",
+    "title": "HERON UK",
     "section": "",
     "text": "The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. The network is funded by HDR UK and more information on the project can be found here.\nOur network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. These records are analysed in situ, with only aggregated results shared by data partners to ensure privacy of patient data. Transparency and reproducibility is a core feature of the network, with all study code made freely available on GitHub."
   },
   {
     "objectID": "index.html#cumulative-data-capture-in-heron-uk",
     "href": "index.html#cumulative-data-capture-in-heron-uk",
-    "title": "HERON-UK",
+    "title": "HERON UK",
     "section": "Cumulative data capture in HERON-UK",
     "text": "Cumulative data capture in HERON-UK\n\nOverallBartsCPRD AURUMDataLochGOSHLancsLeedsUCLH"
+  },
+  {
+    "objectID": "join/how_to_join.html",
+    "href": "join/how_to_join.html",
+    "title": "Joining HERON-UK",
+    "section": "",
+    "text": "Supported by HDR UK, we have previously held a funded call for data partners. This funding supported data partners to complete the on boarding process for HERON-UK.\n\nCurrently, there is no open call for funding for data partner on-boarding.\n\n\n\n\nAlthough we do not currently have a funded call for data partners, we would welcome expressions of interest from potential data partners with data from the UK mapped to the OMOP CDM."
+  },
+  {
+    "objectID": "join/how_to_join.html#funded-calls",
+    "href": "join/how_to_join.html#funded-calls",
+    "title": "Joining HERON-UK",
+    "section": "",
+    "text": "Supported by HDR UK, we have previously held a funded call for data partners. This funding supported data partners to complete the on boarding process for HERON-UK.\n\nCurrently, there is no open call for funding for data partner on-boarding."
+  },
+  {
+    "objectID": "join/how_to_join.html#expressions-of-interest",
+    "href": "join/how_to_join.html#expressions-of-interest",
+    "title": "Joining HERON-UK",
+    "section": "",
+    "text": "Although we do not currently have a funded call for data partners, we would welcome expressions of interest from potential data partners with data from the UK mapped to the OMOP CDM."
   },
   {
     "objectID": "data_conventions/ethnicity.html",
