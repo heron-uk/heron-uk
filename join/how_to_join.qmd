@@ -1,0 +1,11 @@
+# Joining HERON-UK
+
+## Funded calls
+
+Supported by HDR UK, we have previously held a [funded call for data partners](https://www.hdruk.ac.uk/funding-opportunities/cff-for-data-partners-to-join-a-uk-real-world-evidence-network/). This funding supported data partners to complete the on boarding process for HERON-UK.
+
+> Currently, there is no open call for funding for data partner on-boarding.
+
+## Expressions of interest
+
+Although we do not currently have a funded call for data partners, we would welcome expressions of interest from potential data partners with data from the UK mapped to the OMOP CDM.

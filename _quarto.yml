@@ -27,8 +27,12 @@ website:
             href: data_network/data_partners.qmd
           - text: "Data overview"
             href: data_network/data_overview.qmd 
+      - text: "Joining the network"
+        menu:
+          - text: "How to join"
+            href: join/how_to_join.qmd 
           - text: "Onboarding process"
-            href: data_network/onboarding.qmd
+            href: join/onboarding.qmd    
       - text: "Data conventions"
         menu:
           - text: "Introduction"
@@ -41,16 +45,14 @@ website:
             href: data_conventions/ethnicity.qmd                     
       - text: "Network activities"
         menu:
+          - text: "Studies"
+            href: network_activities/study_overview.qmd
           - text: "Publications"
             href: network_activities/publications.qmd
           - text: "Presentations"
             href: network_activities/presentations.qmd
           - text: "Software"
             href: network_activities/software.qmd
-      - text: "Studies"
-        menu:
-          - text: "Study overview"
-            href: studies/study_overview.qmd  
 format:
   html:
     toc: true
