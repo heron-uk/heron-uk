@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-09-10">
 
-<title>publications – HERON-UK</title>
+<title>ethnicity – HERON-UK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="HERON-UK">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="HERON-UK">
 </head>
 
@@ -197,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#publications" id="toc-publications" class="nav-link active" data-scroll-target="#publications">Publications</a></li>
+  <li><a href="#ethnicity" id="toc-ethnicity" class="nav-link active" data-scroll-target="#ethnicity">Ethnicity</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/heron-uk/heron-uk/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -228,14 +229,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="publications" class="level1">
-<h1>Publications</h1>
-<ul>
-<li>HERON-UK (PDS under review)</li>
-<li>Antibiotics (writing)</li>
-<li>High cost medicines (internal review)</li>
-<li>OmopSketch (writing)</li>
-</ul>
+<section id="ethnicity" class="level1">
+<h1>Ethnicity</h1>
+<p>Patient ethnicity is a valuable data element for research, and we encourage you to include ethnicity records in your OMOP CDM instance if available in your source data.</p>
+<p>By convention, ethnicity is mapped using the <a href="https://athena.ohdsi.org/search-terms/terms?vocabulary=NHS+Ethnic+Category&amp;page=1&amp;pageSize=15&amp;query=">NHS Ethnic Category</a> in two places: the <em>observation</em> table and the <em>person</em> table. This approach accommodates databases that may contain multiple ethnicity records per patient.</p>
+<p><strong>Person Table</strong></p>
+<p>Only one ethnicity record per person is allowed in the person table, to be populated as: - <code>race_concept_id</code>: always set to 0, because the NHS Ethnic Category codes are non-standard. - <code>race_source_concept_id</code>: populate with the most common code per person. If two or more codes occur with equal frequency, select the most recent one. If no ethnicity data is available for a person, set <code>race_source_concept_id</code> = 0.</p>
 
 
 </section>

@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-09-10">
 
-<title>publications – HERON-UK</title>
+<title>socioeconomic_status – HERON-UK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="HERON-UK">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="HERON-UK">
 </head>
 
@@ -197,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#publications" id="toc-publications" class="nav-link active" data-scroll-target="#publications">Publications</a></li>
+  <li><a href="#index-of-multiple-deprivation-quintiles" id="toc-index-of-multiple-deprivation-quintiles" class="nav-link active" data-scroll-target="#index-of-multiple-deprivation-quintiles">Index of Multiple Deprivation quintiles</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/heron-uk/heron-uk/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -228,14 +229,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="publications" class="level1">
-<h1>Publications</h1>
+<section id="index-of-multiple-deprivation-quintiles" class="level2">
+<h2 class="anchored" data-anchor-id="index-of-multiple-deprivation-quintiles">Index of Multiple Deprivation quintiles</h2>
+<p>The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardised measure of socioeconomic status across geographic areas.</p>
+<p>The convention is to map the IMD data in the <em>observation</em> table using the concept ID <a href="https://athena.ohdsi.org/search-terms/terms/35812882">35812882</a>. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.</p>
+<p>The IMD quintile value is stored in the <code>value_as_number</code> field using a number between 1 and 5. For the units, we use the concept ID <a href="https://athena.ohdsi.org/search-terms/terms/37524288">37524288</a>, which represents quintiles.</p>
+<p>For the observation date:</p>
 <ul>
-<li>HERON-UK (PDS under review)</li>
-<li>Antibiotics (writing)</li>
-<li>High cost medicines (internal review)</li>
-<li>OmopSketch (writing)</li>
+<li>If a measurement date is available in the source data, use that date.</li>
+<li>If no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.</li>
 </ul>
+<p>In studies, if with multiple IMD records per person are present the record closest to the index date will be used.</p>
+<p>An example IMD record in the observation table would look like:</p>
+<div style="overflow-x: auto;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>…</th>
+<th><code>observation_concept_id</code></th>
+<th>…</th>
+<th><code>value_as_number</code></th>
+<th>…</th>
+<th><code>unit_concept_id</code></th>
+<th>…</th>
+<th><code>observation_source_concept_id</code></th>
+<th>…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>…</td>
+<td>0</td>
+<td>…</td>
+<td>2</td>
+<td>…</td>
+<td>37524288</td>
+<td>…</td>
+<td>35812882</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 </section>

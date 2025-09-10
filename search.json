@@ -14,137 +14,32 @@
     "text": "HERON-UK funding\nEstablishing HERON-UK was supported through funding provided by HDR UK. HDR UK funded the year\nThe"
   },
   {
+    "objectID": "data_conventions/socioeconomic_status.html",
+    "href": "data_conventions/socioeconomic_status.html",
+    "title": "HERON-UK",
+    "section": "",
+    "text": "The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardised measure of socioeconomic status across geographic areas.\nThe convention is to map the IMD data in the observation table using the concept ID 35812882. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.\nThe IMD quintile value is stored in the value_as_number field using a number between 1 and 5. For the units, we use the concept ID 37524288, which represents quintiles.\nFor the observation date:\n\nIf a measurement date is available in the source data, use that date.\nIf no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.\n\nIn studies, if with multiple IMD records per person are present the record closest to the index date will be used.\nAn example IMD record in the observation table would look like:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n…\nobservation_concept_id\n…\nvalue_as_number\n…\nunit_concept_id\n…\nobservation_source_concept_id\n…\n\n\n\n\n…\n0\n…\n2\n…\n37524288\n…\n35812882\n…"
+  },
+  {
+    "objectID": "data_conventions/socioeconomic_status.html#index-of-multiple-deprivation-quintiles",
+    "href": "data_conventions/socioeconomic_status.html#index-of-multiple-deprivation-quintiles",
+    "title": "HERON-UK",
+    "section": "",
+    "text": "The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardised measure of socioeconomic status across geographic areas.\nThe convention is to map the IMD data in the observation table using the concept ID 35812882. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.\nThe IMD quintile value is stored in the value_as_number field using a number between 1 and 5. For the units, we use the concept ID 37524288, which represents quintiles.\nFor the observation date:\n\nIf a measurement date is available in the source data, use that date.\nIf no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.\n\nIn studies, if with multiple IMD records per person are present the record closest to the index date will be used.\nAn example IMD record in the observation table would look like:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n…\nobservation_concept_id\n…\nvalue_as_number\n…\nunit_concept_id\n…\nobservation_source_concept_id\n…\n\n\n\n\n…\n0\n…\n2\n…\n37524288\n…\n35812882\n…"
+  },
+  {
+    "objectID": "data_conventions/observation_period.html",
+    "href": "data_conventions/observation_period.html",
+    "title": "Observation period",
+    "section": "",
+    "text": "Observation period\nThe observation period has a major impact on study results, particularly on incidence and prevalence calculations [CITE]. For this reason, it is essential to define the observation_period table carefully.\nIn some databases, such as primary care data or claims data, enrollment (or registration) and disenrollment dates are available. In these cases, it is most accurate to use the registration date as the observation_period_start_date and the deregistration date as the observation_period_end_date. While multiple observation periods are not recommended, they are permitted.\nIn other settings—most commonly secondary care databases, registration dates are not available, which makes defining the observation period more challenging. After initial exploration, we recommend the following approach:\n\nObservation period start date: the date of the first record for a person.\nObservation period end date: the earliest of the following:\n\nDate of death\nA censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)\nOther censoring events, such as migration out of the study region.\n\n\nThis definition results in a single observation period per person.\nIf death registry linkage is not available, it may be advisable to censor patients two years after their last recorded event. This highlights the importance of linking your data to mortality records (for example, the Office for National Statistics in the UK).\nAs part of the study network’s innovation plan, OmopConstructor was developed. It includes the function builtObservationPeriod(), which helps generate the observation_period table according to these guidelines.\nPlease get in touch if you have any questions about building your observation periods."
+  },
+  {
     "objectID": "studies/study_overview.html",
     "href": "studies/study_overview.html",
     "title": "Studies",
     "section": "",
     "text": "Title\nProtocol\nAnalytic code\nResults viewer\nAssociated publications\nFunding\n\n\n\n\n\n\n\n\n\nHDR UK\n\n\n\n\n\n\n\nHDR UK"
-  },
-  {
-    "objectID": "data_network/conventions.html",
-    "href": "data_network/conventions.html",
-    "title": "Conventions",
-    "section": "",
-    "text": "The observation period has a major impact on study results, particularly on incidence and prevalence calculations [CITE]. For this reason, it is essential to define the observation_period table carefully.\nIn some databases, such as primary care data or claims data, enrollment (or registration) and disenrollment dates are available. In these cases, it is most accurate to use the registration date as the observation_period_start_date and the deregistration date as the observation_period_end_date. While multiple observation periods are not recommended, they are permitted.\nIn other settings—most commonly secondary care databases, registration dates are not available, which makes defining the observation period more challenging. After initial exploration, we recommend the following approach:\n\nObservation period start date: the date of the first record for a person.\nObservation period end date: the earliest of the following:\n\nDate of death\nA censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)\nOther censoring events, such as migration out of the study region.\n\n\nThis definition results in a single observation period per person.\nIf death registry linkage is not available, it may be advisable to censor patients two years after their last recorded event. This highlights the importance of linking your data to mortality records (for example, the Office for National Statistics in the UK).\nAs part of the study network’s innovation plan, OmopConstructor was developed. It includes the function builtObservationPeriod(), which helps generate the observation_period table according to these guidelines.\nPlease get in touch if you have any questions about building your observation periods.\n\n\n\nThe Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardized measure of socioeconomic status across geographic areas.\nThe convention is to map the IMD data in the observation table using the concept ID 35812882. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.\nThe IMD quintile value is stored in the value_as_number field using a number between 1 and 5. For the units, we use the concept ID 37524288, which represents quintiles.\nFor the observation date:\n\nIf a measurement date is available in the source data, use that date.\nIf no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.\n\nIn studies, if with multiple IMD records per person are present the record closest to the index date will be used.\nAn example IMD record in the observation table would look like:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n…\nobservation_concept_id\n…\nvalue_as_number\n…\nunit_concept_id\n…\nobservation_source_concept_id\n…\n\n\n\n\n…\n0\n…\n2\n…\n37524288\n…\n35812882\n…\n\n\n\n\n\n\n\nPatient ethnicity is a valuable data element for research, and we encourage you to include ethnicity records in your OMOP CDM instance if available in your source data.\nBy convention, ethnicity is mapped using the NHS Ethnic Category in two places: the observation table and the person table. This approach accommodates databases that may contain multiple ethnicity records per patient.\nObservation Table\nEthnicity records should be inserted into the observation table, using the following conventions: - observation_date: use the date of the ethnicity record in the source data. If not available, use the patient’s observation_period_start_date. - observation_source_concept_id: use one of the 15 NHS Ethnic Category codes. observation_concept_id: set to 0, since these codes are non-standard concepts.\nPerson Table\nOnly one ethnicity record per person is allowed in the person table, to be populated as: - race_concept_id: always set to 0, because the NHS Ethnic Category codes are non-standard. - race_source_concept_id: populate with the most common code per person. If two or more codes occur with equal frequency, select the most recent one. If no ethnicity data is available for a person, set race_source_concept_id = 0."
-  },
-  {
-    "objectID": "data_network/conventions.html#observation-period",
-    "href": "data_network/conventions.html#observation-period",
-    "title": "Conventions",
-    "section": "",
-    "text": "The observation period has a major impact on study results, particularly on incidence and prevalence calculations [CITE]. For this reason, it is essential to define the observation_period table carefully.\nIn some databases, such as primary care data or claims data, enrollment (or registration) and disenrollment dates are available. In these cases, it is most accurate to use the registration date as the observation_period_start_date and the deregistration date as the observation_period_end_date. While multiple observation periods are not recommended, they are permitted.\nIn other settings—most commonly secondary care databases, registration dates are not available, which makes defining the observation period more challenging. After initial exploration, we recommend the following approach:\n\nObservation period start date: the date of the first record for a person.\nObservation period end date: the earliest of the following:\n\nDate of death\nA censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)\nOther censoring events, such as migration out of the study region.\n\n\nThis definition results in a single observation period per person.\nIf death registry linkage is not available, it may be advisable to censor patients two years after their last recorded event. This highlights the importance of linking your data to mortality records (for example, the Office for National Statistics in the UK).\nAs part of the study network’s innovation plan, OmopConstructor was developed. It includes the function builtObservationPeriod(), which helps generate the observation_period table according to these guidelines.\nPlease get in touch if you have any questions about building your observation periods."
-  },
-  {
-    "objectID": "data_network/conventions.html#index-of-multiple-deprivation-quintiles",
-    "href": "data_network/conventions.html#index-of-multiple-deprivation-quintiles",
-    "title": "Conventions",
-    "section": "",
-    "text": "The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardized measure of socioeconomic status across geographic areas.\nThe convention is to map the IMD data in the observation table using the concept ID 35812882. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.\nThe IMD quintile value is stored in the value_as_number field using a number between 1 and 5. For the units, we use the concept ID 37524288, which represents quintiles.\nFor the observation date:\n\nIf a measurement date is available in the source data, use that date.\nIf no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.\n\nIn studies, if with multiple IMD records per person are present the record closest to the index date will be used.\nAn example IMD record in the observation table would look like:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n…\nobservation_concept_id\n…\nvalue_as_number\n…\nunit_concept_id\n…\nobservation_source_concept_id\n…\n\n\n\n\n…\n0\n…\n2\n…\n37524288\n…\n35812882\n…"
-  },
-  {
-    "objectID": "data_network/conventions.html#ethnicity",
-    "href": "data_network/conventions.html#ethnicity",
-    "title": "Conventions",
-    "section": "",
-    "text": "Patient ethnicity is a valuable data element for research, and we encourage you to include ethnicity records in your OMOP CDM instance if available in your source data.\nBy convention, ethnicity is mapped using the NHS Ethnic Category in two places: the observation table and the person table. This approach accommodates databases that may contain multiple ethnicity records per patient.\nObservation Table\nEthnicity records should be inserted into the observation table, using the following conventions: - observation_date: use the date of the ethnicity record in the source data. If not available, use the patient’s observation_period_start_date. - observation_source_concept_id: use one of the 15 NHS Ethnic Category codes. observation_concept_id: set to 0, since these codes are non-standard concepts.\nPerson Table\nOnly one ethnicity record per person is allowed in the person table, to be populated as: - race_concept_id: always set to 0, because the NHS Ethnic Category codes are non-standard. - race_source_concept_id: populate with the most common code per person. If two or more codes occur with equal frequency, select the most recent one. If no ethnicity data is available for a person, set race_source_concept_id = 0."
-  },
-  {
-    "objectID": "data_network/onboarding.html",
-    "href": "data_network/onboarding.html",
-    "title": "Onboarding",
-    "section": "",
-    "text": "shiny\nlink to data partners\ngithub link"
-  },
-  {
-    "objectID": "data_network/onboarding.html#year-1",
-    "href": "data_network/onboarding.html#year-1",
-    "title": "Onboarding",
-    "section": "",
-    "text": "shiny\nlink to data partners\ngithub link"
-  },
-  {
-    "objectID": "network_activities/publications.html",
-    "href": "network_activities/publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Publications\n\nHERON-UK (PDS under review)\nAntibiotics (writing)\nHigh cost medicines (internal review)\nOmopSketch (writing)"
-  },
-  {
-    "objectID": "network_activities/presentations.html",
-    "href": "network_activities/presentations.html",
-    "title": "Studyathons",
-    "section": "",
-    "text": "Elin antibiotics poster\nCecilia poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding\n\n\n\n\n\n\n\n\nElin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
-  },
-  {
-    "objectID": "network_activities/presentations.html#upcoming",
-    "href": "network_activities/presentations.html#upcoming",
-    "title": "Studyathons",
-    "section": "",
-    "text": "Elin antibiotics poster\nCecilia poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding"
-  },
-  {
-    "objectID": "network_activities/presentations.html#previous",
-    "href": "network_activities/presentations.html#previous",
-    "title": "Studyathons",
-    "section": "",
-    "text": "Elin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
-  },
-  {
-    "objectID": "data_network/data_partners.html",
-    "href": "data_network/data_partners.html",
-    "title": "Data partners",
-    "section": "",
-    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research.\n\n\n\nGreat Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025.\n\n\n\nLeeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation.\n\n\n\nLancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading.\n\n\n\nUniversity College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions.\n\n\n\nBarts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards\n\n\n\nDataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
-  },
-  {
-    "objectID": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
-    "href": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
-    "title": "Data partners",
-    "section": "",
-    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research."
-  },
-  {
-    "objectID": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
-    "href": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
-    "title": "Data partners",
-    "section": "",
-    "text": "Great Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025."
-  },
-  {
-    "objectID": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
-    "href": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
-    "title": "Data partners",
-    "section": "",
-    "text": "Leeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation."
-  },
-  {
-    "objectID": "data_network/data_partners.html#lancashire-teaching-hospitals",
-    "href": "data_network/data_partners.html#lancashire-teaching-hospitals",
-    "title": "Data partners",
-    "section": "",
-    "text": "Lancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading."
-  },
-  {
-    "objectID": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
-    "href": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
-    "title": "Data partners",
-    "section": "",
-    "text": "University College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions."
-  },
-  {
-    "objectID": "data_network/data_partners.html#barts-health-nhs-trust",
-    "href": "data_network/data_partners.html#barts-health-nhs-trust",
-    "title": "Data partners",
-    "section": "",
-    "text": "Barts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards"
-  },
-  {
-    "objectID": "data_network/data_partners.html#dataloch",
-    "href": "data_network/data_partners.html#dataloch",
-    "title": "Data partners",
-    "section": "",
-    "text": "DataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
   },
   {
     "objectID": "data_network/data_overview.html",
@@ -217,6 +112,104 @@
     "text": "Death"
   },
   {
+    "objectID": "data_network/data_partners.html",
+    "href": "data_network/data_partners.html",
+    "title": "Data partners",
+    "section": "",
+    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research.\n\n\n\nGreat Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025.\n\n\n\nLeeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation.\n\n\n\nLancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading.\n\n\n\nUniversity College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions.\n\n\n\nBarts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards\n\n\n\nDataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
+  },
+  {
+    "objectID": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
+    "href": "data_network/data_partners.html#clinical-practice-research-datalink-aurum",
+    "title": "Data partners",
+    "section": "",
+    "text": "Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research."
+  },
+  {
+    "objectID": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
+    "href": "data_network/data_partners.html#great-ormond-street-hospital-nhs-foundation-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "Great Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025."
+  },
+  {
+    "objectID": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
+    "href": "data_network/data_partners.html#leeds-teaching-hospitals-nhs-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "Leeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation."
+  },
+  {
+    "objectID": "data_network/data_partners.html#lancashire-teaching-hospitals",
+    "href": "data_network/data_partners.html#lancashire-teaching-hospitals",
+    "title": "Data partners",
+    "section": "",
+    "text": "Lancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading."
+  },
+  {
+    "objectID": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
+    "href": "data_network/data_partners.html#university-college-london-hospitals-nhs-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "University College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions."
+  },
+  {
+    "objectID": "data_network/data_partners.html#barts-health-nhs-trust",
+    "href": "data_network/data_partners.html#barts-health-nhs-trust",
+    "title": "Data partners",
+    "section": "",
+    "text": "Barts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards"
+  },
+  {
+    "objectID": "data_network/data_partners.html#dataloch",
+    "href": "data_network/data_partners.html#dataloch",
+    "title": "Data partners",
+    "section": "",
+    "text": "DataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
+  },
+  {
+    "objectID": "network_activities/presentations.html",
+    "href": "network_activities/presentations.html",
+    "title": "Studyathons",
+    "section": "",
+    "text": "Elin antibiotics poster\nCecilia poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding\n\n\n\n\n\n\n\n\nElin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
+  },
+  {
+    "objectID": "network_activities/presentations.html#upcoming",
+    "href": "network_activities/presentations.html#upcoming",
+    "title": "Studyathons",
+    "section": "",
+    "text": "Elin antibiotics poster\nCecilia poster\nMarti OmopConstructor oral presentation and software demo\n\n\n\n\n\nEds high cost medicines oral presentation\n\n\n\n\n\nEds high cost medicines oral presentation\nCecilia HERON-UK onboarding"
+  },
+  {
+    "objectID": "network_activities/presentations.html#previous",
+    "href": "network_activities/presentations.html#previous",
+    "title": "Studyathons",
+    "section": "",
+    "text": "Elin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
+  },
+  {
+    "objectID": "network_activities/publications.html",
+    "href": "network_activities/publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Publications\n\nHERON-UK (PDS under review)\nAntibiotics (writing)\nHigh cost medicines (internal review)\nOmopSketch (writing)"
+  },
+  {
+    "objectID": "data_network/onboarding.html",
+    "href": "data_network/onboarding.html",
+    "title": "Onboarding",
+    "section": "",
+    "text": "shiny\nlink to data partners\ngithub link"
+  },
+  {
+    "objectID": "data_network/onboarding.html#year-1",
+    "href": "data_network/onboarding.html#year-1",
+    "title": "Onboarding",
+    "section": "",
+    "text": "shiny\nlink to data partners\ngithub link"
+  },
+  {
     "objectID": "studies/study_conventions.html",
     "href": "studies/study_conventions.html",
     "title": "Studies",
@@ -236,5 +229,19 @@
     "title": "HERON-UK",
     "section": "Cumulative data capture in HERON-UK",
     "text": "Cumulative data capture in HERON-UK"
+  },
+  {
+    "objectID": "data_conventions/ethnicity.html",
+    "href": "data_conventions/ethnicity.html",
+    "title": "Ethnicity",
+    "section": "",
+    "text": "Ethnicity\nPatient ethnicity is a valuable data element for research, and we encourage you to include ethnicity records in your OMOP CDM instance if available in your source data.\nBy convention, ethnicity is mapped using the NHS Ethnic Category in two places: the observation table and the person table. This approach accommodates databases that may contain multiple ethnicity records per patient.\nPerson Table\nOnly one ethnicity record per person is allowed in the person table, to be populated as: - race_concept_id: always set to 0, because the NHS Ethnic Category codes are non-standard. - race_source_concept_id: populate with the most common code per person. If two or more codes occur with equal frequency, select the most recent one. If no ethnicity data is available for a person, set race_source_concept_id = 0."
+  },
+  {
+    "objectID": "data_conventions/introduction.html",
+    "href": "data_conventions/introduction.html",
+    "title": "Conventions",
+    "section": "",
+    "text": "Conventions\nIn general, when mapping to the OMOP CDM we recommend following the OHDSI THEMIS Conventions. Where necessary here we document additional conventions we use in the HERON UK to ensure that we map to the OMOP CDM as consistently as possible.\n\n\nFeedback\nWe greatly value your feedback. These conventions have been developed through the exploration of currently onboarded datasets, as well as the review of published literature and existing ETL processes. However, they are not rigid rules—adjustments may be necessary depending on the characteristics of your data. If you believe that these standards do not align well with your dataset or if you see other areas needing a convention, please do get in touch."
   }
 ]

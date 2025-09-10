@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-09-10">
 
-<title>publications – HERON-UK</title>
+<title>observation_period – HERON-UK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="HERON-UK">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="HERON-UK">
 </head>
 
@@ -197,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#publications" id="toc-publications" class="nav-link active" data-scroll-target="#publications">Publications</a></li>
+  <li><a href="#observation-period" id="toc-observation-period" class="nav-link active" data-scroll-target="#observation-period">Observation period</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/heron-uk/heron-uk/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -228,14 +229,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="publications" class="level1">
-<h1>Publications</h1>
+<section id="observation-period" class="level1">
+<h1>Observation period</h1>
+<p>The observation period has a major impact on study results, particularly on incidence and prevalence calculations [CITE]. For this reason, it is essential to define the observation_period table carefully.</p>
+<p>In some databases, such as primary care data or claims data, enrollment (or registration) and disenrollment dates are available. In these cases, it is most accurate to use the registration date as the <em>observation_period_start_date</em> and the deregistration date as the <em>observation_period_end_date</em>. While multiple observation periods are not recommended, they are permitted.</p>
+<p>In other settings—most commonly secondary care databases, registration dates are not available, which makes defining the observation period more challenging. After initial exploration, we recommend the following approach:</p>
 <ul>
-<li>HERON-UK (PDS under review)</li>
-<li>Antibiotics (writing)</li>
-<li>High cost medicines (internal review)</li>
-<li>OmopSketch (writing)</li>
+<li>Observation period start date: the date of the first record for a person.</li>
+<li>Observation period end date: the earliest of the following:
+<ul>
+<li>Date of death</li>
+<li>A censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)</li>
+<li>Other censoring events, such as migration out of the study region.</li>
+</ul></li>
 </ul>
+<p>This definition results in a single observation period per person.</p>
+<p>If death registry linkage is not available, it may be advisable to censor patients two years after their last recorded event. This highlights the importance of linking your data to mortality records (for example, the Office for National Statistics in the UK).</p>
+<p>As part of the study network’s innovation plan, <a href="">OmopConstructor</a> was developed. It includes the function <a href="">builtObservationPeriod()</a>, which helps generate the <em>observation_period</em> table according to these guidelines.</p>
+<p>Please get in touch if you have any questions about building your observation periods.</p>
 
 
 </section>
