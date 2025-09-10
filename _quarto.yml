@@ -29,8 +29,16 @@ website:
             href: data_network/data_overview.qmd 
           - text: "Onboarding process"
             href: data_network/onboarding.qmd
-          - text: "Data conventions"
-            href: data_network/conventions.qmd
+      - text: "Data conventions"
+        menu:
+          - text: "Introduction"
+            href: data_conventions/introduction.qmd
+          - text: "Observation period"
+            href: data_conventions/observation_period.qmd
+          - text: "Socioeconoic status"
+            href: data_conventions/socioeconomic_status.qmd
+          - text: "Ethnicity"
+            href: data_conventions/ethnicity.qmd                     
       - text: "Network activities"
         menu:
           - text: "Publications"
