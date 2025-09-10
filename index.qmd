@@ -13,6 +13,10 @@ Our network of 7 data partners contains more than 20 billion clinical records fr
 
 ## Cumulative data capture in HERON-UK
 
+::: {.panel-tabset}
+
+# Overall
+
 ```{r}
 # this is to nicely format large numbers
 # should choose appropriate number of decimal places etc
@@ -63,7 +67,8 @@ renameCDM <- function(workingData){
 ```
 
 ```{r}
-plot_data<-record_counts |> 
+plotCumulativeRecords <- function(working_record_counts){
+plot_data <- working_record_counts |> 
   group_by(date, omop_table) |> 
   summarise(total= sum(count, 
                        na.rm = TRUE)) |> 
@@ -74,7 +79,6 @@ plot_data<-record_counts |>
   select(omop_table, date, running_total)
 plot_data<-bind_rows(plot_data,
           record_counts |> 
-            renameCDM() |> 
             group_by(date) |> 
             summarise(total= sum(count, 
                                  na.rm = TRUE)) |> 
@@ -84,16 +88,22 @@ plot_data<-bind_rows(plot_data,
             ungroup() |> 
             select(omop_table, date, running_total))
 
-plot_data |> 
+plot_data<- plot_data |> 
   tidyr::pivot_wider(names_from = omop_table,
-                     values_from = running_total) |> 
-  e_charts(x = date)|> 
+                     values_from = running_total) 
+
+p <- plot_data |> 
+  e_charts(x = date) |> 
   e_area(condition_occurrence, stack = "grp")    |> 
   e_area(drug_exposure, stack = "grp")     |> 
   e_area(measurement, stack = "grp")     |> 
   e_area(observation, stack = "grp")     |> 
-  e_area(procedure_occurrence, stack = "grp")       |> 
-  e_area(device_exposure, stack = "grp")       |> 
+  e_area(procedure_occurrence, stack = "grp") 
+if("device_exposure" %in% colnames(plot_data)){
+  p <- p |> 
+    e_area(device_exposure, stack = "grp")  
+}
+p |> 
   e_area(visit_occurrence, stack = "grp")       |> 
   e_area(death, stack = "grp")   |>
   e_y_axis(
@@ -101,7 +111,61 @@ plot_data |>
       formatter = htmlwidgets::JS(y_formatting_js)
     )
   ) 
+}
+
+plotCumulativeRecords(record_counts)
 ```
+
+# Barts
+```{r}
+plotCumulativeRecords(record_counts|> 
+            renameCDM() |> 
+            filter(stringr::str_detect(cdm_name, "Barts")))
+```
+
+# CPRD AURUM
+```{r}
+plotCumulativeRecords(record_counts|> 
+            renameCDM() |> 
+            filter(stringr::str_detect(cdm_name, "CPRD_AURUM")))
+```
+
+# DataLoch
+```{r}
+plotCumulativeRecords(record_counts |> 
+            renameCDM() |> 
+            filter(stringr::str_detect(cdm_name, "DataLoch")))
+```
+
+# GOSH
+```{r}
+plotCumulativeRecords(record_counts|> 
+            renameCDM() |> 
+            filter(stringr::str_detect(cdm_name, "GOSH")))
+```
+
+# Lancs
+```{r}
+plotCumulativeRecords(record_counts|> 
+            renameCDM() |> 
+            filter(stringr::str_detect(cdm_name, "Lancs")))
+```
+
+# Leeds
+```{r}
+plotCumulativeRecords(record_counts|> 
+            renameCDM() |> 
+            filter(stringr::str_detect(cdm_name, "Leeds")))
+```
+
+# UCLH
+```{r}
+plotCumulativeRecords(record_counts|> 
+            renameCDM() |> 
+            filter(stringr::str_detect(cdm_name, "UCLH")))
+```
+
+:::
 
 ::: {style="display: flex; gap: 20px; align-items: flex-start;"}
 <img src="images/clipboard-3959621261.png" style="max-width: 20%;"/> <img src="images/clipboard-3752148240.png" style="max-width: 20%;"/> <img src="images/clipboard-3013093500.png" style="max-width: 20%;"/> <img src="images/clipboard-2986220169.png" style="max-width: 20%;"/>
