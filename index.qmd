@@ -1,5 +1,5 @@
 ---
-title: "HERON UK"
+title: "HERON-UK"
 format: html
 execute: 
   echo: false
@@ -7,11 +7,13 @@ execute:
   message: false
 ---
 
-The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. The network is funded by HDR UK and more information on the project can be found [here](https://ukhealthdata.org/data-standards/common-data-models/rwe-network/).
+::: {style="display: flex; width:100%; gap: 20px; align-items: center; justify-content: center;"}
+<img src="images/clipboard-3959621261.png" style="max-width: 12.5%;"/> <img src="images/clipboard-3752148240.png" style="max-width: 12.5%;"/> ![](images/clipboard-3013093500.png){style="max-width: 7.5%;"}
+:::
 
-Our network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. These records are analysed in situ, with only aggregated results shared by data partners to ensure privacy of patient data. Transparency and reproducibility is a core feature of the network, with all study code made freely available on [GitHub](https://github.com/heron-uk).
+The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. Our network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. Transparency and reproducibility is a core feature of the network, with all study code made freely available on [GitHub](https://github.com/heron-uk), while data privacy is preserved with patient records analysed in situ with only aggregated results shared by data partners to ensure privacy of patient data. The network has been established through funding from [HDR UK](https://ukhealthdata.org/data-standards/common-data-models/rwe-network/).
 
-## Cumulative data capture in HERON-UK
+### Cumulative data capture in HERON-UK
 
 ::: panel-tabset
 # Overall
@@ -170,8 +172,4 @@ plotCumulativeRecords(record_counts|>
             renameCDM() |> 
             filter(stringr::str_detect(cdm_name, "UCLH")))
 ```
-:::
-
-::: {style="display: flex; gap: 20px; align-items: flex-start;"}
-<img src="images/clipboard-3959621261.png" style="max-width: 20%;"/> <img src="images/clipboard-3752148240.png" style="max-width: 20%;"/> <img src="images/clipboard-3013093500.png" style="max-width: 20%;"/> <img src="images/clipboard-2986220169.png" style="max-width: 20%;"/>
 :::
