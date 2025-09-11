@@ -1,15 +1,11 @@
 project:
   type: website
 
-date: today
-
 website:
   title: "HERON-UK"
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
   repo-url: https://github.com/heron-uk/heron-uk
   repo-actions: [issue]
-  page-footer:
-    center: "Rendered on {{< meta date >}}"
   navbar:
     search: false
     left: 
@@ -55,6 +51,5 @@ website:
             href: network_activities/software.qmd
 format:
   html:
-    toc: true
     theme: flatly
   
