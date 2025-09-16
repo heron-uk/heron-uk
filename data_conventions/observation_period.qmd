@@ -1,22 +1,32 @@
+# Creating observation periods
 
-# Observation period
+In the OMOP CDM, the observation period table defines
 
-The observation period has a major impact on study results, particularly on incidence and prevalence calculations [CITE]. For this reason, it is essential to define the observation_period table carefully.
+> spans of time during which two conditions are expected to hold: (i) Clinical Events that happened to the Person are recorded in the Event tables, and (ii) absence of records indicate such Events did not occur during this span of time. <https://ohdsi.github.io/CommonDataModel/cdm54.html#observation_period>
 
-In some databases, such as primary care data or claims data, enrollment (or registration) and disenrollment dates are available. In these cases, it is most accurate to use the registration date as the *observation_period_start_date* and the deregistration date as the *observation_period_end_date*. While multiple observation periods are not recommended, they are permitted.
+There are many nuances to defining observations periods, and different definitions can have a major impact on studies that rely on observation time (such as incidence and prevalence studies that require identifying a suitable denominator population, survival studies which require follow-up into the future, and so on).
 
-In other settings—most commonly secondary care databases, registration dates are not available, which makes defining the observation period more challenging. After initial exploration, we recommend the following approach:
+In HERON-UK we have defined two conventions for constructing observation periods, depending on whether source data has a start and end date for individuals or not. In addition to these conventions, which are summarised below, we have also developed the [OmopConstructor R package](https://heron-uk.github.io/heron-uk/network_activities/software.html#omopconstructor) which can be used to manipulate observation periods on a study-by-study basis.
 
-- Observation period start date: the date of the first record for a person.
-- Observation period end date: the earliest of the following:
-  - Date of death
-  - A censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)
-  - Other censoring events, such as migration out of the study region.
+## Source data that contains a start and end date for individuals
 
-This definition results in a single observation period per person.
+In some data sources, such as primary care data, enrollment/ registration and exit dates are available for individuals. In this case, we use these dates to set *observation_period_start_date* and *observation_period_end_date*, respectively. In the case where individuals have multiple entries into and exits out of the data, we keep only the first entry per person to define the observation period. (Note, in HERON-UK we do not have any insurance claims data where such a rule may be considered too stringent).
 
-If death registry linkage is not available, it may be advisable to censor patients two years after their last recorded event. This highlights the importance of linking your data to mortality records (for example, the Office for National Statistics in the UK).
+## Source data that does not include a start and end date for individuals
 
-As part of the study network’s innovation plan, [OmopConstructor]() was developed. It includes the function [builtObservationPeriod()](), which helps generate the *observation_period* table according to these guidelines.
+In many data sources, there is no defined start and exit date for individuals. In such cases, we define observation periods using the following approach:
 
-Please get in touch if you have any questions about building your observation periods.
+-   Observation period start date: the date of the first record for a person.
+-   Observation period end date: the earliest of the following:
+    -   Date of death
+    -   A censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)
+    -   Other censoring events, such as migration out of the study region.
+    -   Date of data extraction
+
+This definition results in a single observation period per person. (Note, all data partners in HERON-UK have mortality data - in the absence of death data, additional censoring rules would likely be needed).
+
+This convention is designed to err on the side of including as much possible time for individuals. When running studies, however, the OmopConstructor package can be used to apply study-specific persistance and surveillance windows. See our [OHDSI Europe 2025 poster](https://drive.google.com/file/d/1F82vUcfqonUMtBraiOQuQpvZCnf95U6k/view) for more information on approaches to and implications of methods for defining observation periods, and the [OmopConstructor R package](https://ohdsi.github.io/OmopConstructor/) for implementing them on a study-by-study basis.
+
+## Defining observation periods when using linked data
+
+Where there are multiple source data that are being linked, we define observation periods as the time in which individuals can be observed in **all** datasets. For example, if data source A went from from 2014 to 2023 and data source B went from 2018 to 2025, then an OMOP CDM with linked data from A and B would be expected to have observation periods from 2018 to 2023.
