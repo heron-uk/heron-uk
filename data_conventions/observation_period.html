@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1d547202ef5b81858b5cd4b4ce92205d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-33486d6390cc5f9ef26896ba28f0e32f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,6 +82,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">HERON-UK</span>
     </a>
@@ -203,11 +206,21 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="observation-period" class="level1">
-<h1>Observation period</h1>
-<p>The observation period has a major impact on study results, particularly on incidence and prevalence calculations [CITE]. For this reason, it is essential to define the observation_period table carefully.</p>
-<p>In some databases, such as primary care data or claims data, enrollment (or registration) and disenrollment dates are available. In these cases, it is most accurate to use the registration date as the <em>observation_period_start_date</em> and the deregistration date as the <em>observation_period_end_date</em>. While multiple observation periods are not recommended, they are permitted.</p>
-<p>In other settings—most commonly secondary care databases, registration dates are not available, which makes defining the observation period more challenging. After initial exploration, we recommend the following approach:</p>
+<section id="creating-observation-periods" class="level1">
+<h1>Creating observation periods</h1>
+<p>In the OMOP CDM, the observation period table defines</p>
+<blockquote class="blockquote">
+<p>spans of time during which two conditions are expected to hold: (i) Clinical Events that happened to the Person are recorded in the Event tables, and (ii) absence of records indicate such Events did not occur during this span of time. <a href="https://ohdsi.github.io/CommonDataModel/cdm54.html#observation_period" class="uri">https://ohdsi.github.io/CommonDataModel/cdm54.html#observation_period</a></p>
+</blockquote>
+<p>There are many nuances to defining observations periods, and different definitions can have a major impact on studies that rely on observation time (such as incidence and prevalence studies that require identifying a suitable denominator population, survival studies which require follow-up into the future, and so on).</p>
+<p>In HERON-UK we have defined two conventions for constructing observation periods, depending on whether source data has a start and end date for individuals or not. In addition to these conventions, which are summarised below, we have also developed the <a href="https://heron-uk.github.io/heron-uk/network_activities/software.html#omopconstructor">OmopConstructor R package</a> which can be used to manipulate observation periods on a study-by-study basis.</p>
+<section id="source-data-that-contains-a-start-and-end-date-for-individuals" class="level2">
+<h2 class="anchored" data-anchor-id="source-data-that-contains-a-start-and-end-date-for-individuals">Source data that contains a start and end date for individuals</h2>
+<p>In some data sources, such as primary care data, enrollment/ registration and exit dates are available for individuals. In this case, we use these dates to set <em>observation_period_start_date</em> and <em>observation_period_end_date</em>, respectively. In the case where individuals have multiple entries into and exits out of the data, we keep only the first entry per person to define the observation period. (Note, in HERON-UK we do not have any insurance claims data where such a rule may be considered too stringent).</p>
+</section>
+<section id="source-data-that-does-not-include-a-start-and-end-date-for-individuals" class="level2">
+<h2 class="anchored" data-anchor-id="source-data-that-does-not-include-a-start-and-end-date-for-individuals">Source data that does not include a start and end date for individuals</h2>
+<p>In many data sources, there is no defined start and exit date for individuals. In such cases, we define observation periods using the following approach:</p>
 <ul>
 <li>Observation period start date: the date of the first record for a person.</li>
 <li>Observation period end date: the earliest of the following:
@@ -215,14 +228,18 @@ ul.task-list li input[type="checkbox"] {
 <li>Date of death</li>
 <li>A censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)</li>
 <li>Other censoring events, such as migration out of the study region.</li>
+<li>Date of data extraction</li>
 </ul></li>
 </ul>
-<p>This definition results in a single observation period per person.</p>
-<p>If death registry linkage is not available, it may be advisable to censor patients two years after their last recorded event. This highlights the importance of linking your data to mortality records (for example, the Office for National Statistics in the UK).</p>
-<p>As part of the study network’s innovation plan, <a href="">OmopConstructor</a> was developed. It includes the function <a href="">builtObservationPeriod()</a>, which helps generate the <em>observation_period</em> table according to these guidelines.</p>
-<p>Please get in touch if you have any questions about building your observation periods.</p>
+<p>This definition results in a single observation period per person. (Note, all data partners in HERON-UK have mortality data - in the absence of death data, additional censoring rules would likely be needed).</p>
+<p>This convention is designed to err on the side of including as much possible time for individuals. When running studies, however, the OmopConstructor package can be used to apply study-specific persistance and surveillance windows. See our <a href="https://drive.google.com/file/d/1F82vUcfqonUMtBraiOQuQpvZCnf95U6k/view">OHDSI Europe 2025 poster</a> for more information on approaches to and implications of methods for defining observation periods, and the <a href="https://ohdsi.github.io/OmopConstructor/">OmopConstructor R package</a> for implementing them on a study-by-study basis.</p>
+</section>
+<section id="defining-observation-periods-when-using-linked-data" class="level2">
+<h2 class="anchored" data-anchor-id="defining-observation-periods-when-using-linked-data">Defining observation periods when using linked data</h2>
+<p>Where there are multiple source data that are being linked, we define observation periods as the time in which individuals can be observed in <strong>all</strong> datasets. For example, if data source A went from from 2014 to 2023 and data source B went from 2018 to 2025, then an OMOP CDM with linked data from A and B would be expected to have observation periods from 2018 to 2023.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -277,13 +294,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
