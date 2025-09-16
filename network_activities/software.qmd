@@ -3,6 +3,10 @@
 
 ## OmopConstructor
 
+As part of the study network’s innovation plan, OmopConstructor was developed. It includes the function builtObservationPeriod(), which helps generate the observation_period table according to these guidelines.
+
+Please get in touch if you have any questions about building your observation periods.
+
 ## OmopSketch
 
 

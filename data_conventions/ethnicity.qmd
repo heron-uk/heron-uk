@@ -1,14 +1,18 @@
-
 # Ethnicity
 
-Patient ethnicity is a valuable data element for research, and we encourage you to include ethnicity records in your OMOP CDM instance if available in your source data.
+In HERON-UK ethnicity is standardised to the [NHS Ethnic Category](https://athena.ohdsi.org/search-terms/terms?vocabulary=NHS+Ethnic+Category&page=1&pageSize=15&query=). For considerations around mapping ethnictiy for research we suggest starting with [this paper](https://www.nature.com/articles/s41597-024-02958-1).
 
-By convention, ethnicity is mapped using the [NHS Ethnic Category](https://athena.ohdsi.org/search-terms/terms?vocabulary=NHS+Ethnic+Category&page=1&pageSize=15&query=) in two places: the *observation* table and the *person* table. This approach accommodates databases that may contain multiple ethnicity records per patient.
+## Source data has at most one ethnicity recorded per person
 
-**Person Table**
+Map ethnicity to the person table using the following
 
-Only one ethnicity record per person is allowed in the person table, to be populated as:
-- `race_concept_id`: always set to 0, because the NHS Ethnic Category codes are non-standard.
-- `race_source_concept_id`: populate with the most common code per person. If two or more codes occur with equal frequency, select the most recent one. If no ethnicity data is available for a person, set `race_source_concept_id` = 0.
+-   `race_source_concept_id`: use NHS Ethnic Category codes using the [NHS Ethnic Category](https://athena.ohdsi.org/search-terms/terms?vocabulary=NHS+Ethnic+Category&page=1&pageSize=15&query=).
+-   `race_concept_id`: map from NHS Ethnic Category codes to standard Race codes (note, these mappings were introduced in the August 2025 vocabulary release.) If `race_source_concept_id` is missing for an individual, set `race_concept_id` as missing.
 
+## Source data has multiple ethnicity records per person
 
+Map ethnicity to both the person and observation tables.
+
+For the person table, use NHS Ethnic Category codes as above. The person table can only contain one record per person so to choose a single ethnicity per person, using the record considered to be highest-quality given your source data (e.g. choosing most common code per person and if two or more codes occur with equal frequency, select the most recent one.)
+
+For the observation table, include each ethnicity record for individuals using NHS Ethnic Category codes for source values, mapping these to their standard concepts. This accommodates datasets with multiple ethnicity records per patient and allows for customisation at the analysis stage (although for most network studies we would expect to use ethnicity as recorded in the person table).
