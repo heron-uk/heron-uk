@@ -1,82 +1,5 @@
 [
   {
-    "objectID": "about/about_heron_uk.html",
-    "href": "about/about_heron_uk.html",
-    "title": "HERON-UK",
-    "section": "",
-    "text": "HERON-UK\nThe HEalth data Research UK OMOP Network (HERON-UK)"
-  },
-  {
-    "objectID": "about/funding.html",
-    "href": "about/funding.html",
-    "title": "HERON-UK funding",
-    "section": "",
-    "text": "HERON-UK funding\nEstablishing HERON-UK was supported through funding provided by HDR UK. HDR UK funded the year\nThe"
-  },
-  {
-    "objectID": "data_conventions/socioeconomic_status.html",
-    "href": "data_conventions/socioeconomic_status.html",
-    "title": "HERON-UK",
-    "section": "",
-    "text": "The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardised measure of socioeconomic status across geographic areas.\nThe convention is to map the IMD data in the observation table using the concept ID 35812882. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.\nThe IMD quintile value is stored in the value_as_number field using a number between 1 and 5. For the units, we use the concept ID 37524288, which represents quintiles.\nFor the observation date:\n\nIf a measurement date is available in the source data, use that date.\nIf no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.\n\nIn studies, if with multiple IMD records per person are present the record closest to the index date will be used.\nAn example IMD record in the observation table would look like:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n…\nobservation_concept_id\n…\nvalue_as_number\n…\nunit_concept_id\n…\nobservation_source_concept_id\n…\n\n\n\n\n…\n0\n…\n2\n…\n37524288\n…\n35812882\n…"
-  },
-  {
-    "objectID": "data_conventions/socioeconomic_status.html#index-of-multiple-deprivation-quintiles",
-    "href": "data_conventions/socioeconomic_status.html#index-of-multiple-deprivation-quintiles",
-    "title": "HERON-UK",
-    "section": "",
-    "text": "The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardised measure of socioeconomic status across geographic areas.\nThe convention is to map the IMD data in the observation table using the concept ID 35812882. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.\nThe IMD quintile value is stored in the value_as_number field using a number between 1 and 5. For the units, we use the concept ID 37524288, which represents quintiles.\nFor the observation date:\n\nIf a measurement date is available in the source data, use that date.\nIf no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.\n\nIn studies, if with multiple IMD records per person are present the record closest to the index date will be used.\nAn example IMD record in the observation table would look like:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n…\nobservation_concept_id\n…\nvalue_as_number\n…\nunit_concept_id\n…\nobservation_source_concept_id\n…\n\n\n\n\n…\n0\n…\n2\n…\n37524288\n…\n35812882\n…"
-  },
-  {
-    "objectID": "data_conventions/observation_period.html",
-    "href": "data_conventions/observation_period.html",
-    "title": "Creating observation periods",
-    "section": "",
-    "text": "In the OMOP CDM, the observation period table defines\n\nspans of time during which two conditions are expected to hold: (i) Clinical Events that happened to the Person are recorded in the Event tables, and (ii) absence of records indicate such Events did not occur during this span of time. https://ohdsi.github.io/CommonDataModel/cdm54.html#observation_period\n\nThere are many nuances to defining observations periods, and different definitions can have a major impact on studies that rely on observation time (such as incidence and prevalence studies that require identifying a suitable denominator population, survival studies which require follow-up into the future, and so on).\nIn HERON-UK we have defined two conventions for constructing observation periods, depending on whether source data has a start and end date for individuals or not. In addition to these conventions, which are summarised below, we have also developed the OmopConstructor R package which can be used to manipulate observation periods on a study-by-study basis.\n\n\nIn some data sources, such as primary care data, enrollment/ registration and exit dates are available for individuals. In this case, we use these dates to set observation_period_start_date and observation_period_end_date, respectively. In the case where individuals have multiple entries into and exits out of the data, we keep only the first entry per person to define the observation period. (Note, in HERON-UK we do not have any insurance claims data where such a rule may be considered too stringent).\n\n\n\nIn many data sources, there is no defined start and exit date for individuals. In such cases, we define observation periods using the following approach:\n\nObservation period start date: the date of the first record for a person.\nObservation period end date: the earliest of the following:\n\nDate of death\nA censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)\nOther censoring events, such as migration out of the study region.\nDate of data extraction\n\n\nThis definition results in a single observation period per person. (Note, all data partners in HERON-UK have mortality data - in the absence of death data, additional censoring rules would likely be needed).\nThis convention is designed to err on the side of including as much possible time for individuals. When running studies, however, the OmopConstructor package can be used to apply study-specific persistance and surveillance windows. See our OHDSI Europe 2025 poster for more information on approaches to and implications of methods for defining observation periods, and the OmopConstructor R package for implementing them on a study-by-study basis.\n\n\n\nWhere there are multiple source data that are being linked, we define observation periods as the time in which individuals can be observed in all datasets. For example, if data source A went from from 2014 to 2023 and data source B went from 2018 to 2025, then an OMOP CDM with linked data from A and B would be expected to have observation periods from 2018 to 2023."
-  },
-  {
-    "objectID": "data_conventions/observation_period.html#source-data-that-contains-a-start-and-end-date-for-individuals",
-    "href": "data_conventions/observation_period.html#source-data-that-contains-a-start-and-end-date-for-individuals",
-    "title": "Creating observation periods",
-    "section": "",
-    "text": "In some data sources, such as primary care data, enrollment/ registration and exit dates are available for individuals. In this case, we use these dates to set observation_period_start_date and observation_period_end_date, respectively. In the case where individuals have multiple entries into and exits out of the data, we keep only the first entry per person to define the observation period. (Note, in HERON-UK we do not have any insurance claims data where such a rule may be considered too stringent)."
-  },
-  {
-    "objectID": "data_conventions/observation_period.html#source-data-that-does-not-include-a-start-and-end-date-for-individuals",
-    "href": "data_conventions/observation_period.html#source-data-that-does-not-include-a-start-and-end-date-for-individuals",
-    "title": "Creating observation periods",
-    "section": "",
-    "text": "In many data sources, there is no defined start and exit date for individuals. In such cases, we define observation periods using the following approach:\n\nObservation period start date: the date of the first record for a person.\nObservation period end date: the earliest of the following:\n\nDate of death\nA censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)\nOther censoring events, such as migration out of the study region.\nDate of data extraction\n\n\nThis definition results in a single observation period per person. (Note, all data partners in HERON-UK have mortality data - in the absence of death data, additional censoring rules would likely be needed).\nThis convention is designed to err on the side of including as much possible time for individuals. When running studies, however, the OmopConstructor package can be used to apply study-specific persistance and surveillance windows. See our OHDSI Europe 2025 poster for more information on approaches to and implications of methods for defining observation periods, and the OmopConstructor R package for implementing them on a study-by-study basis."
-  },
-  {
-    "objectID": "data_conventions/observation_period.html#defining-observation-periods-when-using-linked-data",
-    "href": "data_conventions/observation_period.html#defining-observation-periods-when-using-linked-data",
-    "title": "Creating observation periods",
-    "section": "",
-    "text": "Where there are multiple source data that are being linked, we define observation periods as the time in which individuals can be observed in all datasets. For example, if data source A went from from 2014 to 2023 and data source B went from 2018 to 2025, then an OMOP CDM with linked data from A and B would be expected to have observation periods from 2018 to 2023."
-  },
-  {
-    "objectID": "join/onboarding.html",
-    "href": "join/onboarding.html",
-    "title": "Onboarding",
-    "section": "",
-    "text": "shiny\nlink to data partners\ngithub link"
-  },
-  {
-    "objectID": "join/onboarding.html#year-1",
-    "href": "join/onboarding.html#year-1",
-    "title": "Onboarding",
-    "section": "",
-    "text": "shiny\nlink to data partners\ngithub link"
-  },
-  {
-    "objectID": "studies/study_conventions.html",
-    "href": "studies/study_conventions.html",
-    "title": "Studies",
-    "section": "",
-    "text": "Studies"
-  },
-  {
     "objectID": "data_network/data_partners.html",
     "href": "data_network/data_partners.html",
     "title": "Data partners",
@@ -133,11 +56,109 @@
     "text": "DataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work."
   },
   {
+    "objectID": "about/funding.html",
+    "href": "about/funding.html",
+    "title": "HERON-UK funding",
+    "section": "",
+    "text": "HERON-UK funding\nEstablishing HERON-UK was supported through funding provided by HDR UK. HDR UK funded the year\nThe"
+  },
+  {
+    "objectID": "data_conventions/introduction.html",
+    "href": "data_conventions/introduction.html",
+    "title": "Conventions",
+    "section": "",
+    "text": "Conventions\nData in HERON-UK has been standardised to the OMOP CDM. When mapping to the OMOP CDM we recommend following the OHDSI THEMIS Conventions. However, to ensure the greatest possible alignment within HERON-UK we have also developed additional conventions to ensure that we map to the OMOP CDM as consistently as possible. Please note that our conventions reflect the current onboarded data partners and are subject to change as and when additional data partners are added.\n\n\nFeedback\nIf any conventions are unclear, do not align well with your data, or if you see other areas needing a convention please open a GitHub issue."
+  },
+  {
+    "objectID": "data_conventions/ethnicity.html",
+    "href": "data_conventions/ethnicity.html",
+    "title": "Ethnicity",
+    "section": "",
+    "text": "In HERON-UK ethnicity is standardised to the NHS Ethnic Category. For considerations around mapping ethnictiy for research we suggest starting with this paper.\n\n\nMap ethnicity to the person table using the following\n\nrace_source_concept_id: use NHS Ethnic Category codes using the NHS Ethnic Category.\nrace_concept_id: map from NHS Ethnic Category codes to standard Race codes (note, these mappings were introduced in the August 2025 vocabulary release.) If race_source_concept_id is missing for an individual, set race_concept_id as missing.\n\n\n\n\nMap ethnicity to both the person and observation tables.\nFor the person table, use NHS Ethnic Category codes as above. The person table can only contain one record per person so to choose a single ethnicity per person, using the record considered to be highest-quality given your source data (e.g. choosing most common code per person and if two or more codes occur with equal frequency, select the most recent one.)\nFor the observation table, include each ethnicity record for individuals using NHS Ethnic Category codes for source values, mapping these to their standard concepts. This accommodates datasets with multiple ethnicity records per patient and allows for customisation at the analysis stage (although for most network studies we would expect to use ethnicity as recorded in the person table)."
+  },
+  {
+    "objectID": "data_conventions/ethnicity.html#source-data-has-at-most-one-ethnicity-recorded-per-person",
+    "href": "data_conventions/ethnicity.html#source-data-has-at-most-one-ethnicity-recorded-per-person",
+    "title": "Ethnicity",
+    "section": "",
+    "text": "Map ethnicity to the person table using the following\n\nrace_source_concept_id: use NHS Ethnic Category codes using the NHS Ethnic Category.\nrace_concept_id: map from NHS Ethnic Category codes to standard Race codes (note, these mappings were introduced in the August 2025 vocabulary release.) If race_source_concept_id is missing for an individual, set race_concept_id as missing."
+  },
+  {
+    "objectID": "data_conventions/ethnicity.html#source-data-has-multiple-ethnicity-records-per-person",
+    "href": "data_conventions/ethnicity.html#source-data-has-multiple-ethnicity-records-per-person",
+    "title": "Ethnicity",
+    "section": "",
+    "text": "Map ethnicity to both the person and observation tables.\nFor the person table, use NHS Ethnic Category codes as above. The person table can only contain one record per person so to choose a single ethnicity per person, using the record considered to be highest-quality given your source data (e.g. choosing most common code per person and if two or more codes occur with equal frequency, select the most recent one.)\nFor the observation table, include each ethnicity record for individuals using NHS Ethnic Category codes for source values, mapping these to their standard concepts. This accommodates datasets with multiple ethnicity records per patient and allows for customisation at the analysis stage (although for most network studies we would expect to use ethnicity as recorded in the person table)."
+  },
+  {
     "objectID": "network_activities/study_overview.html",
     "href": "network_activities/study_overview.html",
     "title": "Studies",
     "section": "",
     "text": "Title\nProtocol\nAnalytic code\nResults viewer\nAssociated publications\nFunding\n\n\n\n\n\n\n\n\n\nHDR UK\n\n\n\n\n\n\n\nHDR UK"
+  },
+  {
+    "objectID": "network_activities/software.html",
+    "href": "network_activities/software.html",
+    "title": "Software",
+    "section": "",
+    "text": "As part of the study network’s innovation plan, OmopConstructor was developed. It includes the function builtObservationPeriod(), which helps generate the observation_period table according to these guidelines.\nPlease get in touch if you have any questions about building your observation periods."
+  },
+  {
+    "objectID": "network_activities/software.html#omopconstructor",
+    "href": "network_activities/software.html#omopconstructor",
+    "title": "Software",
+    "section": "",
+    "text": "As part of the study network’s innovation plan, OmopConstructor was developed. It includes the function builtObservationPeriod(), which helps generate the observation_period table according to these guidelines.\nPlease get in touch if you have any questions about building your observation periods."
+  },
+  {
+    "objectID": "join/onboarding.html",
+    "href": "join/onboarding.html",
+    "title": "Onboarding",
+    "section": "",
+    "text": "shiny\nlink to data partners\ngithub link"
+  },
+  {
+    "objectID": "join/onboarding.html#year-1",
+    "href": "join/onboarding.html#year-1",
+    "title": "Onboarding",
+    "section": "",
+    "text": "shiny\nlink to data partners\ngithub link"
+  },
+  {
+    "objectID": "studies/study_conventions.html",
+    "href": "studies/study_conventions.html",
+    "title": "Studies",
+    "section": "",
+    "text": "Studies"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "HERON-UK",
+    "section": "",
+    "text": "The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. Our network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. Transparency and reproducibility is a core feature of the network, with all study code made freely available on GitHub, while data privacy is preserved with patient records analysed in situ with only aggregated results shared by data partners to ensure privacy of patient data. The network has been established through funding from HDR UK.\n\nData capture in HERON-UK\n\nOverallBartsCPRD AURUMDataLochGOSHLancsLeedsUCLH\n\n\n\nGeographic coverage\n\n\n\n\n\n\n\nCumulative data capture\n\n\n\n\n\n\n\n\n\n\nGeographic coverage\n\n\n\n\n\n\n\nCumulative data capture\n\n\n\n\n\n\n\n\n\n\nGeographic coverage\n\n\n\n\n\n\n\nCumulative data capture\n\n\n\n\n\n\n\n\n\n\nGeographic coverage\n\n\n\n\n\n\n\nCumulative data capture\n\n\n\n\n\n\n\n\n\n\nGeographic coverage\n\n\n\n\n\n\n\nCumulative data capture\n\n\n\n\n\n\n\n\n\n\nGeographic coverage\n\n\n\n\n\n\n\nCumulative data capture\n\n\n\n\n\n\n\n\n\n\nGeographic coverage\n\n\n\n\n\n\n\nCumulative data capture\n\n\n\n\n\n\n\n\n\n\nGeographic coverage\n\n\n\n\n\n\n\nCumulative data capture"
+  },
+  {
+    "objectID": "join/how_to_join.html",
+    "href": "join/how_to_join.html",
+    "title": "Joining HERON-UK",
+    "section": "",
+    "text": "Supported by HDR UK, we have previously held a funded call for data partners. This funding supported data partners to complete the on boarding process for HERON-UK.\n\nCurrently, there is no open call for funding for data partner on-boarding.\n\n\n\n\nAlthough we do not currently have a funded call for data partners, we would welcome expressions of interest from potential data partners with data from the UK mapped to the OMOP CDM."
+  },
+  {
+    "objectID": "join/how_to_join.html#funded-calls",
+    "href": "join/how_to_join.html#funded-calls",
+    "title": "Joining HERON-UK",
+    "section": "",
+    "text": "Supported by HDR UK, we have previously held a funded call for data partners. This funding supported data partners to complete the on boarding process for HERON-UK.\n\nCurrently, there is no open call for funding for data partner on-boarding."
+  },
+  {
+    "objectID": "join/how_to_join.html#expressions-of-interest",
+    "href": "join/how_to_join.html#expressions-of-interest",
+    "title": "Joining HERON-UK",
+    "section": "",
+    "text": "Although we do not currently have a funded call for data partners, we would welcome expressions of interest from potential data partners with data from the UK mapped to the OMOP CDM."
   },
   {
     "objectID": "network_activities/publications.html",
@@ -168,18 +189,53 @@
     "text": "Elin Rowlands, Cecilia Campanile, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Marti Catala and Edward Burn. Characterising the use of antibiotics commonly associated with antimicrobial resistance in UK primary and hospital care. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Oral presentation.\nCecilia Campanile, Elin Rowlands, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Andy South, Ana Cavalcante, Duncan Cartner, Baptiste Briot Ribeyre, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Characterisation of Data Sources in the HEalth data Real World Evidence OMOP Network (HERON UK). OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAlex Knight, David Seymour, Uwaye Ideh, Cecilia Campanile, Elin Rowlands, Danielle Newby, Edward Burn, Martí Català and Daniel Prieto-Alhambra. Establishing a Health Data RWE OMOP Network for the UK: HERON-UK. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nAndy South, Hiba Junaid, Jennifer Lane, Usama Rahman, Ben Eaton, Xavier Griffin, Ana Cavalcante, Steve Harris, Ofran Almossawi, Lydia Briggs, Daniel Key, Timothy Howcroft, Vishnu Chandrabalan, Peter S Hall, Mahéva Vallet, Marta Pasikowska, Nicola Symmers, Colin McLean, Spyro Nita, Daniel Dedman, Zara Cuccu, Stelios Theophanous, Geoff Hall, Edward Bolton, Cecilia Campanile, Elin Rowlands, Danielle Newby, Daniel Prieto Alhambra, Edward Burn and Marti Catala. Moving towards standard observation period settings for OMOP-based EHR data: results from the HERON-UK network. OHDSI Europe 2025 conference, 7th July 2025, Hasselt, Belgium. Poster presentation.\nCecilia software demo\nEds high cost medicines poster"
   },
   {
-    "objectID": "network_activities/software.html",
-    "href": "network_activities/software.html",
-    "title": "Software",
+    "objectID": "data_conventions/observation_period.html",
+    "href": "data_conventions/observation_period.html",
+    "title": "Creating observation periods",
     "section": "",
-    "text": "As part of the study network’s innovation plan, OmopConstructor was developed. It includes the function builtObservationPeriod(), which helps generate the observation_period table according to these guidelines.\nPlease get in touch if you have any questions about building your observation periods."
+    "text": "In the OMOP CDM, the observation period table defines\n\nspans of time during which two conditions are expected to hold: (i) Clinical Events that happened to the Person are recorded in the Event tables, and (ii) absence of records indicate such Events did not occur during this span of time. https://ohdsi.github.io/CommonDataModel/cdm54.html#observation_period\n\nThere are many nuances to defining observations periods, and different definitions can have a major impact on studies that rely on observation time (such as incidence and prevalence studies that require identifying a suitable denominator population, survival studies which require follow-up into the future, and so on).\nIn HERON-UK we have defined two conventions for constructing observation periods, depending on whether source data has a start and end date for individuals or not. In addition to these conventions, which are summarised below, we have also developed the OmopConstructor R package which can be used to manipulate observation periods on a study-by-study basis.\n\n\nIn some data sources, such as primary care data, enrollment/ registration and exit dates are available for individuals. In this case, we use these dates to set observation_period_start_date and observation_period_end_date, respectively. In the case where individuals have multiple entries into and exits out of the data, we keep only the first entry per person to define the observation period. (Note, in HERON-UK we do not have any insurance claims data where such a rule may be considered too stringent).\n\n\n\nIn many data sources, there is no defined start and exit date for individuals. In such cases, we define observation periods using the following approach:\n\nObservation period start date: the date of the first record for a person.\nObservation period end date: the earliest of the following:\n\nDate of death\nA censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)\nOther censoring events, such as migration out of the study region.\nDate of data extraction\n\n\nThis definition results in a single observation period per person. (Note, all data partners in HERON-UK have mortality data - in the absence of death data, additional censoring rules would likely be needed).\nThis convention is designed to err on the side of including as much possible time for individuals. When running studies, however, the OmopConstructor package can be used to apply study-specific persistance and surveillance windows. See our OHDSI Europe 2025 poster for more information on approaches to and implications of methods for defining observation periods, and the OmopConstructor R package for implementing them on a study-by-study basis.\n\n\n\nWhere there are multiple source data that are being linked, we define observation periods as the time in which individuals can be observed in all datasets. For example, if data source A went from from 2014 to 2023 and data source B went from 2018 to 2025, then an OMOP CDM with linked data from A and B would be expected to have observation periods from 2018 to 2023."
   },
   {
-    "objectID": "network_activities/software.html#omopconstructor",
-    "href": "network_activities/software.html#omopconstructor",
-    "title": "Software",
+    "objectID": "data_conventions/observation_period.html#source-data-that-contains-a-start-and-end-date-for-individuals",
+    "href": "data_conventions/observation_period.html#source-data-that-contains-a-start-and-end-date-for-individuals",
+    "title": "Creating observation periods",
     "section": "",
-    "text": "As part of the study network’s innovation plan, OmopConstructor was developed. It includes the function builtObservationPeriod(), which helps generate the observation_period table according to these guidelines.\nPlease get in touch if you have any questions about building your observation periods."
+    "text": "In some data sources, such as primary care data, enrollment/ registration and exit dates are available for individuals. In this case, we use these dates to set observation_period_start_date and observation_period_end_date, respectively. In the case where individuals have multiple entries into and exits out of the data, we keep only the first entry per person to define the observation period. (Note, in HERON-UK we do not have any insurance claims data where such a rule may be considered too stringent)."
+  },
+  {
+    "objectID": "data_conventions/observation_period.html#source-data-that-does-not-include-a-start-and-end-date-for-individuals",
+    "href": "data_conventions/observation_period.html#source-data-that-does-not-include-a-start-and-end-date-for-individuals",
+    "title": "Creating observation periods",
+    "section": "",
+    "text": "In many data sources, there is no defined start and exit date for individuals. In such cases, we define observation periods using the following approach:\n\nObservation period start date: the date of the first record for a person.\nObservation period end date: the earliest of the following:\n\nDate of death\nA censoring age (commonly 120 years, though this can vary; e.g., pediatric databases may use 18 years)\nOther censoring events, such as migration out of the study region.\nDate of data extraction\n\n\nThis definition results in a single observation period per person. (Note, all data partners in HERON-UK have mortality data - in the absence of death data, additional censoring rules would likely be needed).\nThis convention is designed to err on the side of including as much possible time for individuals. When running studies, however, the OmopConstructor package can be used to apply study-specific persistance and surveillance windows. See our OHDSI Europe 2025 poster for more information on approaches to and implications of methods for defining observation periods, and the OmopConstructor R package for implementing them on a study-by-study basis."
+  },
+  {
+    "objectID": "data_conventions/observation_period.html#defining-observation-periods-when-using-linked-data",
+    "href": "data_conventions/observation_period.html#defining-observation-periods-when-using-linked-data",
+    "title": "Creating observation periods",
+    "section": "",
+    "text": "Where there are multiple source data that are being linked, we define observation periods as the time in which individuals can be observed in all datasets. For example, if data source A went from from 2014 to 2023 and data source B went from 2018 to 2025, then an OMOP CDM with linked data from A and B would be expected to have observation periods from 2018 to 2023."
+  },
+  {
+    "objectID": "data_conventions/socioeconomic_status.html",
+    "href": "data_conventions/socioeconomic_status.html",
+    "title": "HERON-UK",
+    "section": "",
+    "text": "The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardised measure of socioeconomic status across geographic areas.\nThe convention is to map the IMD data in the observation table using the concept ID 35812882. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.\nThe IMD quintile value is stored in the value_as_number field using a number between 1 and 5. For the units, we use the concept ID 37524288, which represents quintiles.\nFor the observation date:\n\nIf a measurement date is available in the source data, use that date.\nIf no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.\n\nIn studies, if with multiple IMD records per person are present the record closest to the index date will be used.\nAn example IMD record in the observation table would look like:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n…\nobservation_concept_id\n…\nvalue_as_number\n…\nunit_concept_id\n…\nobservation_source_concept_id\n…\n\n\n\n\n…\n0\n…\n2\n…\n37524288\n…\n35812882\n…"
+  },
+  {
+    "objectID": "data_conventions/socioeconomic_status.html#index-of-multiple-deprivation-quintiles",
+    "href": "data_conventions/socioeconomic_status.html#index-of-multiple-deprivation-quintiles",
+    "title": "HERON-UK",
+    "section": "",
+    "text": "The Index of Multiple Deprivation (IMD) is a valuable metric in research, as it provides a standardised measure of socioeconomic status across geographic areas.\nThe convention is to map the IMD data in the observation table using the concept ID 35812882. Since this is not a standard concept we will use standard_concept_id = 0 and source_concept_id = 35812882.\nThe IMD quintile value is stored in the value_as_number field using a number between 1 and 5. For the units, we use the concept ID 37524288, which represents quintiles.\nFor the observation date:\n\nIf a measurement date is available in the source data, use that date.\nIf no measurement date is available (and you have only one IMD record per person), use the individual’s observation_period_start_date.\n\nIn studies, if with multiple IMD records per person are present the record closest to the index date will be used.\nAn example IMD record in the observation table would look like:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n…\nobservation_concept_id\n…\nvalue_as_number\n…\nunit_concept_id\n…\nobservation_source_concept_id\n…\n\n\n\n\n…\n0\n…\n2\n…\n37524288\n…\n35812882\n…"
+  },
+  {
+    "objectID": "about/about_heron_uk.html",
+    "href": "about/about_heron_uk.html",
+    "title": "HERON-UK",
+    "section": "",
+    "text": "HERON-UK\nThe HEalth data Research UK OMOP Network (HERON-UK)"
   },
   {
     "objectID": "data_network/data_overview.html",
@@ -250,61 +306,5 @@
     "title": "Data overview",
     "section": "Death",
     "text": "Death"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "HERON-UK",
-    "section": "",
-    "text": "The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. Our network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. Transparency and reproducibility is a core feature of the network, with all study code made freely available on GitHub, while data privacy is preserved with patient records analysed in situ with only aggregated results shared by data partners to ensure privacy of patient data. The network has been established through funding from HDR UK.\n\nData capture coverage in HERON-UK\n\nOverallBartsCPRD AurumDataLochGOSHLancsLeedsUCLH\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCumulative data capture in HERON-UK\n\nOverallBartsCPRD AURUMDataLochGOSHLancsLeedsUCLH"
-  },
-  {
-    "objectID": "join/how_to_join.html",
-    "href": "join/how_to_join.html",
-    "title": "Joining HERON-UK",
-    "section": "",
-    "text": "Supported by HDR UK, we have previously held a funded call for data partners. This funding supported data partners to complete the on boarding process for HERON-UK.\n\nCurrently, there is no open call for funding for data partner on-boarding.\n\n\n\n\nAlthough we do not currently have a funded call for data partners, we would welcome expressions of interest from potential data partners with data from the UK mapped to the OMOP CDM."
-  },
-  {
-    "objectID": "join/how_to_join.html#funded-calls",
-    "href": "join/how_to_join.html#funded-calls",
-    "title": "Joining HERON-UK",
-    "section": "",
-    "text": "Supported by HDR UK, we have previously held a funded call for data partners. This funding supported data partners to complete the on boarding process for HERON-UK.\n\nCurrently, there is no open call for funding for data partner on-boarding."
-  },
-  {
-    "objectID": "join/how_to_join.html#expressions-of-interest",
-    "href": "join/how_to_join.html#expressions-of-interest",
-    "title": "Joining HERON-UK",
-    "section": "",
-    "text": "Although we do not currently have a funded call for data partners, we would welcome expressions of interest from potential data partners with data from the UK mapped to the OMOP CDM."
-  },
-  {
-    "objectID": "data_conventions/ethnicity.html",
-    "href": "data_conventions/ethnicity.html",
-    "title": "Ethnicity",
-    "section": "",
-    "text": "In HERON-UK ethnicity is standardised to the NHS Ethnic Category. For considerations around mapping ethnictiy for research we suggest starting with this paper.\n\n\nMap ethnicity to the person table using the following\n\nrace_source_concept_id: use NHS Ethnic Category codes using the NHS Ethnic Category.\nrace_concept_id: map from NHS Ethnic Category codes to standard Race codes (note, these mappings were introduced in the August 2025 vocabulary release.) If race_source_concept_id is missing for an individual, set race_concept_id as missing.\n\n\n\n\nMap ethnicity to both the person and observation tables.\nFor the person table, use NHS Ethnic Category codes as above. The person table can only contain one record per person so to choose a single ethnicity per person, using the record considered to be highest-quality given your source data (e.g. choosing most common code per person and if two or more codes occur with equal frequency, select the most recent one.)\nFor the observation table, include each ethnicity record for individuals using NHS Ethnic Category codes for source values, mapping these to their standard concepts. This accommodates datasets with multiple ethnicity records per patient and allows for customisation at the analysis stage (although for most network studies we would expect to use ethnicity as recorded in the person table)."
-  },
-  {
-    "objectID": "data_conventions/ethnicity.html#source-data-has-at-most-one-ethnicity-recorded-per-person",
-    "href": "data_conventions/ethnicity.html#source-data-has-at-most-one-ethnicity-recorded-per-person",
-    "title": "Ethnicity",
-    "section": "",
-    "text": "Map ethnicity to the person table using the following\n\nrace_source_concept_id: use NHS Ethnic Category codes using the NHS Ethnic Category.\nrace_concept_id: map from NHS Ethnic Category codes to standard Race codes (note, these mappings were introduced in the August 2025 vocabulary release.) If race_source_concept_id is missing for an individual, set race_concept_id as missing."
-  },
-  {
-    "objectID": "data_conventions/ethnicity.html#source-data-has-multiple-ethnicity-records-per-person",
-    "href": "data_conventions/ethnicity.html#source-data-has-multiple-ethnicity-records-per-person",
-    "title": "Ethnicity",
-    "section": "",
-    "text": "Map ethnicity to both the person and observation tables.\nFor the person table, use NHS Ethnic Category codes as above. The person table can only contain one record per person so to choose a single ethnicity per person, using the record considered to be highest-quality given your source data (e.g. choosing most common code per person and if two or more codes occur with equal frequency, select the most recent one.)\nFor the observation table, include each ethnicity record for individuals using NHS Ethnic Category codes for source values, mapping these to their standard concepts. This accommodates datasets with multiple ethnicity records per patient and allows for customisation at the analysis stage (although for most network studies we would expect to use ethnicity as recorded in the person table)."
-  },
-  {
-    "objectID": "data_conventions/introduction.html",
-    "href": "data_conventions/introduction.html",
-    "title": "Conventions",
-    "section": "",
-    "text": "Conventions\nData in HERON-UK has been standardised to the OMOP CDM. When mapping to the OMOP CDM we recommend following the OHDSI THEMIS Conventions. However, to ensure the greatest possible alignment within HERON-UK we have also developed additional conventions to ensure that we map to the OMOP CDM as consistently as possible. Please note that our conventions reflect the current onboarded data partners and are subject to change as and when additional data partners are added.\n\n\nFeedback\nIf any conventions are unclear, do not align well with your data, or if you see other areas needing a convention please open a GitHub issue."
   }
 ]
