@@ -13,48 +13,16 @@ execute:
 
 The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. Our network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. Transparency and reproducibility is a core feature of the network, with all study code made freely available on [GitHub](https://github.com/heron-uk), while data privacy is preserved with patient records analysed in situ with only aggregated results shared by data partners to ensure privacy of patient data. The network has been established through funding from [HDR UK](https://ukhealthdata.org/data-standards/common-data-models/rwe-network/).
 
-### Data capture coverage in HERON-UK
-
-::: panel-tabset
-
-# Overall
-
-![](images/heronuk_map_overall_lin.png){fig-align="center" width=60%}
-
-# Barts
-
-![](images/heronuk_map_Barts_lin.png){fig-align="center" width=60%}
-
-# CPRD Aurum
-
-![](images/heronuk_map_AURUM_lin.png){fig-align="center" width=60%}
-
-# DataLoch
-
-![](images/heronuk_map_DataLoch_lin.png){fig-align="center" width=60%}
-
-# GOSH
-
-![](images/heronuk_map_GOSH_lin.png){fig-align="center" width=60%}
-
-# Lancs
-
-![](images/heronuk_map_LANCS_lin.png){fig-align="center" width=60%}
-
-# Leeds
-
-![](images/heronuk_map_LTHT_lin.png){fig-align="center" width=60%}
-
-# UCLH
-
-![](images/heronuk_map_UCLH_lin.png){fig-align="center" width=60%}
-
-:::
-
-### Cumulative data capture in HERON-UK
+### Data capture in HERON-UK
 
 ::: panel-tabset
 # Overall
+
+### *Geographic coverage*
+
+![](images/heronuk_map_overall_lin.png){fig-align="center" width="60%"}
+
+### *Cumulative data capture*
 
 ```{r}
 # this is to nicely format large numbers
@@ -149,13 +117,20 @@ p |>
     axisLabel = list(
       formatter = htmlwidgets::JS(y_formatting_js)
     )
-  ) 
+  )  |> 
+  e_tooltip(trigger = "axis")
 }
 
 plotCumulativeRecords(record_counts)
 ```
 
 # Barts
+
+### *Geographic coverage*
+
+![](images/heronuk_map_Barts_lin.png){fig-align="center" width="60%"}
+
+### *Cumulative data capture*
 
 ```{r}
 plotCumulativeRecords(record_counts|> 
@@ -165,6 +140,12 @@ plotCumulativeRecords(record_counts|>
 
 # CPRD AURUM
 
+### *Geographic coverage*
+
+![](images/heronuk_map_AURUM_lin.png){fig-align="center" width="60%"}
+
+### *Cumulative data capture*
+
 ```{r}
 plotCumulativeRecords(record_counts|> 
             renameCDM() |> 
@@ -172,6 +153,12 @@ plotCumulativeRecords(record_counts|>
 ```
 
 # DataLoch
+
+### *Geographic coverage*
+
+![](images/heronuk_map_DataLoch_lin.png){fig-align="center" width="60%"}
+
+### *Cumulative data capture*
 
 ```{r}
 plotCumulativeRecords(record_counts |> 
@@ -181,6 +168,12 @@ plotCumulativeRecords(record_counts |>
 
 # GOSH
 
+### *Geographic coverage*
+
+![](images/heronuk_map_GOSH_lin.png){fig-align="center" width="60%"}
+
+### *Cumulative data capture*
+
 ```{r}
 plotCumulativeRecords(record_counts|> 
             renameCDM() |> 
@@ -188,6 +181,12 @@ plotCumulativeRecords(record_counts|>
 ```
 
 # Lancs
+
+### *Geographic coverage*
+
+![](images/heronuk_map_LANCS_lin.png){fig-align="center" width="60%"}
+
+### *Cumulative data capture*
 
 ```{r}
 plotCumulativeRecords(record_counts|> 
@@ -197,6 +196,12 @@ plotCumulativeRecords(record_counts|>
 
 # Leeds
 
+### *Geographic coverage*
+
+![](images/heronuk_map_LTHT_lin.png){fig-align="center" width="60%"}
+
+### *Cumulative data capture*
+
 ```{r}
 plotCumulativeRecords(record_counts|> 
             renameCDM() |> 
@@ -204,6 +209,12 @@ plotCumulativeRecords(record_counts|>
 ```
 
 # UCLH
+
+### *Geographic coverage*
+
+![](images/heronuk_map_UCLH_lin.png){fig-align="center" width="60%"}
+
+### *Cumulative data capture*
 
 ```{r}
 plotCumulativeRecords(record_counts|> 
