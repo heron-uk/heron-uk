@@ -33,11 +33,13 @@ website:
         menu:
           - text: "Introduction"
             href: data_conventions/introduction.qmd
-          - text: "Observation period"
-            href: data_conventions/observation_period.qmd
-          - text: "Socioeconoic status"
+          - text: "Who to keep"
+            href: data_conventions/who_to_keep.qmd
+          - text: "Creating observation periods"
+            href: data_conventions/observation_period.qmd   
+          - text: "Recording socioeconoic status"
             href: data_conventions/socioeconomic_status.qmd
-          - text: "Ethnicity"
+          - text: "Recording ethnicity"
             href: data_conventions/ethnicity.qmd                     
       - text: "Network activities"
         menu:

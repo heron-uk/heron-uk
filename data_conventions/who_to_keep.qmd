@@ -1,0 +1,10 @@
+# Who to keep
+
+Excluding patients from the OMOP CDM due to lack of or unreasonable data for key elements, such as year of birth, results in a "cleaner" analytic dataset. However, this comes at the cost of losing data which might be necessary for some use cases, such as summarising total volume of cases seen, etc.
+
+In HERON-UK, data partners **can** include all patients in their OMOP CDM dataset. Those patients missing key data elements can be expected to be dropped in most research studies, but keeping them allows for data partners to use their OMOP CDM for more operational research use cases.
+
+An alternative approach data partners can follow is that of Lancashire Teaching Hospitals, who have a "silver" version of their OMOP CDM data ("Data ready for operational use, with quality checks applied. Active visits and records with incomplete patient information remain in this layer") and a "gold" version ("Fully conformant to OMOP standards, research-ready data. Patients who opted out of data sharing are excluded, and all data has undergone verified Extract-Load-Transform (ELT) processes.")[^who_to_keep-1] Then for HERON-UK studies we would be using this "gold" research-ready version.
+
+[^who_to_keep-1]: More details on the approach can be seen here <https://ukhealthdata.org/wp-content/uploads/2024/11/QuinAshcroft-UKOHDSIposter.pdf>
+
