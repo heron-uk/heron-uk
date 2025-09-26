@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data_partners – HERON-UK</title>
+<title>who_to_keep – HERON-UK</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="HERON-UK">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="HERON-UK">
 </head>
 
@@ -209,41 +210,22 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="data-partners" class="level1">
-<h1>Data partners</h1>
-<section id="clinical-practice-research-datalink-aurum" class="level2">
-<h2 class="anchored" data-anchor-id="clinical-practice-research-datalink-aurum">Clinical Practice Research Datalink Aurum</h2>
-<p>Clinical Practice Research Datalink Aurum is a primary care electronic health records (EHR) database collected from general practitioner (GP) practices in England using the EMIS® management software system. It includes approximately 49 million patients and captures anonymised data on demographics, clinical events, investigations, referrals, and prescriptions. The database provides broad and longitudinal coverage of the English population and is widely used in observational research.</p>
-</section>
-<section id="great-ormond-street-hospital-nhs-foundation-trust" class="level2">
-<h2 class="anchored" data-anchor-id="great-ormond-street-hospital-nhs-foundation-trust">Great Ormond Street Hospital NHS Foundation Trust</h2>
-<p>Great Ormond Street Hospital NHS Foundation Trust is a specialist tertiary care paediatric hospital in the UK that receives children with complex and/or rare conditions. Many patients require long-term care and follow-up, resulting in highly detailed clinical data. The database includes over 200,000 patients with inpatient or outpatient encounters between April 2019 and February 2025.</p>
-</section>
-<section id="leeds-teaching-hospitals-nhs-trust" class="level2">
-<h2 class="anchored" data-anchor-id="leeds-teaching-hospitals-nhs-trust">Leeds Teaching Hospitals NHS Trust</h2>
-<p>Leeds Teaching Hospitals NHS Trust contributes data on approximately 1.5 million patients with diagnoses or admissions since 2003. The dataset receives data from multiple hospital systems and includes detailed information related to cancer care, including diagnosis, treatment, staging, biomarkers, and clinical trial participation.</p>
-</section>
-<section id="lancashire-teaching-hospitals" class="level2">
-<h2 class="anchored" data-anchor-id="lancashire-teaching-hospitals">Lancashire Teaching Hospitals</h2>
-<p>Lancashire Teaching Hospitals data set provides hospital-based data from the Northwest of England, covering approximately 1.5 million patients. The dataset includes a wide range of clinical information, such as outpatient clinic attendances, laboratory test results (including blood tests and microbiology), and detailed cancer pathway data, including staging and grading.</p>
-</section>
-<section id="university-college-london-hospitals-nhs-trust" class="level2">
-<h2 class="anchored" data-anchor-id="university-college-london-hospitals-nhs-trust">University College London Hospitals NHS Trust</h2>
-<p>University College London Hospitals NHS Trust is one of the largest NHS trusts in the UK, providing first-class acute and specialist services across six hospitals in central London. It contributes a dataset of 6 million patients. Its patient population includes national referrals for tertiary and quaternary services (cancer, neurology etc.) and general medical admissions from an inner-city teaching hospital that treats &gt;1 million outpatients per year and has &gt;100,000 inpatient admissions.</p>
-</section>
-<section id="barts-health-nhs-trust" class="level2">
-<h2 class="anchored" data-anchor-id="barts-health-nhs-trust">Barts Health NHS Trust</h2>
-<p>Barts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards</p>
-</section>
-<section id="dataloch" class="level2">
-<h2 class="anchored" data-anchor-id="dataloch">DataLoch</h2>
-<p>DataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work.</p>
+<section id="who-to-keep" class="level1">
+<h1>Who to keep</h1>
+<p>Excluding patients from the OMOP CDM due to lack of or unreasonable data for key elements, such as year of birth, results in a “cleaner” analytic dataset. However, this comes at the cost of losing data which might be necessary for some use cases, such as summarising total volume of cases seen, etc.</p>
+<p>In HERON-UK, data partners <strong>can</strong> include all patients in their OMOP CDM dataset. Those patients missing key data elements can be expected to be dropped in most research studies, but keeping them allows for data partners to use their OMOP CDM for more operational research use cases.</p>
+<p>An alternative approach data partners can follow is that of Lancashire Teaching Hospitals, who have a “silver” version of their OMOP CDM data (“Data ready for operational use, with quality checks applied. Active visits and records with incomplete patient information remain in this layer”) and a “gold” version (“Fully conformant to OMOP standards, research-ready data. Patients who opted out of data sharing are excluded, and all data has undergone verified Extract-Load-Transform (ELT) processes.”)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Then for HERON-UK studies we would be using this “gold” research-ready version.</p>
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>More details on the approach can be seen here <a href="https://ukhealthdata.org/wp-content/uploads/2024/11/QuinAshcroft-UKOHDSIposter.pdf" class="uri">https://ukhealthdata.org/wp-content/uploads/2024/11/QuinAshcroft-UKOHDSIposter.pdf</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
