@@ -13,7 +13,163 @@ execute:
 
 The HEalth data Research UK OMOP Network (HERON-UK) contains routinely-collected health care data from across the United Kingdom. Our network of 7 data partners contains more than 20 billion clinical records from over 50 million patients. Transparency and reproducibility is a core feature of the network, with all study code made freely available on [GitHub](https://github.com/heron-uk), while data privacy is preserved with patient records analysed in situ with only aggregated results shared by data partners to ensure privacy of patient data. The network has been established through funding from [HDR UK](https://ukhealthdata.org/data-standards/common-data-models/rwe-network/).
 
-### Data capture in HERON-UK
+
+## Data capture in HERON-UK
+
+```{r}
+library(omopgenerics)
+library(readr)
+library(here)
+library(dplyr)
+library(echarts4r)
+library(countup)
+library(bsicons)
+
+snapshot <- importSummarisedResult(here("data_network", "data", "snapshot.csv"))
+
+clinical_records <- read_csv(here("data_network", "data", "clinical_records.csv"))
+  
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+dp_count <- length(clinical_records$cdm_name |> unique())
+
+record_count <- clinical_records |> 
+  filter(in_observation == "overall",
+         time_interval != "overall",
+         variable_name == "Number of records",
+         is.na(name_observation_period),
+         !is.na(count)) |>  
+  group_by(omop_table) |> 
+  summarise(total= sum(count, 
+                       na.rm = TRUE))
+
+person_count <- snapshot |> 
+  filter(estimate_name == "person_count") |> 
+  mutate(estimate_value = as.numeric(estimate_value)) |> 
+  summarise(total = sum(estimate_value)) |> 
+  pull()
+
+bslib::value_box(
+  title = "Number of data partners",
+  value = countup::countup(
+    dp_count, 
+    duration = 2,                    
+    options = list(separator = ",")  
+  ),
+  showcase = bs_icon("diagram-3"),
+  theme = "purple"
+)
+
+bslib::value_box(
+  title = "Number of patients",
+  value = countup::countup(
+    person_count, 
+    duration = 2,                    
+    options = list(separator = ",")  
+  ),
+  showcase = bs_icon("people"),
+  theme = "success"
+)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+bslib::layout_column_wrap(
+  width = 1/3,
+bslib::value_box(
+  title = "Visits",
+  value = htmltools::tags$div(
+    style = "font-size: 18px !important;",
+    countup::countup(
+    record_count |> 
+    filter(omop_table == "visit_occurrence") |>
+    pull(), 
+    duration = 2,                    
+    options = list(separator = ",")  
+  )
+  ),
+  showcase = bsicons::bs_icon("hospital"),
+  theme = "teal"
+),
+bslib::value_box(
+  title = "Diagnoses",
+  value = htmltools::tags$div(
+    style = "font-size: 18px !important;",
+    countup::countup(
+    record_count |> 
+    filter(omop_table == "condition_occurrence") |>
+    pull(), 
+    duration = 2,                    
+    options = list(separator = ",")  
+  )
+  ),
+  showcase = bsicons::bs_icon("file-medical"),
+  theme = "teal"
+),
+bslib::value_box(
+  title = "Medications",
+  value = htmltools::tags$div(
+    style = "font-size: 18px !important;",
+    countup::countup(
+    record_count |> 
+    filter(omop_table == "drug_exposure") |>
+    pull(), 
+    duration = 2,                    
+    options = list(separator = ",")  
+  )
+  ),
+  showcase = bsicons::bs_icon("capsule"),
+  theme = "teal"
+),
+bslib::value_box(
+  title = "Measurements",
+  value = htmltools::tags$div(
+    style = "font-size: 18px !important;",
+    countup::countup(
+    record_count |> 
+    filter(omop_table == "measurement") |>
+    pull(), 
+    duration = 2,                    
+    options = list(separator = ",")  
+  )
+  ),
+  showcase = bsicons::bs_icon("activity"),
+  theme = "teal"
+),
+bslib::value_box(
+  title = "Procedures",
+  value = htmltools::tags$div(
+    style = "font-size: 18px !important;",
+    countup::countup(
+    record_count |> 
+    filter(omop_table == "procedure_occurrence") |>
+    pull(), 
+    duration = 2,                    
+    options = list(separator = ",")  
+  )
+  ),
+  showcase = bsicons::bs_icon("bandaid"),
+  theme = "teal"
+),
+bslib::value_box(
+  title = "Deaths",
+  value = htmltools::tags$div(
+    style = "font-size: 18px !important;",
+    countup::countup(
+    record_count |> 
+    filter(omop_table == "death") |>
+    pull(), 
+    duration = 2,                    
+    options = list(separator = ",")  
+  )
+  ),
+  showcase = bsicons::bs_icon("person-dash"),
+  theme = "teal"
+)
+)
+```
+
+
 
 ::: panel-tabset
 # Overall
@@ -50,78 +206,57 @@ y_formatting_js <- "
 ```
 
 ```{r}
-library(here)
-library(dplyr)
-library(echarts4r)
+plotCumulativeRecords <- function(clinical_records){
+plot_data <- clinical_records |> 
+  mutate(date = stringr::str_remove(time_interval, " to.*")) |> 
+  mutate(date = as.Date(date)) |> 
+  mutate(omop_table = stringr::str_replace_all(omop_table, "_", " ")) |> 
+  filter(in_observation == "overall",
+         time_interval != "overall",
+         variable_name == "Number of records",
+         is.na(name_observation_period)) |> 
+  filter(!is.na(count)) |>  
+  select(omop_table, count, date) |> 
+  filter(!is.na(count))
 
-record_counts <- readr::read_csv(here::here("data_network",
-                           "data", 
-                           "record_count.csv"))
-
-renameCDM <- function(workingData){
-  workingData |> 
-    mutate(cdm_name = case_when(
-      cdm_name == "AurumCDM_202409"  ~ "CPRD_AURUM",
-      cdm_name == "Barts Health"  ~ "Barts",
-      cdm_name == "DataLoch"  ~ "DataLoch",
-      cdm_name == "GOSH DRE"  ~ "GOSH",
-      cdm_name == "IDRIL_1"  ~ "Lancs",
-      cdm_name == "LTHT"  ~ "Leeds",
-      cdm_name == "UCLH-from-2019"  ~ "UCLH"
-    ))
-}
-  
-```
-
-```{r}
-plotCumulativeRecords <- function(working_record_counts){
-plot_data <- working_record_counts |> 
+plot_data <- plot_data |> 
   group_by(date, omop_table) |> 
   summarise(total= sum(count, 
                        na.rm = TRUE)) |> 
   group_by(omop_table) |>
   arrange(omop_table) |> 
-  mutate(running_total = cumsum(total)) |> 
+  mutate(running_total = cumsum(as.numeric(total))) |> 
   ungroup() |> 
   select(omop_table, date, running_total)
-plot_data<-bind_rows(plot_data,
-          record_counts |> 
-            group_by(date) |> 
-            summarise(total= sum(count, 
-                                 na.rm = TRUE)) |> 
-            arrange(date) |> 
-            mutate(running_total = cumsum(total)) |> 
-            mutate(omop_table = "All")|> 
-            ungroup() |> 
-            select(omop_table, date, running_total))
 
-plot_data<- plot_data |> 
+plot_data <- plot_data |> 
   tidyr::pivot_wider(names_from = omop_table,
                      values_from = running_total) 
 
 p <- plot_data |> 
   e_charts(x = date) |> 
-  e_area(condition_occurrence, stack = "grp")    |> 
-  e_area(drug_exposure, stack = "grp")     |> 
-  e_area(measurement, stack = "grp")     |> 
-  e_area(observation, stack = "grp")     |> 
-  e_area(procedure_occurrence, stack = "grp") 
-if("device_exposure" %in% colnames(plot_data)){
+  e_area(`condition occurrence`, stack = "grp")    |> 
+  e_area(`drug exposure`, stack = "grp")     |> 
+  e_area(`observation`, stack = "grp")     |> 
+  e_area(`measurement`, stack = "grp")     |> 
+  e_area(`procedure occurrence`, stack = "grp")     |> 
+  e_area(`visit occurrence`, stack = "grp")     |> 
+  e_area(`death`, stack = "grp") 
+if("device exposure" %in% colnames(plot_data)){
   p <- p |> 
-    e_area(device_exposure, stack = "grp")  
+    e_area(`device exposure`, stack = "grp")  
 }
-p |> 
-  e_area(visit_occurrence, stack = "grp")       |> 
-  e_area(death, stack = "grp")   |>
+
+p |>
   e_y_axis(
     axisLabel = list(
       formatter = htmlwidgets::JS(y_formatting_js)
     )
   )  |> 
   e_tooltip(trigger = "axis")
-}
 
-plotCumulativeRecords(record_counts)
+}
+plotCumulativeRecords(clinical_records)
 ```
 
 # Barts
@@ -133,8 +268,7 @@ plotCumulativeRecords(record_counts)
 ### *Cumulative data capture*
 
 ```{r}
-plotCumulativeRecords(record_counts|> 
-            renameCDM() |> 
+plotCumulativeRecords(clinical_records|> 
             filter(stringr::str_detect(cdm_name, "Barts")))
 ```
 
@@ -147,9 +281,8 @@ plotCumulativeRecords(record_counts|>
 ### *Cumulative data capture*
 
 ```{r}
-plotCumulativeRecords(record_counts|> 
-            renameCDM() |> 
-            filter(stringr::str_detect(cdm_name, "CPRD_AURUM")))
+plotCumulativeRecords(clinical_records|> 
+            filter(stringr::str_detect(cdm_name, "Aurum")))
 ```
 
 # DataLoch
@@ -161,8 +294,7 @@ plotCumulativeRecords(record_counts|>
 ### *Cumulative data capture*
 
 ```{r}
-plotCumulativeRecords(record_counts |> 
-            renameCDM() |> 
+plotCumulativeRecords(clinical_records|> 
             filter(stringr::str_detect(cdm_name, "DataLoch")))
 ```
 
@@ -175,9 +307,8 @@ plotCumulativeRecords(record_counts |>
 ### *Cumulative data capture*
 
 ```{r}
-plotCumulativeRecords(record_counts|> 
-            renameCDM() |> 
-            filter(stringr::str_detect(cdm_name, "GOSH")))
+plotCumulativeRecords(clinical_records|> 
+            filter(stringr::str_detect(cdm_name, "Ormond")))
 ```
 
 # Lancs
@@ -189,9 +320,8 @@ plotCumulativeRecords(record_counts|>
 ### *Cumulative data capture*
 
 ```{r}
-plotCumulativeRecords(record_counts|> 
-            renameCDM() |> 
-            filter(stringr::str_detect(cdm_name, "Lancs")))
+plotCumulativeRecords(clinical_records|> 
+            filter(stringr::str_detect(cdm_name, "Lancashire")))
 ```
 
 # Leeds
@@ -203,8 +333,7 @@ plotCumulativeRecords(record_counts|>
 ### *Cumulative data capture*
 
 ```{r}
-plotCumulativeRecords(record_counts|> 
-            renameCDM() |> 
+plotCumulativeRecords(clinical_records |> 
             filter(stringr::str_detect(cdm_name, "Leeds")))
 ```
 
@@ -217,8 +346,7 @@ plotCumulativeRecords(record_counts|>
 ### *Cumulative data capture*
 
 ```{r}
-plotCumulativeRecords(record_counts|> 
-            renameCDM() |> 
-            filter(stringr::str_detect(cdm_name, "UCLH")))
+plotCumulativeRecords(clinical_records|> 
+            filter(stringr::str_detect(cdm_name, "University College")))
 ```
 :::

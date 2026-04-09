@@ -25,6 +25,6 @@ University College London Hospitals NHS Trust is one of the largest NHS trusts i
 
 Barts Health NHS Trust is the largest NHS hospital group in the UK. It contributes a dataset of approximately 3 million patients from across its six hospitals in East London: The Royal London Hospital, Newham General Hospital, Whipps Cross Hospital, Mile End Hospital, St Bartholomew’s Hospital and the London NHS Nightingale Hospital, a purpose-built COVID-19 hospital. The dataset spans from 2012, with comprehensive and consistent records available from 2015/2016 onwards 
 
-## DataLoch
+## DataLoch Lothian
 
 DataLoch’s OMOP mapped data is extracted from secondary care EHR databases from NHS Lothian, covering a population of approximately 1.4 million in South-East Scotland. It focuses on oncology and contains longitudinal data capturing the full cancer care pathways, including diagnosis, treatment and follow-up. The database includes information from the cancer registry, inpatient admissions, outpatient visits, and community prescribing records. All NHS Lothian patients present in these databases were included for this work. 
