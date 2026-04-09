@@ -24,7 +24,11 @@ jobs:
             libx11-dev \
             libglpk-dev \
             libxml2-dev \
-            pandoc        
+            libfontconfig1-dev \
+            libfreetype6-dev \
+            libharfbuzz-dev \
+            libfribidi-dev \
+            pandoc      
         
       - name: Install R
         uses: r-lib/actions/setup-r@v2
