@@ -350,3 +350,4 @@ plotCumulativeRecords(clinical_records|>
             filter(stringr::str_detect(cdm_name, "University College")))
 ```
 :::
+
