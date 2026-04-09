@@ -105,12 +105,8 @@
                 color: '#00aecd'
             },
             controlStyle: {
-                color: '#00aecd',
-            },
-            emphasis: {
-                controlStyle: {
-                  color: '#00aecd'
-                }
+                normal: { color: '#00aecd' },
+                emphasis: { color: '#00aecd' }
             }
         },
 

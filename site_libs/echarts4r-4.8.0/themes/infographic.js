@@ -76,7 +76,9 @@
 
         toolbox: {
             iconStyle: {
-                borderColor: colorPalette[0]
+                normal: {
+                    borderColor: colorPalette[0]
+                }
             }
         },
 
@@ -150,10 +152,8 @@
                 borderColor: '#fff',
                 lineStyle: {
                     width: 3
-                }
-            },
-            emphasis: {
-                itemStyle: {
+                },
+                emphasis: {
                     borderWidth: 0
                 }
             },

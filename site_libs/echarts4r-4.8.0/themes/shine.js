@@ -67,7 +67,9 @@
 
         toolbox: {
             iconStyle: {
-                borderColor: '#06467c'
+                normal: {
+                    borderColor: '#06467c'
+                }
             }
         },
 
